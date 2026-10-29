@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abdallah Abo Elkhair · Medical Equipment Planner & BIM Specialist</title>
+<meta name="description" content="Biomedical engineer specialising in medical equipment planning and BIM for healthcare projects. Revit models from concept to LOD 500, ISO 19650.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F4F6FA;--ink:#0B1F3A;--muted:#51647E;--card:#fff;--line:#D5DDE8;--accent:#8A6A1F;--gold:#C8A55A;--gold2:#E6D3A0;--navy:#0B1F3A;--navy2:#123259;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#08172B;--ink:#E8EDF5;--muted:#A3B2C8;--card:#0E2540;--line:#23405F;--accent:#D4B36A;--navy:#06101F;--navy2:#0E2540}}
+:root[data-theme="dark"]{--paper:#08172B;--ink:#E8EDF5;--muted:#A3B2C8;--card:#0E2540;--line:#23405F;--accent:#D4B36A;--navy:#06101F;--navy2:#0E2540}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",sans-serif;line-height:1.12;margin:0}
+a{color:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:6;background:var(--navy);color:#fff;border-bottom:1px solid #ffffff22}
+.nav .wrap{display:flex;justify-content:space-between;align-items:center;height:58px;gap:14px}
+.nav strong{font:700 18px "Bricolage Grotesque",sans-serif;white-space:nowrap}
+.nav nav{display:flex;gap:18px;font-size:15px;overflow-x:auto;margin-left:auto}
+.nav nav a{text-decoration:none;color:#c9d4e6;white-space:nowrap}
+.nav nav a:hover{color:var(--gold2)}
+.btn{display:inline-block;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:600;border:1.5px solid var(--gold);color:var(--gold2);background:transparent;cursor:pointer;font-family:inherit;font-size:16px}
+.btn.gold{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+.btn:hover{background:var(--gold2);border-color:var(--gold2);color:var(--navy)}
+.nav .btn{padding:8px 16px;font-size:15px}
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:40px 40px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:72px;padding-bottom:110px}
+.hero h1{font-size:clamp(40px,6.2vw,70px);font-weight:700;letter-spacing:-.02em}
+.role{font:500 clamp(20px,2.4vw,26px) "Bricolage Grotesque",sans-serif;color:var(--gold);margin:14px 0 18px}
+.lede{max-width:52ch;color:#c9d4e6;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.stats{display:flex;flex-wrap:wrap;gap:12px 32px;margin:36px 0 0;padding:0;list-style:none}
+.stats b{display:block;font:700 26px "Bricolage Grotesque",sans-serif;color:var(--gold2)}
+.stats span{font-size:14px;color:#9fb0cb}
+.plan{background:#ffffff0a;border:1.5px solid #C8A55A88;border-radius:8px;padding:12px}
+.plan svg{display:block;width:100%;height:auto}
+.d{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.4s ease-out forwards}
+.t rect{fill:var(--gold)}.t text{fill:#0B1F3A;font:600 11px "Public Sans",sans-serif}
+.cap{fill:#9fb0cb;font:500 11px "Public Sans",sans-serif}
+.ecg{position:absolute;left:0;right:0;bottom:0;width:100%;height:70px;display:block}
+.ecg path{fill:none;stroke:var(--gold);stroke-width:2;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.2s .6s ease-out forwards;opacity:.85}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.d,.ecg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:76px 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(30px,4vw,44px);margin-bottom:12px;letter-spacing:-.01em}
+h2::after{content:"";display:block;width:56px;height:4px;background:var(--gold);margin-top:12px;border-radius:2px}
+.sub{color:var(--muted);max-width:62ch;margin:14px 0 36px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:8px;padding:24px}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{margin:0 0 10px;color:var(--muted);font-size:16px}
+.card ul{margin:0;padding-left:20px;font-size:16px}.card li{padding:2px 0}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.chips i{font-style:normal;font-size:13px;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--navy2);color:var(--gold2)}
+.rank{font:700 34px "Bricolage Grotesque",sans-serif;color:var(--accent);line-height:1;margin-bottom:6px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.skills section{padding:0;border:0}
+.skills div{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px}
+.skills h3{font-size:18px;color:var(--accent);margin-bottom:10px}
+.skills dl{margin:0}.skills dt{font-weight:600;margin-top:8px}.skills dd{margin:0;color:var(--muted);font-size:15px}
+.tl{list-style:none;margin:0;padding:0 0 0 28px;border-left:3px solid var(--gold)}
+.tl li{position:relative;padding:0 0 30px}
+.tl li::before{content:"";position:absolute;left:-38px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--paper);border:3px solid var(--navy2)}
+.tl h3{font-size:22px}.co{font-weight:600;color:var(--accent)}.when{display:block;color:var(--muted);font-size:15px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}
+.two h3{font-size:19px}.two p{margin:2px 0 18px;color:var(--muted)}
+.empty{border:2px dashed var(--line);border-radius:8px;padding:32px;text-align:center;color:var(--muted)}
+.empty h3{color:var(--ink);margin-bottom:8px}
+.art details{margin-top:8px}.art summary{cursor:pointer;font-weight:600;color:var(--accent)}
+.contact{background:var(--navy);color:#fff;border-bottom:0}
+.contact .sub{color:#c9d4e6}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cgrid form{display:grid;gap:12px}
+.cgrid input,.cgrid textarea{width:100%;padding:12px 14px;border-radius:8px;border:1.5px solid #ffffff44;background:#ffffff12;color:#fff;font:inherit}
+.cgrid ::placeholder{color:#9fb0cb}
+footer{background:var(--navy);color:#9fb0cb;padding:20px 0;font-size:14px;border-top:1px solid #ffffff1a}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:7}
+.fab summary{list-style:none;cursor:pointer;background:var(--gold);color:var(--navy);font-weight:700;padding:13px 22px;border-radius:99px;box-shadow:0 6px 20px #0b1f3a55}
+.fab summary::-webkit-details-marker{display:none}
+.fab div{position:absolute;right:0;bottom:56px;width:240px;background:var(--navy);border:1.5px solid var(--gold);border-radius:12px;padding:14px;display:grid;gap:8px}
+.fab .btn{text-align:center;padding:10px}
+.toast{position:fixed;left:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:7;max-width:320px;background:var(--navy);color:#fff;border:1.5px solid var(--gold);border-radius:12px;padding:16px;display:none}
+.toast.on{display:block}.toast p{margin:0 0 12px;font-size:15px}.toast .btns{gap:8px}.toast .btn{padding:8px 14px;font-size:14px}
+@media (max-width:760px){.hero .wrap,.cgrid{grid-template-columns:1fr}.hero .wrap{padding-top:44px;padding-bottom:96px}section{padding:52px 0}.nav nav{display:none}.toast{display:none!important}}
+.ic{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.ib{width:52px;height:52px;border-radius:14px;background:var(--navy2);color:var(--gold);display:grid;place-items:center;margin-bottom:16px;border:1px solid #C8A55A55}
+.btn .ic{width:18px;height:18px;vertical-align:-3px;margin-right:8px}
+.skills h3{display:flex;align-items:center;gap:10px}.skills h3 .ic{width:24px;height:24px}
+.hero .wrap{position:relative}
+.hero::before{content:"";position:absolute;right:-70px;top:-70px;width:340px;height:340px;opacity:.06;background:linear-gradient(var(--gold),var(--gold)) center/90px 100% no-repeat,linear-gradient(var(--gold),var(--gold)) center/100% 90px no-repeat;pointer-events:none}
+.eq{background:var(--navy2);color:#fff;padding:36px 0;border-bottom:1px solid #ffffff1a}
+.eq p{margin:0 0 20px;font:500 20px "Bricolage Grotesque",sans-serif;color:var(--gold2)}
+.eq .row{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:20px}
+.eq figure{margin:0;text-align:center}
+.eq svg{width:64px;height:64px;fill:none;stroke:var(--gold);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.eq figcaption{font-size:14px;color:#c9d4e6;margin-top:8px}
+.thumb{width:100%;height:auto;display:block;background:var(--navy2);border-radius:6px;margin-bottom:16px;stroke:var(--gold);fill:none;stroke-width:1.8;stroke-linejoin:round;stroke-linecap:round}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-plan" viewBox="0 0 24 24"><path d="M9 4h6v3H9z"/><path d="M7 5H5v16h14V5h-2"/><path d="M9 12h6M9 16h4"/></symbol>
+<symbol id="i-cube" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M12 12l8-4.5M12 12v9M12 12L4 7.5"/></symbol>
+<symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></symbol>
+<symbol id="i-hosp" viewBox="0 0 24 24"><path d="M4 21V8l8-4 8 4v13z"/><path d="M12 10v6M9 13h6"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></symbol>
+<symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><path d="M16 5a3.3 3.3 0 0 1 0 6.5M18 14.5c2 .7 3.5 2.6 3.5 5.5"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><path d="M8 16v-5M12 16V8M16 16v-8"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+</defs></svg>
+<header class="nav"><div class="wrap"><strong>Abdallah A.</strong>
+<nav aria-label="Sections"><a href="#services">Services</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#articles">Articles</a></nav>
+<a class="btn gold" href="#contact">Contact me</a></div></header>
+
+<main>
+<div class="hero" id="home"><div class="wrap">
+<div>
+<h1>Abdallah Abo Elkhair</h1>
+<p class="role">Medical equipment planner &amp; BIM specialist</p>
+<p class="lede">I plan medical equipment for healthcare projects and model it in Revit, from concept to LOD 500, to ISO 19650. Based in Cairo and open to roles in Abu Dhabi and Dubai.</p>
+<div class="btns"><a class="btn gold" href="mailto:a.aboalkhair99@gmail.com?subject=Hello%20Abdallah"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Email me</a><a class="btn" href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>Message on LinkedIn</a></div>
+<ul class="stats"><li><b>4+ years</b><span>planning healthcare projects</span></li><li><b>LOD 500</b><span>Revit models</span></li><li><b>ISO 19650</b><span>BIM workflow</span></li><li><b>1st place</b><span>FEMU Projects Competition</span></li></ul>
+</div>
+<div class="plan"><svg viewBox="0 0 400 300" role="img" aria-label="Floor plan of a clinical room with tagged equipment">
+<g class="d"><rect x="20" y="20" width="360" height="240"/><path d="M20 150h70M130 150h250"/><path d="M90 150a40 40 0 0 1 40 0"/><rect x="190" y="50" width="110" height="70" rx="4"/><circle cx="245" cy="85" r="18"/><rect x="320" y="40" width="40" height="90" rx="3"/><rect x="40" y="180" width="90" height="50" rx="3"/><rect x="230" y="190" width="120" height="46" rx="3"/><path d="M40 60h110v60H40z"/></g>
+<g class="t"><rect x="196" y="22" width="98" height="20" rx="3"/><text x="203" y="36">Surgical light</text><rect x="300" y="138" width="76" height="20" rx="3"/><text x="307" y="152">Pendant</text><rect x="44" y="196" width="82" height="20" rx="3"/><text x="51" y="210">Sterilizer</text><rect x="238" y="200" width="104" height="20" rx="3"/><text x="245" y="214">Anaesthesia</text></g>
+<text class="cap" x="24" y="284">Equipment tags: room data, power, medical gas</text></svg></div>
+</div>
+<svg class="ecg" viewBox="0 0 1200 70" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40H240l14-6 12 6h60l12 10 14-36 16 52 14-26h60l14-6 12 6h240l14-6 12 6h60l12 10 14-36 16 52 14-26h160"/></svg>
+</div>
+
+<div class="eq"><div class="wrap"><p>Equipment categories I work with</p><div class="row"><figure><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="9" width="38" height="28" rx="5"/><circle cx="24" cy="23" r="9"/><circle cx="24" cy="23" r="4"/><path d="M10 41h28"/></svg><figcaption>Imaging</figcaption></figure><figure><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="14" r="10"/><circle cx="24" cy="14" r="4"/><path d="M24 24v7h9v8"/></svg><figcaption>Surgical lighting</figcaption></figure><figure><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 12v26M5 30h38v8M43 30v-6a4 4 0 0 0-4-4H20v10"/><circle cx="12" cy="41" r="2"/><circle cx="36" cy="41" r="2"/></svg><figcaption>Patient beds</figcaption></figure><figure><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="5" y="8" width="38" height="24" rx="3"/><path d="M9 21h8l3-7 5 12 3-5h11"/><path d="M24 32v6M15 41h18"/></svg><figcaption>Monitoring</figcaption></figure><figure><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="13" y="8" width="22" height="26" rx="3"/><rect x="17" y="12" width="14" height="8" rx="1"/><path d="M18 26h4M26 26h4M24 34v4M16 41h16"/></svg><figcaption>Infusion</figcaption></figure><figure><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="8" width="36" height="30" rx="4"/><circle cx="21" cy="23" r="9"/><circle cx="21" cy="23" r="3"/><path d="M35 15v4M35 27v4M11 42h6M31 42h6"/></svg><figcaption>Sterilization</figcaption></figure></div></div></div>
+
+<section id="services"><div class="wrap">
+<h2>What I do</h2>
+<p class="sub">Planning that hospitals can build from, and models that stay useful after handover.</p>
+<div class="grid">
+<div class="card"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-plan"/></svg></div><h3>Medical equipment planning</h3><ul><li>Equipment lists and schedules by department and room</li><li>Power, medical gas, data, water and drainage needs per item</li><li>Layouts and clearances checked against how each room is used</li><li>Coordination with architects and MEP teams</li></ul></div>
+<div class="card"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-cube"/></svg></div><h3>Healthcare BIM</h3><ul><li>Revit models from concept to LOD 500</li><li>Equipment families with the parameters planners and contractors need</li><li>Clash coordination in Navisworks</li><li>Shared models managed to ISO 19650 in ACC / BIM 360</li></ul></div>
+<div class="card"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></div><h3>Standards and compliance</h3><ul><li>Designs checked against FGI guidelines</li><li>HTM technical memoranda for UK-style healthcare facilities</li><li>CBAHI accreditation requirements</li><li>Documentation that points back to the standard</li></ul></div>
+<div class="card"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></div><h3>Automation and reporting</h3><ul><li>Dynamo scripts for repetitive modelling work</li><li>Excel schedules and checks</li><li>Power BI dashboards for project data</li></ul></div>
+<div class="card"><div class="ib"><svg class="ic" aria-hidden="true"><use href="#i-hosp"/></svg></div><h3>Hospital biomedical engineering</h3><p>Hands-on experience as a biomedical engineer at El Arish Military Hospital, which keeps my plans practical for the clinical teams who use them.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills in detail</h2>
+<p class="sub">What I use each tool for.</p>
+<div class="skills">
+<div><h3><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg>Modelling and design</h3><dl><dt>Revit</dt><dd>Healthcare models from concept to LOD 500</dd><dt>AutoCAD</dt><dd>Drawings and layouts</dd><dt>Navisworks</dt><dd>Model coordination and clash review</dd><dt>Dynamo</dt><dd>Automating repetitive Revit tasks</dd></dl></div>
+<div><h3><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg>Collaboration</h3><dl><dt>ACC / BIM 360</dt><dd>Shared models and issue tracking</dd><dt>ISO 19650</dt><dd>Information management workflow</dd></dl></div>
+<div><h3><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg>Data and reporting</h3><dl><dt>Power BI</dt><dd>Project dashboards</dd><dt>Excel</dt><dd>Schedules, checks and calculations</dd></dl></div>
+<div><h3><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg>Standards and languages</h3><dl><dt>FGI · HTM · CBAHI</dt><dd>Healthcare design and accreditation standards</dd><dt>English</dt><dd>Full professional</dd><dt>German</dt><dd>Elementary</dd></dl></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<p class="sub">Work streams and competition results.</p>
+<div class="grid">
+<div class="card"><svg class="thumb" viewBox="0 0 320 120" role="img" aria-label="Isometric building model"><path d="M160 14l52 26-52 26-52-26z M108 40v40l52 26V66 M212 40v40l-52 26 M108 60l52 26 M212 60l-52 26 M160 66v40"/><g transform="translate(-100 22) scale(.7)"><path d="M160 14l52 26-52 26-52-26z M108 40v40l52 26V66 M212 40v40l-52 26"/></g><g transform="translate(150 22) scale(.7)"><path d="M160 14l52 26-52 26-52-26z M108 40v40l52 26V66 M212 40v40l-52 26"/></g></svg><h3>Healthcare facility BIM models</h3><p>Revit models developed from concept through LOD 500 for healthcare projects.</p><div class="chips"><i>Revit</i><i>LOD 500</i><i>ISO 19650</i></div></div>
+<div class="card"><svg class="thumb" viewBox="0 0 320 120" role="img" aria-label="Room layout with equipment"><rect x="40" y="12" width="240" height="96" rx="3"/><path d="M40 60h96M170 60h110"/><path d="M136 60a17 17 0 0 0-17-17"/><rect x="60" y="22" width="52" height="24" rx="2"/><circle cx="220" cy="36" r="14"/><circle cx="220" cy="36" r="5"/><rect x="60" y="72" width="56" height="26" rx="2"/><rect x="170" y="76" width="90" height="20" rx="2"/></svg><h3>Medical equipment planning packages</h3><p>Equipment planning for healthcare facilities at Corner Edge Group and Andalusia Engineering Services.</p><div class="chips"><i>Planning</i><i>Room schedules</i></div></div>
+<div class="card"><svg class="thumb" viewBox="0 0 320 120" role="img" aria-label="Trophy"><path d="M130 14h60v22a30 30 0 0 1-60 0z"/><path d="M130 22h-14a14 14 0 0 0 14 22M190 22h14a14 14 0 0 1-14 22"/><path d="M160 66v18M138 98h44M146 84h28"/></svg><div class="rank">1st</div><h3>FEMU Projects Competition</h3><p>First place.</p></div>
+<div class="card"><svg class="thumb" viewBox="0 0 320 120" role="img" aria-label="Trophy"><path d="M130 14h60v22a30 30 0 0 1-60 0z"/><path d="M130 22h-14a14 14 0 0 0 14 22M190 22h14a14 14 0 0 1-14 22"/><path d="M160 66v18M138 98h44M146 84h28"/></svg><div class="rank">3rd</div><h3>FEMU Projects Competition</h3><p>Third place in a second edition.</p></div>
+</div></div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<p class="sub">From hospital biomedical work to planning and BIM on healthcare projects.</p>
+<ol class="tl">
+<li><h3>Biomedical Engineer</h3><span class="co">Dar Engineering</span><span class="when">Cairo · Oct 2024 – Jul 2026</span></li>
+<li><h3>Medical Equipment Planner</h3><span class="co">Andalusia Engineering Services</span><span class="when">Aug 2024 – Oct 2024</span></li>
+<li><h3>Biomedical Engineer</h3><span class="co">El Arish Military Hospital</span><span class="when">Mar 2023 – Feb 2024</span></li>
+<li><h3>Medical Equipment Planner</h3><span class="co">Corner Edge Group</span><span class="when">Aug 2022 – Jul 2024</span></li>
+</ol>
+<div class="two" style="margin-top:20px"><div><h2>Education</h2><h3>B.Sc. Biomedical Engineering</h3><p>Mansoura University · 2017 – 2022</p><h3>Samsung Innovation Campus, AI course</h3><p>2021 – 2022</p><h3>Internship</h3><p>Urology &amp; Nephrology Center, Mansoura University · Aug 2021</p></div></div>
+</div></section>
+
+<section id="articles"><div class="wrap">
+<h2>Articles</h2>
+<p class="sub">Notes on medical equipment planning, BIM and healthcare design.</p>
+<div class="grid art" id="artList"></div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2>Let's talk</h2>
+<p class="sub">Hiring for a BIM or biomedical design role in the UAE, or have a healthcare project that needs planning? Send a message and I'll reply.</p>
+<div class="cgrid">
+<form id="cf"><input id="cn" placeholder="Your name" aria-label="Your name" required><input id="cc" placeholder="Company or project (optional)" aria-label="Company or project"><textarea id="cm" rows="4" placeholder="How can I help?" aria-label="Message" required></textarea><button class="btn gold" type="submit">Send by email</button></form>
+<div><p>Prefer to reach out directly?</p><div class="btns"><a class="btn gold" href="mailto:a.aboalkhair99@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>a.aboalkhair99@gmail.com</a><a class="btn" href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>linkedin.com/in/abo-elkhair</a></div></div>
+</div></div></section>
+</main>
+<footer><div class="wrap">© 2026 Abdallah Abo Elkhair · Cairo, Egypt</div></footer>
+
+<details class="fab"><summary>Let's talk</summary><div><a class="btn gold" href="mailto:a.aboalkhair99@gmail.com?subject=Hello%20Abdallah"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg>Email</a><a class="btn" href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener"><svg class="ic" aria-hidden="true"><use href="#i-link"/></svg>LinkedIn</a></div></details>
+<div class="toast" id="toast" role="dialog" aria-label="Contact prompt"><p>Hiring or have a healthcare project? Message me now.</p><div class="btns"><a class="btn gold" href="#contact" id="tc">Contact me</a><button class="btn" id="tx" type="button">Not now</button></div></div>
+
+<script>
+const ARTICLES=[]; /* {title,date,summary,body:["paragraph",...]} */
+const L=document.getElementById('artList');
+if(!ARTICLES.length){L.innerHTML='<div class="empty" style="grid-column:1/-1"><div class="ib" style="margin:0 auto 14px"><svg class="ic" aria-hidden="true"><use href="#i-pen"/></svg></div><h3>First articles coming soon</h3><p>Follow me on LinkedIn to read them as they are published.</p><a class="btn gold" href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">Follow on LinkedIn</a></div>';}
+else ARTICLES.forEach(a=>{const c=document.createElement('article');c.className='card';
+const h=document.createElement('h3');h.textContent=a.title;const m=document.createElement('p');m.textContent=a.date+' · '+a.summary;c.append(h,m);
+if(a.body){const d=document.createElement('details'),s=document.createElement('summary');s.textContent='Read article';d.append(s);a.body.forEach(t=>{const p=document.createElement('p');p.textContent=t;d.append(p)});c.append(d)}
+L.append(c)});
+document.getElementById('cf').addEventListener('submit',e=>{e.preventDefault();
+const n=cn.value,c=cc.value,m=cm.value;
+location.href='mailto:a.aboalkhair99@gmail.com?subject='+encodeURIComponent('Message from '+n+(c?' · '+c:''))+'&body='+encodeURIComponent(m+'\n\n'+n)});
+const T=document.getElementById('toast');let seen=false;
+try{seen=sessionStorage.getItem('t')==='1'}catch(e){}
+if(!seen)setTimeout(()=>T.classList.add('on'),3500);
+function closeT(){T.classList.remove('on');try{sessionStorage.setItem('t','1')}catch(e){}}
+tx.onclick=closeT;tc.onclick=closeT;
+</script>
+</body>
+</html>
