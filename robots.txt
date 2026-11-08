@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/sitemap.xml
