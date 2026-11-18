@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</link><description>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</description><language>ar</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/feed.xml" rel="self" type="application/rss+xml"/><item><title>أتمتة شغل Revit المتكرر في تخطيط المعدات الطبية: تعرّف على A+ MQ</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</guid><pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate><description>A+ MQ إضافة على Revit خرجت من شغلي اليومي في تخطيط المعدات الطبية. ست أدوات شغالة في الاستخدام اليومي وعشر أدوات أخرى في الطريق.</description><category>Revit</category><category>الأتمتة</category><category>تخطيط المعدات الطبية</category><category>A+ MQ</category><content:encoded><![CDATA[<p>في مشاريع المستشفيات الكبيرة، جزء كبير من وقتي كـ Medical Equipment Planner بيروح في شغل متكرر على Revit: أنهي غرف اتفرشت؟ إيه اللي لسه ناقص؟ الداتا شيت متحدثة ومربوطة بالعناصر في الريفت ولا لأ؟ وكمان الـ Layout Sheets والـ Tags لكل غرفة…</p>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</link><description>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</description><language>ar</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/feed.xml" rel="self" type="application/rss+xml"/><item><title>COBie للمعدات الطبية: كيف يتحول التسليم إلى بيانات أصول قابلة للاستخدام</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/cobie-handover-medical-equipment-asset-data/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/cobie-handover-medical-equipment-asset-data/</guid><pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate><description>يوفّر COBie بيانات الأصول التي يحتاجها المالك عند التسليم. نشرح كيف تطابق جداول Type وComponent قائمة المعدات الطبية، وما يجب الاتفاق عليه مبكرًا.</description><category>COBie</category><category>بيانات الأصول</category><category>تخطيط المعدات الطبية</category><category>التسليم</category><content:encoded><![CDATA[<p>يُفتتح المستشفى، وتكون قائمة المعدات ملف جداول لا يثق به أحد. الموديلات والأرقام التسلسلية والضمانات موزعة بين رسائل البريد وملفات PDF ومجلدات الموقع. ثم يعيد فريق المرافق إدخال البيانات نفسها في نظام الصيانة بعد أشهر من وصول أول مريض.</p>
+<p>وُجد COBie لسد هذه الفجوة. هو طريقة لتسليم بيانات الأصول القابلة للصيانة، وليس الأشكال الهندسية للنموذج، بشكل منظم يستطيع المالك تحميله في أنظمة التشغيل.</p>
+<h2>ما هو COBie وما ليس هو</h2>
+<p>تصفه NBS بأنه صيغة بيانات غير مملوكة لجهة بعينها، تنشر جزءًا من نموذج معلومات المبنى يركز على بيانات الأصول لا على الأشكال الهندسية، وتؤكد أن ملف COBie ليس BIM كاملًا بأي حال. أما ملخص NIBS للمعيار فيصفه بأنه صيغة بيانات ومعيار عملية، يلتقط الأصول القابلة للصيانة في المنشأة بصيغة رقمية لتقليل الفجوة الزمنية بين التسليم وبدء تشغيل المرافق.</p>
+<p>نشرته أول مرة هيئة المهندسين بالجيش الأمريكي عام 2007، وتتولى NIBS صيانته منذ 2013. وتذكر المصدرين أنه يمكن تقديمه كجدول بيانات أو كبيانات IFC، ولهذا يقابله كثيرون أول مرة كملف Excel.</p>
+<p><img loading="lazy" alt="إنفوجرافيك: كيف تتطابق قائمة المعدات الطبية مع COBie. Space للغرفة وType لموديل المنتج وComponent لكل وحدة مركّبة" src="images/cobie-equipment-mapping-ar.webp" /></p>
+<h2>Type وComponent: الجزء المألوف للمخططين</h2>
+<p>جدولان هما الأهم للمعدات. جدول Type يصف نوع المنتج بمرجعه وشركته المصنعة وخصائصه. وجدول Component يسرد كل وحدة مركّبة على حدة ويربطها بنوعها وبالـ Space الموجودة فيه. وتوضح NBS ذلك بمثال باب هو نسخة من نوع باب معين وموجود في غرفة محددة.</p>
+<p>وفي قائمة المعدات الطبية يأتي التطابق طبيعيًا:</p>
+<ul>
+<li><strong>Space:</strong> الغرفة كما هي معرّفة في بيانات الغرف.</li>
+<li><strong>Type:</strong> موديل الجهاز، مثل موديل مضخة تسريب واحد بشركته المصنعة وخصائصه.</li>
+<li><strong>Component:</strong> كل وحدة فعلية موضوعة في غرفة، وتُتتبع منفردة.</li>
+</ul>
+<p>إذا كانت قائمة معداتك تفصل أصلًا بين الموديل والكمية في كل غرفة، فأنت قطعت معظم الطريق.</p>
+<h2>ما يجب الاتفاق عليه قبل إنتاج البيانات</h2>
+<p>COBie جهد تعاوني. تشير NBS إلى أنه لا يملك مهني واحد أو جهة واحدة كل المعلومات، وتؤكد NIBS أن المعماريين والمهندسين والمقاولين والموردين ووكلاء التشغيل التجريبي والمالك جميعًا يساهمون. وبعض القرارات تمنع إعادة العمل:</p>
+<ol>
+<li><strong>الحقول المطلوبة.</strong> يوضح ملخص NIBS أن كل حقل إما مطلوب دائمًا أو مطلوب إذا نص عليه العقد أو مرجعي، وأن للمالك تحديد الحقول التي يريدها. لذلك تختلف المخرجات من عقد إلى آخر.</li>
+<li><strong>الإصدار والصيغة.</strong> المعيار تطور عبر السنوات، ووثيقة NIBS تصف الإصدار الثالث بأنه مسودة وقت كتابتها. تأكد مما تطلبه وثائق المشروع فعلًا.</li>
+<li><strong>من يملك كل جدول ومتى.</strong> تُسلَّم البيانات على مراحل تنتهي بتسليم كامل عند التسليم، لذلك يجب بناء بيانات المعدات أثناء التصميم لا تجميعها في النهاية.</li>
+<li><strong>أكواد ثابتة للغرف والمعدات.</strong> لا يرتبط Component بـ Space وType إلا إذا تطابقت المعرّفات بين النموذج والجداول وملف البيانات.</li>
+</ol>
+<h2>لماذا يهم المالك</h2>
+<p>تعرّف NIBS الأصول القابلة للصيانة بأنها العناصر التي سيديرها المالك في نظام التشغيل والصيانة، ومنها المعدات الميكانيكية والكهربائية. وتضيف NBS أن الهدف دعم التشغيل والإصلاح والاستبدال. وفي المستشفى يعني هذا أن قائمة المعدات تصبح نقطة البداية لسجل الأصول، لا وثيقة تُعاد كتابتها بعد الافتتاح.</p>
+<h2>الخلاصة</h2>
+<p>COBie ليس ورقًا إضافيًا في النهاية. هو قائمة المعدات نفسها، منظمة مبكرًا بما يكفي لتنجو من التسليم. اتفق على الحقول المطلوبة، وحافظ على ثبات المعرّفات من بيانات الغرف إلى النموذج، واعتبر Type وComponent عمود قائمتك الفقري.</p>
+<h2>المصادر</h2>
+<ul>
+<li><a href="https://www.thenbs.com/knowledge/what-is-cobie" target="_blank" rel="noopener">NBS: What is COBie?</a></li>
+<li><a href="https://www.buildingsmart.org/wp-content/uploads/2022/11/COBie-v3-Standard_Executive-Summary_DRAFT061322.pdf" target="_blank" rel="noopener">NIBS / buildingSMART: COBie v3 Standard, Executive Summary (draft)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/COBie" target="_blank" rel="noopener">Wikipedia: COBie</a></li>
+</ul>]]></content:encoded></item><item><title>FGI 2026: فصل الأكواد عن الأدلة. ما الذي يجب أن يعرفه مخططو المنشآت الصحية</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/fgi-2026-codes-and-handbooks-what-planners-should-know/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/fgi-2026-codes-and-handbooks-what-planners-should-know/</guid><pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate><description>تفصل إصدارات FGI لعام 2026 بين الاشتراطات الدنيا الملزمة والإرشادات التوضيحية. نلخص ما تغير في الهيكل وكيف تتكيف فرق التخطيط.</description><category>FGI</category><category>أكواد المنشآت الصحية</category><category>تخطيط المستشفيات</category><category>المعايير</category><content:encoded><![CDATA[<p>لعقود، كانت وثيقة واحدة تؤدي وظيفتين. الجهات التنظيمية تقرؤها كاشتراط، والمصممون يقرؤونها كنصيحة. وتخطو إصدارات FGI لعام 2026 خطوة واضحة نحو الفصل بين الوظيفتين.</p>
+<h2>ما الذي تغير في الهيكل</h2>
+<p>أصدر FGI (معهد إرشادات المنشآت) أكواد FGI 2026 للتخطيط والتصميم مع أدلة FGI الجديدة للتخطيط والتصميم، بحسب ما نشرته مجلة Healthcare Design في 1 سبتمبر 2026. وذكر التقرير نفسه أن الأكواد تركز الآن، لأول مرة، حصريًا على الحد الأدنى من اشتراطات التخطيط والتصميم.</p>
+<p>ويصف مقال لـ FGI منشور في مجلة HFM التقسيم ذاته: فُصلت الاشتراطات الإلزامية عن الإرشادات التكميلية، مع ثلاثة أكواد مستقلة (المستشفيات، والعيادات الخارجية، ومنشآت الرعاية السكنية والدعم). تعرض الأكواد الحد الأدنى من الاشتراطات المقصودة للاعتماد والإنفاذ، بينما تقدم الأدلة السياق والرسوم والأمثلة وشرح الأسباب.</p>
+<p><img loading="lazy" alt="إنفوجرافيك: هيكل FGI 2026. ثلاثة أكواد تحمل الاشتراطات الدنيا للاعتماد والإنفاذ، وأدلة تحمل السياق والأمثلة" src="images/fgi-2026-structure-ar.webp" /></p>
+<h2>ما الذي لم يتغير</h2>
+<p>بحسب مقال HFM، لم تُعد صياغة الاشتراطات ضمن إعادة التنظيم، وإنما نُقلت فقط. وأعيد تنظيم اشتراطات المشروع العامة القديمة في خمسة فصول: المقدمة، والتخطيط، والتصميم، والإنشاء، والتشغيل التجريبي (Commissioning). كما روجع مسرد المصطلحات ووُحّدت الصياغة عبر الأكواد الثلاثة. وتتضمن إصدارات 2026 كذلك إصدار 2025 من المعيار ANSI/ASHRAE/ASHE 170 الخاص بتهوية المنشآت الصحية، وفق المقال نفسه.</p>
+<h2>لماذا يهم المخططين</h2>
+<p>يعيش تخطيط المعدات حيث تلتقي الاشتراطات بالغرض منها. فـ Room Data Sheets ومساحات الفراغات والمسافات الحرة واشتراطات المرافق ترجع كلها إلى ما يقوله الكود ولماذا.</p>
+<ul>
+<li><strong>استشهد بالكود لما هو مطلوب، وبالدليل لسبب ذلك.</strong> الفصل الواضح يسهّل تبرير ملاحظات مراجعة التصميم.</li>
+<li><strong>تحقق من الإصدار الذي تطبّقه جهتك.</strong> الاعتماد خطوة تنظيمية، والإصدار الجديد لا يحل تلقائيًا محل الإصدار الملزم للمشروع، فتأكد من الجهة المختصة ومن وثائق العقد.</li>
+<li><strong>حدّث القوالب وقوائم المراجعة.</strong> راجع ملاحظات Room Data Sheet وقوائم المراجعة التي تذكر أرقام البنود مقابل تنظيم الفصول الجديد.</li>
+<li><strong>سجّل الإصدار لكل مشروع.</strong> كتابة الإصدار في معلومات المشروع تمنع الالتباس في البرامج الطويلة.</li>
+</ul>
+<h2>الإتاحة</h2>
+<p>تذكر Healthcare Design أن إصدارات 2026 متاحة على FGI OneSource، وهي منصة رقمية جديدة. وتضيف HFM أن FGI تتيح نسخة من الأكواد بصيغة رقمية مجانية وقابلة للبحث.</p>
+<h2>الخلاصة</h2>
+<p>إصدار FGI 2026 هو في معظمه تغيير في طريقة تنظيم الاشتراطات وعرضها. اعتبر الأكواد هي الاشتراط، والأدلة هي الشرح، وتأكد من الإصدار المطبّق قبل تحديث معايير مشروعك.</p>
+<h2>المصادر</h2>
+<ul>
+<li><a href="https://healthcaredesignmagazine.com/?p=165444" target="_blank" rel="noopener">Healthcare Design: FGI Releases 2026 Codes For Planning And Design, New Handbook</a></li>
+<li><a href="https://www.hfmmagazine.com/transformation-fgi-codes" target="_blank" rel="noopener">HFM: The transformation of the FGI codes</a></li>
+<li><a href="https://blog.drofus.com/en/news/everything-you-need-to-know-about-fgi-guidelines-2026" target="_blank" rel="noopener">dRofus: Everything you need to know about FGI Guidelines 2026</a></li>
+</ul>]]></content:encoded></item><item><title>أتمتة شغل Revit المتكرر في تخطيط المعدات الطبية: تعرّف على A+ MQ</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</guid><pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate><description>A+ MQ إضافة على Revit خرجت من شغلي اليومي في تخطيط المعدات الطبية. ست أدوات شغالة في الاستخدام اليومي وعشر أدوات أخرى في الطريق.</description><category>Revit</category><category>الأتمتة</category><category>تخطيط المعدات الطبية</category><category>A+ MQ</category><content:encoded><![CDATA[<p>في مشاريع المستشفيات الكبيرة، جزء كبير من وقتي كـ Medical Equipment Planner بيروح في شغل متكرر على Revit: أنهي غرف اتفرشت؟ إيه اللي لسه ناقص؟ الداتا شيت متحدثة ومربوطة بالعناصر في الريفت ولا لأ؟ وكمان الـ Layout Sheets والـ Tags لكل غرفة…</p>
 <p>Building Explorer كان أول خطوة، ودلوقتي بقى جزء من Plugin كاملة على Revit اسمها A+ MQ، طالعة من قلب شغلي اليومي في الـ Medical Equipment Planning.</p>
 <p><img loading="lazy" alt="إنفوجرافيك: أدوات Revit لمخططي المعدات الطبية، تبويب A+ MQ بست أدوات شغالة وعشر أدوات أخرى في الطريق" src="images/a-plus-mq-revit-tools.webp" /></p>
 <h2>الأدوات اللي شغالة معايا دلوقتي</h2>
