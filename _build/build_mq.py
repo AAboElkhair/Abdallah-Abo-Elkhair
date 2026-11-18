@@ -16,18 +16,28 @@ ICONS = '''<svg width="0" height="0" style="position:absolute" aria-hidden="true
 <symbol id="e" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/><path d="M10 16h6M13.5 13.5L16 16l-2.5 2.5"/></symbol>
 <symbol id="s" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 2"/></symbol>
 <symbol id="q" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h10M4 18h7"/></symbol>
+<symbol id="g" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+<symbol id="p" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7"/><circle cx="12" cy="12" r="2.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+<symbol id="y" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7a8 8 0 0 0-14-2L4 7"/><path d="M4 3v4h4"/><path d="M4 17a8 8 0 0 0 14 2l2-2"/><path d="M20 21v-4h-4"/></symbol>
+<symbol id="k" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M3 14h18M9 9v11"/></symbol>
+<symbol id="o" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></symbol>
+<symbol id="u" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+<symbol id="m" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6-5.5-6-11a6 6 0 0 1 12 0c0 5.5-6 11-6 11z"/><path d="M12 7v6M9 10h6"/></symbol>
+<symbol id="c" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18"/><path d="M12 4v9M8.5 10L12 13.5 15.5 10"/><rect x="7" y="16" width="10" height="5" rx="1"/></symbol>
+<symbol id="x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="8" height="8" rx="1"/><path d="M4 4h4M4 4v4M20 4h-4M20 4v4M4 20h4M4 20v-4M20 20h-4M20 20v-4" stroke-dasharray="2 2"/></symbol>
+<symbol id="a" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="z" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L4 14h7l-1 7 9-11h-7z"/></symbol>
+<symbol id="v" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+<symbol id="h" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-4.5-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.5 12 20 12 20z"/><path d="M12 10v5M9.5 12.5h5"/></symbol>
+<symbol id="w1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+<symbol id="w2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0"/><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 13.5a7 7 0 0 1 4 6.5"/></symbol>
+<symbol id="w3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M10 21v-5h4v5M12 8v4M10 10h4"/></symbol>
+<symbol id="w4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></symbol>
+<symbol id="ck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+<symbol id="ar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </defs></svg>'''
 
-# Shared illustrative mockups (English UI, sample data only)
-def tile(icon, name, live):
-    return f'<div class="tl{"" if live else " soon"}"><b>{"In use" if live else "Soon"}</b><svg><use href="#{icon}"/></svg>{name}</div>'
-
-def ribbon():
-    t = ''.join([tile('b','Building Explorer',1), tile('r','Furnishing Report',1), tile('d','Equipment Datasheet',1),
-                 tile('l','Room Layout Sheet',1), tile('t','Room Tags Auto Leader',1), tile('e','Sheet Export',1)])
-    return ('<div class="card ribbon" dir="ltr" aria-hidden="true"><div class="tabs"><span class="f">File</span><span>Architecture</span><span>Systems</span><span>Annotate</span><span>View</span><span class="on">A+ MQ</span></div>'
-            f'<div class="tools">{t}</div></div>')
-
+# Illustrative mockups (English UI, sample data only)
 SHOTS = {
  'explorer': '<div style="font-weight:700;margin-bottom:2px">Level 02 · 18 rooms</div><div class="bar"><i style="width:72%"></i></div><div class="li">Operating Room 01<em class="ok">Furnished</em></div><div class="li">Recovery Bay<em class="ms">3 missing</em></div><div class="li">Sterile Store<em class="ok">Furnished</em></div><div class="li">Isolation Room<em class="ms">5 missing</em></div>',
  'report': '<table class="tbl"><tr><th>Room</th><th>Furnished</th><th>Missing</th></tr><tr><td>Operating Room 01</td><td><em class="li ok" style="display:inline;padding:1px 8px;margin:0;border:0">Yes</em></td><td>0</td></tr><tr><td>Recovery Bay</td><td>Partly</td><td>3</td></tr><tr><td>Sterile Store</td><td><em class="li ok" style="display:inline;padding:1px 8px;margin:0;border:0">Yes</em></td><td>0</td></tr><tr><td>Isolation Room</td><td>Partly</td><td>5</td></tr><tr><td>Staff Lounge</td><td>No</td><td>9</td></tr></table>',
@@ -37,96 +47,156 @@ SHOTS = {
  'export': '<div class="li"><span class="cb on"></span>A-101 · Level 01 Plan<span class="exp"><u>DWG</u><u>PDF</u></span></div><div class="li"><span class="cb on"></span>A-102 · Level 02 Plan<span class="exp"><u>DWG</u><u>PDF</u></span></div><div class="li"><span class="cb on"></span>R-201 · Room Layout 201<span class="exp"><u>DWG</u><u>PDF</u></span></div><div class="li"><span class="cb"></span>R-202 · Room Layout 202<span class="exp"><u>DWG</u><u>PDF</u></span></div>',
 }
 
+def ribbon(more):
+    tl = lambda i, n: f'<div class="tl"><svg><use href="#{i}"/></svg>{n}</div>'
+    t = (tl('b','Building Explorer') + tl('l','Room Layout Sheet') + tl('y','RDS Sync') +
+         tl('u','Utility Matrix') + tl('x','Clearance Check') + f'<div class="tl more"><b>+11</b>{more}</div>')
+    return ('<div class="card ribbon" dir="ltr" aria-hidden="true"><div class="tabs"><span class="f">File</span><span>Architecture</span><span>Systems</span><span>Annotate</span><span>View</span><span class="on">A+ MQ</span></div>'
+            f'<div class="tools">{t}</div></div>')
+
+# (icon, name, category key, EN description, AR description)
+TOOLS = [
+ ('b','Building Explorer','ex','See the furnishing status of every room across the building, level by level, in one panel.','حالة فرش كل غرفة في المبنى كله، دور بدور، في شاشة واحدة.'),
+ ('r','Furnishing Report','ex','Furnished rooms and missing items in one clear report, ready to review and share.','الغرف المفروشة والعناصر الناقصة في تقرير واحد واضح، جاهز للمراجعة والإرسال.'),
+ ('d','Equipment Datasheet','ex','Generate equipment datasheets straight from the equipment database, always up to date.','داتا شيت لكل جهاز مباشرة من قاعدة بيانات المعدات، ومتحدثة دايمًا.'),
+ ('l','Room Layout Sheet','sh','A ready layout sheet for every room in one click, views and titles included.','Layout Sheet جاهز لكل غرفة بضغطة واحدة، بالـ views والعناوين.'),
+ ('t','Room Tags Auto Leader','sh','Place room tags with clean automatic leaders, without dragging each one by hand.','تاجات الغرف بـ leaders أوتوماتيك ونظيفة، من غير ما تسحب كل واحدة بإيدك.'),
+ ('e','Sheet Export','sh','Export sheets to CAD or PDF in one click, named and organized.','تصدير الشيتات CAD أو PDF بضغطة واحدة، بأسماء مرتبة.'),
+ ('a','As-Built Tracker','sh','Track equipment changes through construction and keep as-built sheets in step with the site.','متابعة تغييرات المعدات أثناء التنفيذ، وشيتات الـ As-Built ماشية مع الموقع.'),
+ ('p','Smart Placement','pl','Place equipment in rooms faster and more consistently across similar room types.','وضع المعدات في الغرف أسرع وبشكل موحد في الغرف المتشابهة.'),
+ ('y','RDS Sync','pl','Keep room data sheets and the Revit model in sync, so equipment lists match on both sides.','الـ Room Data Sheets والموديل متزامنين، وقوائم المعدات متطابقة في الاتنين.'),
+ ('k','RBR Schedule','pl','Room-by-room equipment schedules built from the model, ready for the client.','جداول RBR غرفة غرفة من الموديل مباشرة، جاهزة للعميل.'),
+ ('o','Equipment BOQ','pl','Equipment quantities and BOQ pulled from the model for costing and procurement.','كميات المعدات والـ BOQ من الموديل للتسعير والتوريد.'),
+ ('u','Utility Matrix','co','Equipment utility needs, such as power, water and data, gathered in one matrix for MEP.','احتياجات المعدات من كهرباء ومياه وداتا في جدول واحد لفريق الـ MEP.'),
+ ('m','Medical Gas Map','co','Medical gas requirements mapped room by room for clear coordination with MEP.','احتياجات الغازات الطبية غرفة غرفة، لتنسيق واضح مع الـ MEP.'),
+ ('c','Ceiling Load Map','co','Ceiling-mounted equipment mapped with its loads for structural coordination.','المعدات المعلقة في السقف بأحمالها، للتنسيق مع الإنشائي.'),
+ ('x','Clearance Check','co','Check equipment service and access clearances before they become site problems.','مراجعة مسافات الخدمة والوصول حوالين المعدات قبل ما تبقى مشكلة في الموقع.'),
+ ('g','Item Code Guard','qa','Catch missing, duplicate or wrong equipment item codes before they reach schedules.','اكتشاف أكواد المعدات الناقصة أو المكررة أو الغلط قبل ما توصل للجداول.'),
+]
+
 L = {
 'en': dict(
- lang='en', dir='ltr', rel='', home=BASE + 'aplus-mq/', other=BASE + 'aplus-mq/ar/', other_href='ar/', other_label='العربية', portfolio='../',
+ lang='en', dir='ltr', rel='', home=BASE + 'aplus-mq/', other_href='ar/', other_label='العربية', portfolio='../',
  title='A+ MQ: Revit Plugin for Medical Equipment Planners',
- desc='A+ MQ is a Revit plugin for medical equipment planners on hospital BIM projects: furnishing status, datasheets, layout sheets, room tags and sheet export. Launching soon.',
- nav=[('#tools','Tools'),('#licensing','Licensing'),('#faq','FAQ')], cta='Get early access', ctasub='Launching soon',
- kick='Revit plugin · Launching soon',
- h1='Stop repeating Revit work. <em>Plan the equipment.</em>',
- lede='A+ MQ adds a tab to Revit for medical equipment planners: furnishing status, datasheets, layout sheets, room tags and sheet export, built from daily work on large hospital projects.',
- see='See the tools', demo='Request a demo', demo_sub='A+ MQ demo request', demo_body='Name:\nCompany:\nTeam size:\nPreferred time for a demo:\n', note='Six tools are in daily use and being tested. Release is coming soon.',
- pains_h='The repetitive work behind every hospital model', pains_s='These are the questions and tasks that eat a planner\'s week. A+ MQ is built around them.',
- pains=[('b','Which rooms are furnished?','A clear status for every room, level by level.'),('r','What is still missing?','Furnished rooms and missing items in one report.'),('d','Are datasheets up to date?','Datasheets generated straight from the equipment database.'),('l','Layout sheets and tags','A layout sheet for every room and tags with leaders, without drawing each one by hand.')],
- tools_h='Sixteen tools, one Revit tab', tools_s='Six tools are in daily use and being tested on real planning work. Ten more are in development. Release is coming soon.',
- tools=[('explorer','Building Explorer','Room-by-room furnishing status across the whole building.'),('report','Furnishing Report','Furnished rooms and missing items, ready to review.'),('datasheet','Equipment Datasheet','Datasheets straight from the equipment database.'),('layout','Room Layout Sheet','A ready layout sheet for every room in one click.'),('tags','Room Tags Auto Leader','Room tags placed with automatic leaders.'),('export','Sheet Export','Sheets exported to CAD or PDF in one click, no hassle.')],
- inuse='In daily use', soon='Coming soon',
- cav='Illustrative mockups with sample data. They show the idea of each tool and are not screenshots of the released plugin.',
- road_h='Ten more tools on the way', road_s='The roadmap follows what a planner actually needs on a hospital model.',
- road=[('Healthcare QA',['Item Code Guard']),('Planning',['Smart Placement','RDS Sync','RBR Schedule','Equipment BOQ']),('Coordination',['Utility Matrix','Medical Gas Map','Ceiling Load Map','Clearance Check']),('Sheets',['As-Built Tracker'])],
- ask='If one tool could save you the most time in medical equipment planning on Revit, which would it be? Tell us and it moves up the list.', askbtn='Tell us your pick',
- by_h='Built by a planner, for planners', by_p='A+ MQ grew out of the day-to-day work of Abdallah Abo-Elkhair, a Medical Equipment Planning Engineer. It started with Building Explorer and became a full Revit plugin.', by_a='About the author', 
- lic_h='Licensing for individuals, teams and companies', lic_s='Pricing is announced at launch. Teams and companies get a lower price per seat.',
- lic=[('Individual','For a single planner or BIM specialist.',['One user','Full toolset once released'],False),
-      ('Team','For planning teams on shared projects.',['Several seats under one license','Lower price per seat','For shared projects'],True),
-      ('Company','For firms and contractors rolling it out across projects.',['Many seats across projects','Lower price per seat','Talk to us about your needs'],False)],
- licbadge='Lower per seat', licprice='Pricing at launch', licbtn='Ask about this plan',
+ desc='A+ MQ puts 16 Revit tools for medical equipment planners in one tab: furnishing status, datasheets, layout sheets, schedules, BOQ, utilities and QA. Launching soon.',
+ nav=[('#tools','Tools'),('#how','How it works'),('#licensing','Licensing'),('#faq','FAQ')],
+ demo='Request a demo', demo_sub='A+ MQ demo request', demo_body='Name:\nCompany:\nTeam size:\nPreferred time for a demo:\n',
+ cta='Get early access', mail_sub='A+ MQ early access', see='Explore the 16 tools',
+ kick='Revit plugin for medical equipment planning · Launching soon',
+ h1='Medical equipment planning in Revit, <em>done faster.</em>',
+ lede='A+ MQ puts 16 tools in one Revit tab: furnishing status, datasheets, layout sheets, schedules, BOQ, utilities, medical gases and QA checks. Less clicking, cleaner deliverables, and more time for the planning decisions that matter.',
+ trust=['Built by a medical equipment planner','16 tools in one Revit tab','Team and company licenses'],
+ more='more tools',
+ out_h='Deliver hospital projects faster, and better', out_s='Repetitive Revit work slows every healthcare project down. A+ MQ automates it, so your team spends its time on planning, not on clicking.',
+ out=[('z','Faster delivery','Tasks that take hours of manual work run in a click, so packages reach the client sooner.'),
+      ('g','Fewer errors','Automatic checks catch missing items, wrong codes and clearance issues before the client or the site does.'),
+      ('v','Consistent deliverables','Every sheet, tag, schedule and datasheet follows the same standard, on every project and every team member.'),
+      ('h','Better healthcare projects','More time for clinical planning means better-equipped rooms, smoother coordination and safer hospitals.')],
+ ba_h='From manual work to one click', ba_s='The same planning tasks, without the repetition.', ba_l='Without A+ MQ', ba_r='With A+ MQ',
+ ba=[('Furnishing status','Checking rooms one by one in views and schedules','A building-wide status in one panel'),
+     ('Datasheets','Copying equipment data into documents by hand','Generated straight from the equipment database'),
+     ('Layout sheets','Setting up every room sheet view by view','A layout sheet for every room in one click'),
+     ('RDS and schedules','Keeping spreadsheets and the model aligned manually','RDS, RBR schedules and BOQ synced with the model'),
+     ('MEP coordination','Rebuilding utility and gas lists for every issue','Utility matrix and medical gas map from the model'),
+     ('QA and export','Manual reviews, then exporting sheets one by one','Codes and clearances checked, sheets exported in one click')],
+ tools_h='16 tools. One tab. Every stage of planning.', tools_s='From the first room survey to as-built sheets, A+ MQ covers the repetitive work of medical equipment planning in Revit.',
+ cats=[('all','All tools'),('ex','Explore and report'),('sh','Sheets and documentation'),('pl','Planning'),('co','Coordination'),('qa','Healthcare QA')],
+ show_h='See it in action', show_s='A look at how some of the tools present your model data.',
+ shows=[('explorer','Building Explorer'),('report','Furnishing Report'),('datasheet','Equipment Datasheet'),('layout','Room Layout Sheet'),('tags','Room Tags Auto Leader'),('export','Sheet Export')],
+ cav='Illustrative mockups with sample data, showing the idea of each tool.',
+ how_h='Up and running in three steps', how=[('Open your hospital model','A+ MQ adds its own tab to the Revit ribbon, next to the tools you already use.'),('Pick a tool','Run reports, sheets, schedules, coordination maps and checks in a click.'),('Deliver with confidence','Send consistent, checked outputs to the client, the design team and the site.')],
+ who_h='Made for the people who equip hospitals', who=[('w1','Medical equipment planners','Spend less time on Revit chores and more on planning.'),('w2','Healthcare BIM teams','Standard outputs across every model and every team member.'),('w3','Hospital design firms','Faster equipment packages and smoother MEP coordination.'),('w4','Contractors and suppliers','Clear schedules, BOQ and as-built records for delivery and handover.')],
+ by_h='Built by a planner, for planners', by_p='A+ MQ grew out of the day-to-day work of Abdallah Abo-Elkhair, a Medical Equipment Planning Engineer on large hospital projects. Every tool solves a task planners repeat on every project.', by_a='About the author',
+ lic_h='Licensing for individuals, teams and companies', lic_s='Pricing is announced at launch. The bigger your team, the lower the price per seat.',
+ lic=[('Individual','For a single planner or BIM specialist.',['One user','All 16 tools'],False,'cta'),
+      ('Team','For planning teams on shared projects.',['Several seats under one license','All 16 tools','Lower price per seat'],True,'demo'),
+      ('Company','For firms rolling it out across projects.',['Seats for the whole company','All 16 tools','Lowest price per seat'],False,'demo')],
+ licbadge='Best for teams', licprice='Pricing at launch',
  faq_h='Questions', faq=[
-  ('Who is A+ MQ for?','Medical equipment planners and BIM teams who plan equipment for hospitals in Revit.'),
-  ('Can I see a demo?','Yes. Send a demo request and include your team size. The demo covers the tools that are in daily use.'),
-  ('Is it available now?','Not yet. Six tools are in daily use and still being tested. Join the early-access list and you will hear first.'),
-  ('Will there be team and company licenses?','Yes. Team and company licenses are planned with a lower price per seat. Get in touch to discuss your team.'),
-  ('Can I suggest a tool?','Yes. The roadmap is shaped by planners\' feedback. Send your suggestion by email or LinkedIn.'),
+  ('Who is A+ MQ for?','Medical equipment planners, healthcare BIM teams, hospital design firms and contractors who plan equipment in Revit.'),
+  ('Can I see a demo?','Yes. Send a demo request with your team size and we will walk you through the tools and how they fit your workflow.'),
+  ('When can I buy it?','A+ MQ is launching soon. Join early access or request a demo and you will be the first to know, with launch pricing.'),
+  ('Are there team and company licenses?','Yes. Team and company licenses cost less per seat. Get in touch to discuss your team size.'),
+  ('Can I suggest a tool?','Yes. A+ MQ is shaped by planners. Send your idea by email or LinkedIn.'),
   ('Is A+ MQ affiliated with Autodesk?','No. It is an independent product for use with Autodesk Revit.')],
- end_h='Be first to try A+ MQ', end_p='Join the early-access list, or tell us what your team needs.', end_b='Email us', end_b2='Message on LinkedIn',
+ end_h='Ready to plan faster?', end_p='Book a demo for your team or join early access. Team and company licenses get a lower price per seat.', end_b2='Message on LinkedIn',
  foot='A+ MQ is an independent product by Abdallah Abo-Elkhair.', foot_a='Autodesk and Revit are trademarks of Autodesk, Inc. A+ MQ is not affiliated with or endorsed by Autodesk.', copy='© 2026 A+ MQ. All rights reserved.', portlabel='Portfolio',
- mail_sub='A+ MQ early access', 
 ),
 'ar': dict(
- lang='ar', dir='rtl', rel='../', home=BASE + 'aplus-mq/ar/', other=BASE + 'aplus-mq/', other_href='../', other_label='English', portfolio='../../ar/',
+ lang='ar', dir='rtl', rel='../', home=BASE + 'aplus-mq/ar/', other_href='../', other_label='English', portfolio='../../ar/',
  title='A+ MQ: إضافة Revit لمخططي المعدات الطبية',
- desc='A+ MQ إضافة على Revit لمخططي المعدات الطبية في مشاريع المستشفيات: حالة الفرش، الداتا شيت، Layout Sheets، تاجات الغرف وتصدير الشيتات. تُطلق قريبًا.',
- nav=[('#tools','الأدوات'),('#licensing','التراخيص'),('#faq','أسئلة')], cta='احجز وصولًا مبكرًا', ctasub='قريبًا',
- kick='إضافة Revit · تُطلق قريبًا',
- h1='كفاية شغل متكرر على Revit، <em>وخطّط المعدات</em>',
- lede='A+ MQ تضيف تبويبًا على Revit لمخططي المعدات الطبية: حالة الفرش، الداتا شيت، الـ Layout Sheets، تاجات الغرف وتصدير الشيتات. خرجت من الشغل اليومي في مشاريع المستشفيات الكبيرة.',
- see='شوف الأدوات', demo='اطلب ديمو', demo_sub='طلب ديمو A+ MQ', demo_body='الاسم:\nالشركة:\nعدد الفريق:\nالوقت المناسب للديمو:\n', note='ست أدوات شغالة في الاستخدام اليومي وتحت الاختبار، والإطلاق قريب.',
- pains_h='الشغل المتكرر وراء كل موديل مستشفى', pains_s='دي الأسئلة والمهام اللي بتاكل أسبوع المخطط. A+ MQ مبنية حولها.',
- pains=[('b','أنهي غرف اتفرشت؟','حالة واضحة لكل غرفة، دور بدور.'),('r','إيه اللي لسه ناقص؟','الغرف المفروشة والعناصر الناقصة في تقرير واحد.'),('d','الداتا شيت محدّثة؟','داتا شيت بتتولد مباشرة من قاعدة بيانات المعدات.'),('l','Layout Sheets والتاجات','Layout Sheet لكل غرفة وتاجات بالـ leaders من غير رسم كل واحدة يدويًا.')],
- tools_h='ستة عشر أداة في تبويب واحد على Revit', tools_s='ست أدوات شغالة في الاستخدام اليومي وبتتجرب على شغل تخطيط حقيقي، وعشر أدوات تانية تحت التطوير. الإطلاق قريب.',
- tools=[('explorer','Building Explorer','حالة فرش كل غرفة في المبنى كله، غرفة غرفة.'),('report','Furnishing Report','الغرف المفروشة والعناصر الناقصة في تقرير جاهز للمراجعة.'),('datasheet','Equipment Datasheet','داتا شيت لكل جهاز مباشرة من قاعدة بيانات المعدات.'),('layout','Room Layout Sheet','شيت Layout جاهز لكل غرفة بضغطة زر.'),('tags','Room Tags Auto Leader','تاجات الغرف بالـ leaders أوتوماتيك.'),('export','Sheet Export','تصدير الشيتات CAD أو PDF بضغطة واحدة من غير تعقيدات.')],
- inuse='شغالة يوميًا', soon='قريبًا',
- cav='رسومات توضيحية ببيانات تجريبية. بتوضح فكرة كل أداة، وليست لقطات شاشة من الإضافة بعد إطلاقها.',
- road_h='عشر أدوات أخرى في الطريق', road_s='الخطة بتمشي على اللي المخطط محتاجه فعلًا في موديل المستشفى.',
- road=[('Healthcare QA',['Item Code Guard']),('Planning',['Smart Placement','RDS Sync','RBR Schedule','Equipment BOQ']),('Coordination',['Utility Matrix','Medical Gas Map','Ceiling Load Map','Clearance Check']),('Sheets',['As-Built Tracker'])],
- ask='لو أداة واحدة توفر عليك أكبر وقت في تخطيط المعدات الطبية على Revit، تبقى إيه؟ قولنا وهتتقدم في القائمة.', askbtn='قولنا اختيارك',
- by_h='مبنية بإيد مخطط، لمخططين', by_p='A+ MQ خرجت من الشغل اليومي لعبدالله أبو الخير، مهندس تخطيط معدات طبية. بدأت بـ Building Explorer وبقت إضافة كاملة على Revit.', by_a='عن المؤلف',
- lic_h='تراخيص للأفراد والفرق والشركات', lic_s='الأسعار تُعلن عند الإطلاق. الفرق والشركات بسعر أقل للمقعد الواحد.',
- lic=[('فرد','لمخطط أو BIM specialist واحد.',['مستخدم واحد','الأدوات كاملة عند الإطلاق'],False),
-      ('فريق','لفرق التخطيط على مشاريع مشتركة.',['عدة مقاعد في ترخيص واحد','سعر أقل للمقعد','لمشاريع مشتركة'],True),
-      ('شركة','للشركات والمقاولين اللي هتطبقها على مشاريع كتير.',['مقاعد كتير على مشاريع متعددة','سعر أقل للمقعد','كلمنا نعرف احتياجك'],False)],
- licbadge='أقل للمقعد', licprice='السعر عند الإطلاق', licbtn='اسأل عن الباقة',
+ desc='A+ MQ بتجمع 16 أداة على Revit لمخططي المعدات الطبية في تبويب واحد: حالة الفرش، الداتا شيت، الشيتات، الجداول، الـ BOQ، الخدمات والـ QA. تُطلق قريبًا.',
+ nav=[('#tools','الأدوات'),('#how','إزاي بتشتغل'),('#licensing','التراخيص'),('#faq','أسئلة')],
+ demo='اطلب ديمو', demo_sub='طلب ديمو A+ MQ', demo_body='الاسم:\nالشركة:\nعدد الفريق:\nالوقت المناسب للديمو:\n',
+ cta='احجز وصولًا مبكرًا', mail_sub='وصول مبكر A+ MQ', see='اكتشف الـ 16 أداة',
+ kick='إضافة Revit لتخطيط المعدات الطبية · تُطلق قريبًا',
+ h1='تخطيط المعدات الطبية على Revit، <em>أسرع بكتير.</em>',
+ lede='A+ MQ بتجمعلك 16 أداة في تبويب واحد على Revit: حالة الفرش، الداتا شيت، الـ Layout Sheets، الجداول، الـ BOQ، الخدمات، الغازات الطبية ومراجعات الجودة. ضغطات أقل، مخرجات أنضف، ووقت أكتر لقرارات التخطيط المهمة.',
+ trust=['مبنية بإيد مخطط معدات طبية','16 أداة في تبويب واحد','تراخيص للفرق والشركات'],
+ more='more tools',
+ out_h='سلّم مشاريع المستشفيات أسرع، وبجودة أعلى', out_s='الشغل المتكرر على Revit بيأخر أي مشروع صحي. A+ MQ بتعمله أوتوماتيك، عشان فريقك يركز في التخطيط مش في الضغط على الماوس.',
+ out=[('z','تسليم أسرع','مهام بتاخد ساعات شغل يدوي بتخلص بضغطة، والباكدجات توصل للعميل بدري.'),
+      ('g','أخطاء أقل','مراجعات أوتوماتيك بتكشف العناصر الناقصة والأكواد الغلط ومشاكل المسافات قبل العميل أو الموقع.'),
+      ('v','مخرجات موحدة','كل شيت وتاج وجدول وداتا شيت بنفس الستاندرد، في كل مشروع ومع كل عضو في الفريق.'),
+      ('h','مشاريع صحية أفضل','وقت أكتر للتخطيط الإكلينيكي يعني غرف مجهزة أحسن، تنسيق أسهل، ومستشفيات أأمن.')],
+ ba_h='من الشغل اليدوي لضغطة واحدة', ba_s='نفس مهام التخطيط، من غير التكرار.', ba_l='من غير A+ MQ', ba_r='مع A+ MQ',
+ ba=[('حالة الفرش','مراجعة الغرف واحدة واحدة في الـ views والجداول','حالة المبنى كله في شاشة واحدة'),
+     ('الداتا شيت','نقل بيانات المعدات للمستندات يدويًا','بتتولد مباشرة من قاعدة بيانات المعدات'),
+     ('Layout Sheets','تجهيز شيت كل غرفة view بـ view','Layout Sheet لكل غرفة بضغطة واحدة'),
+     ('الـ RDS والجداول','مطابقة الإكسيل مع الموديل بالإيد','RDS وجداول RBR والـ BOQ متزامنين مع الموديل'),
+     ('تنسيق الـ MEP','إعادة عمل قوائم الخدمات والغازات مع كل تعديل','Utility Matrix وخريطة غازات طبية من الموديل'),
+     ('المراجعة والتصدير','مراجعة يدوية وتصدير الشيتات واحد واحد','الأكواد والمسافات متراجعة والتصدير بضغطة')],
+ tools_h='16 أداة. تبويب واحد. كل مراحل التخطيط.', tools_s='A+ MQ بتغطي الشغل المتكرر في تخطيط المعدات الطبية على Revit، من أول حصر الغرف لحد شيتات الـ As-Built.',
+ cats=[('all','كل الأدوات'),('ex','الاستكشاف والتقارير'),('sh','الشيتات والتوثيق'),('pl','التخطيط'),('co','التنسيق'),('qa','جودة المشاريع الصحية')],
+ show_h='شوفها وهي شغالة', show_s='نظرة على طريقة عرض بعض الأدوات لبيانات الموديل.',
+ shows=[('explorer','Building Explorer'),('report','Furnishing Report'),('datasheet','Equipment Datasheet'),('layout','Room Layout Sheet'),('tags','Room Tags Auto Leader'),('export','Sheet Export')],
+ cav='رسومات توضيحية ببيانات تجريبية بتوضح فكرة كل أداة.',
+ how_h='تبدأ في تلات خطوات', how=[('افتح موديل المستشفى','A+ MQ بتضيف تبويبها الخاص على شريط Revit جنب الأدوات اللي بتستخدمها.'),('اختار الأداة','تقارير، شيتات، جداول، خرايط تنسيق ومراجعات بضغطة واحدة.'),('سلّم وانت مطمن','مخرجات موحدة ومتراجعة للعميل وفريق التصميم والموقع.')],
+ who_h='معمولة للناس اللي بتجهز المستشفيات', who=[('w1','مخططي المعدات الطبية','وقت أقل في شغل Revit الروتيني، ووقت أكتر للتخطيط.'),('w2','فرق BIM الصحية','مخرجات بستاندرد واحد في كل موديل ومع كل الفريق.'),('w3','مكاتب تصميم المستشفيات','باكدجات معدات أسرع وتنسيق MEP أسهل.'),('w4','المقاولين والموردين','جداول وBOQ وسجلات As-Built واضحة للتوريد والتسليم.')],
+ by_h='مبنية بإيد مخطط، لمخططين', by_p='A+ MQ خرجت من الشغل اليومي لعبدالله أبو الخير، مهندس تخطيط معدات طبية في مشاريع مستشفيات كبيرة. كل أداة بتحل مهمة المخطط بيكررها في كل مشروع.', by_a='عن المؤلف',
+ lic_h='تراخيص للأفراد والفرق والشركات', lic_s='الأسعار تُعلن عند الإطلاق. كل ما الفريق يكبر، سعر المقعد يقل.',
+ lic=[('فرد','لمخطط أو BIM specialist واحد.',['مستخدم واحد','الـ 16 أداة كاملة'],False,'cta'),
+      ('فريق','لفرق التخطيط على مشاريع مشتركة.',['عدة مقاعد في ترخيص واحد','الـ 16 أداة كاملة','سعر أقل للمقعد'],True,'demo'),
+      ('شركة','للشركات اللي هتطبقها على مشاريع كتير.',['مقاعد للشركة كلها','الـ 16 أداة كاملة','أقل سعر للمقعد'],False,'demo')],
+ licbadge='الأنسب للفرق', licprice='السعر عند الإطلاق',
  faq_h='أسئلة', faq=[
-  ('A+ MQ لمين؟','لمخططي المعدات الطبية وفرق BIM اللي بيخططوا معدات المستشفيات على Revit.'),
-  ('أقدر أشوف ديمو؟','أيوه. ابعت طلب ديمو واكتب عدد فريقك. الديمو بيغطي الأدوات الشغالة في الاستخدام اليومي.'),
-  ('هي متاحة دلوقتي؟','لسه. ست أدوات شغالة يوميًا وتحت الاختبار. سجّل في قائمة الوصول المبكر وهتعرف أول ناس.'),
-  ('هل فيه تراخيص للفرق والشركات؟','أيوه. تراخيص الفرق والشركات مخططة بسعر أقل للمقعد. كلمنا لنناقش احتياج فريقك.'),
-  ('أقدر أقترح أداة؟','أيوه. الخطة بتتشكل بآراء المخططين. ابعت اقتراحك على الإيميل أو LinkedIn.'),
+  ('A+ MQ لمين؟','لمخططي المعدات الطبية وفرق BIM الصحية ومكاتب تصميم المستشفيات والمقاولين اللي بيخططوا المعدات على Revit.'),
+  ('أقدر أشوف ديمو؟','أيوه. ابعت طلب ديمو واكتب عدد فريقك، وهنعرّفك على الأدوات وإزاي تمشي مع طريقة شغلك.'),
+  ('أقدر أشتريها إمتى؟','A+ MQ هتنزل قريب. احجز وصول مبكر أو اطلب ديمو وهتعرف أول واحد، بأسعار الإطلاق.'),
+  ('فيه تراخيص للفرق والشركات؟','أيوه. تراخيص الفرق والشركات سعر المقعد فيها أقل. كلمنا عشان نتكلم عن حجم فريقك.'),
+  ('أقدر أقترح أداة؟','أيوه. A+ MQ بتتشكل بآراء المخططين. ابعت فكرتك على الإيميل أو LinkedIn.'),
   ('هل A+ MQ تابعة لـ Autodesk؟','لا. هي منتج مستقل بيشتغل مع Autodesk Revit.')],
- end_h='كن أول من يجرّب A+ MQ', end_p='سجّل في قائمة الوصول المبكر، أو قولنا فريقك محتاج إيه.', end_b='راسلنا بالإيميل', end_b2='رسالة على LinkedIn',
+ end_h='جاهز تخطط أسرع؟', end_p='احجز ديمو لفريقك أو سجّل في الوصول المبكر. تراخيص الفرق والشركات بسعر أقل للمقعد.', end_b2='رسالة على LinkedIn',
  foot='A+ MQ منتج مستقل من عبدالله أبو الخير.', foot_a='Autodesk و Revit علامتان تجاريتان لشركة Autodesk, Inc. و A+ MQ غير تابعة لها أو معتمدة منها.', copy='© 2026 A+ MQ. جميع الحقوق محفوظة.', portlabel='الموقع الشخصي',
- mail_sub='وصول مبكر A+ MQ',
 )}
 
 def esc(s): return s.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
 
+FILTER_JS = '''<script>document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('.tg .tool').forEach(function(t){t.hidden=!(c==='all'||t.dataset.c===c)})})});var st=document.querySelector('.sticky');addEventListener('scroll',function(){st.classList.toggle('on',scrollY>560)},{passive:true})</script>'''
+
 def page(k):
-    t = L[k]; r = t['rel']
     from urllib.parse import quote
-    demo = 'mailto:'+MAIL+'?subject='+quote(t['demo_sub'])+'&body='+quote(t['demo_body'])
-    mail = f'mailto:{MAIL}?subject=' + t['mail_sub'].replace('+','%2B').replace(' ', '%20')
-    jld = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A+ MQ","applicationCategory":"DesignApplication","description":t['desc'],"url":t['home'],"inLanguage":t['lang'],"creator":{"@type":"Person","name":"Abdallah Abo-Elkhair","url":BASE}}
+    t = L[k]; r = t['rel']; ar = k == 'ar'
+    demo = 'mailto:' + MAIL + '?subject=' + quote(t['demo_sub']) + '&body=' + quote(t['demo_body'])
+    mail = 'mailto:' + MAIL + '?subject=' + quote(t['mail_sub'])
+    arrow = '<svg class="ic"><use href="#ar"/></svg>'
+    jld = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A+ MQ","applicationCategory":"DesignApplication","operatingSystem":"Windows","description":t['desc'],"url":t['home'],"inLanguage":t['lang'],"creator":{"@type":"Person","name":"Abdallah Abo-Elkhair","url":BASE}}
     nav = ''.join(f'<a href="{h}">{esc(x)}</a>' for h,x in t['nav'])
-    pains = ''.join(f'<div class="card pain"><svg><use href="#{i}"/></svg><b>{esc(a)}</b><span>{esc(b)}</span></div>' for i,a,b in t['pains'])
-    tools = ''.join(f'<article class="card tc"><div class="shot" dir="ltr" aria-hidden="true">{SHOTS[s]}</div><div class="tx"><span class="tag">{t["inuse"]}</span><h3>{n}</h3><p>{esc(d)}</p></div></article>' for s,n,d in t['tools'])
-    soon_cards = ''.join(f'<article class="card tc soon"><div class="tx"><span class="tag s">{t["soon"]}</span><h3>{x}</h3><p>{h}</p></div></article>' for h,items in t['road'] for x in items)
-    road = ''.join(f'<div class="card rd"><h3>{h}</h3><ul>' + ''.join(f'<li>{x}</li>' for x in items) + '</ul></div>' for h,items in t['road'])
+    trust = ''.join(f'<li><svg><use href="#ck"/></svg>{esc(x)}</li>' for x in t['trust'])
+    out = ''.join(f'<div class="card oc"><span class="oi"><svg><use href="#{i}"/></svg></span><h3>{esc(a)}</h3><p>{esc(b)}</p></div>' for i,a,b in t['out'])
+    ba = ''.join(f'<div class="br"><b>{esc(a)}</b><span class="bl">{esc(x)}</span><span class="bg"><svg><use href="#ck"/></svg>{esc(y)}</span></div>' for a,x,y in t['ba'])
+    catname = dict(t['cats'])
+    chips = ''.join(f'<button type="button" data-c="{c}" aria-pressed="{"true" if c=="all" else "false"}">{esc(n)}</button>' for c,n in t['cats'])
+    tools = ''.join(f'<article class="card tool" data-c="{c}"><span class="ti"><svg><use href="#{i}"/></svg></span><div><span class="tcat">{esc(catname[c])}</span><h3 dir="ltr">{n}</h3><p>{esc(da if ar else de)}</p></div></article>' for i,n,c,de,da in TOOLS)
+    shows = ''.join(f'<figure class="card sh"><div class="shot" dir="ltr" aria-hidden="true">{SHOTS[s]}</div><figcaption dir="ltr">{n}</figcaption></figure>' for s,n in t['shows'])
+    how = ''.join(f'<div class="hw"><span class="hn">{i+1}</span><h3>{esc(a)}</h3><p>{esc(b)}</p></div>' for i,(a,b) in enumerate(t['how']))
+    who = ''.join(f'<div class="card wc"><svg><use href="#{i}"/></svg><h3>{esc(a)}</h3><p>{esc(b)}</p></div>' for i,a,b in t['who'])
     lic = ''
-    for name,forr,feats,hl in t['lic']:
+    for name,forr,feats,hl,btn in t['lic']:
+        href, label = (demo, t['demo']) if btn == 'demo' else (mail, t['cta'])
         lic += (f'<div class="card lc{" hl" if hl else ""}">' + (f'<span class="badge">{t["licbadge"]}</span>' if hl else '') +
                 f'<h3>{name}</h3><div class="for">{esc(forr)}</div><div class="pr">{t["licprice"]}</div><ul>' + ''.join(f'<li>{esc(f)}</li>' for f in feats) +
-                f'</ul><div style="margin-top:auto;padding-top:18px"><a class="btn ghost" href="{mail}">{t["licbtn"]}</a></div></div>')
+                f'</ul><div style="margin-top:auto;padding-top:18px"><a class="btn{"" if hl else " ghost"} full" href="{href}">{label}</a></div></div>')
     faq = ''.join(f'<details><summary>{esc(q)}</summary><p>{esc(a)}</p></details>' for q,a in t['faq'])
     faqld = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a}} for q,a in t['faq']]}
     og = BASE + 'aplus-mq/assets/og.png'
@@ -135,24 +205,29 @@ def page(k):
 <html lang="{t['lang']}" dir="{t['dir']}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{esc(t['title'])}</title><meta name="description" content="{esc(t['desc'])}"><meta name="color-scheme" content="light dark">
 <link rel="canonical" href="{t['home']}">{hreflang}
-<meta property="og:type" content="website"><meta property="og:site_name" content="A+ MQ"><meta property="og:title" content="{esc(t['title'])}"><meta property="og:description" content="{esc(t['desc'])}"><meta property="og:url" content="{t['home']}"><meta property="og:image" content="{og}"><meta property="og:locale" content="{'ar_AR' if k=='ar' else 'en_US'}">
+<meta property="og:type" content="website"><meta property="og:site_name" content="A+ MQ"><meta property="og:title" content="{esc(t['title'])}"><meta property="og:description" content="{esc(t['desc'])}"><meta property="og:url" content="{t['home']}"><meta property="og:image" content="{og}"><meta property="og:locale" content="{'ar_AR' if ar else 'en_US'}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
 <link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/mq.css?v=3">
+<link rel="stylesheet" href="{r}assets/mq.css?v=12">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
-<header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if k=='ar' else 'ar'}">{t['other_label']}</a><a class="btn" href="{demo}">{t['demo']}</a></div></header>
+<header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if ar else 'ar'}">{t['other_label']}</a><a class="btn" href="{demo}">{t['demo']}</a></div></header>
 <main>
-<div class="hero"><div class="wrap"><div><span class="kick"><i></i>{t['kick']}</span><h1>{t['h1']}</h1><p class="lede">{esc(t['lede'])}</p><div class="row"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a><a class="btn ghost" href="#tools">{t['see']}</a></div><p class="note">{esc(t['note'])}</p></div>{ribbon()}</div></div>
-<section class="sec"><div class="wrap"><h2>{esc(t['pains_h'])}</h2><p class="sub">{esc(t['pains_s'])}</p><div class="pains">{pains}</div></div></section>
-<section class="sec" id="tools" style="padding-top:20px"><div class="wrap"><div class="eyebrow">{t['inuse']}</div><h2>{esc(t['tools_h'])}</h2><p class="sub">{esc(t['tools_s'])}</p><div class="grid3">{tools}{soon_cards}</div><p class="cav">{esc(t['cav'])}</p><div class="card ask"><p>{esc(t['ask'])}</p><a class="btn" href="{mail}">{t['askbtn']}</a></div></div></section>
-<section class="sec" style="padding-top:20px"><div class="wrap"><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h2 style="font-size:24px;margin-bottom:8px">{esc(t['by_h'])}</h2><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
-<section class="sec" id="licensing" style="padding-top:20px"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
-<section class="sec" id="faq" style="padding-top:20px"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
-<section style="padding-top:10px"><div class="wrap"><div class="cta"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><div class="row" style="justify-content:center"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['end_b']}</a><a class="btn ghost" href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></div></div></div></section>
+<div class="hero"><div class="wrap"><div><span class="kick"><i></i>{t['kick']}</span><h1>{t['h1']}</h1><p class="lede">{esc(t['lede'])}</p><div class="row"><a class="btn lg" href="{demo}">{t['demo']} {arrow}</a><a class="btn ghost lg" href="{mail}">{t['cta']}</a></div><ul class="trust">{trust}</ul></div>{ribbon(t['more'])}</div></div>
+<section class="sec"><div class="wrap"><h2>{esc(t['out_h'])}</h2><p class="sub">{esc(t['out_s'])}</p><div class="outs">{out}</div></div></section>
+<section class="sec alt"><div class="wrap"><h2>{esc(t['ba_h'])}</h2><p class="sub">{esc(t['ba_s'])}</p><div class="card ba"><div class="br hd"><b></b><span class="bl">{t['ba_l']}</span><span class="bg">{t['ba_r']}</span></div>{ba}</div></div></section>
+<section class="sec" id="tools"><div class="wrap"><h2>{esc(t['tools_h'])}</h2><p class="sub">{esc(t['tools_s'])}</p><div class="chips" role="group">{chips}</div><div class="tg">{tools}</div><div class="mid"><a class="btn lg" href="{demo}">{t['demo']} {arrow}</a></div></div></section>
+<section class="sec alt"><div class="wrap"><h2>{esc(t['show_h'])}</h2><p class="sub">{esc(t['show_s'])}</p><div class="shows">{shows}</div><p class="cav">{esc(t['cav'])}</p></div></section>
+<section class="sec" id="how"><div class="wrap"><h2>{esc(t['how_h'])}</h2><div class="how">{how}</div></div></section>
+<section class="sec alt"><div class="wrap"><h2>{esc(t['who_h'])}</h2><div class="who">{who}</div><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h3>{esc(t['by_h'])}</h3><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
+<section class="sec" id="licensing"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
+<section class="sec alt" id="faq"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
+<section class="sec"><div class="wrap"><div class="cta"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><div class="row" style="justify-content:center"><a class="btn lg" href="{demo}">{t['demo']} {arrow}</a><a class="btn ghost lg" href="{mail}">{t['cta']}</a></div><p class="li2"><a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div></div></section>
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
+<div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
+{FILTER_JS}
 </body></html>'''
 
 def main():
