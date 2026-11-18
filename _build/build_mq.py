@@ -78,7 +78,7 @@ L = {
  desc='A+ MQ إضافة على Revit لمخططي المعدات الطبية في مشاريع المستشفيات: حالة الفرش، الداتا شيت، Layout Sheets، تاجات الغرف وتصدير الشيتات. تُطلق قريبًا.',
  nav=[('#tools','الأدوات'),('#roadmap','الخطة'),('#licensing','التراخيص'),('#faq','أسئلة')], cta='احجز وصولًا مبكرًا', ctasub='قريبًا',
  kick='إضافة Revit · تُطلق قريبًا',
- h1='كفاية شغل متكرر على Revit. <em>خطّط المعدات.</em>',
+ h1='كفاية شغل متكرر على Revit، <em>وخطّط المعدات</em>',
  lede='A+ MQ تضيف تبويبًا على Revit لمخططي المعدات الطبية: حالة الفرش، الداتا شيت، الـ Layout Sheets، تاجات الغرف وتصدير الشيتات. خرجت من الشغل اليومي في مشاريع المستشفيات الكبيرة.',
  see='شوف الأدوات', note='ست أدوات شغالة في الاستخدام اليومي وتحت الاختبار، والإطلاق قريب.',
  pains_h='الشغل المتكرر وراء كل موديل مستشفى', pains_s='دي الأسئلة والمهام اللي بتاكل أسبوع المخطط. A+ MQ مبنية حولها.',
@@ -103,7 +103,7 @@ L = {
   ('أقدر أقترح أداة؟','أيوه. الخطة بتتشكل بآراء المخططين. ابعت اقتراحك على الإيميل أو LinkedIn.'),
   ('هل A+ MQ تابعة لـ Autodesk؟','لا. هي منتج مستقل بيشتغل مع Autodesk Revit.')],
  end_h='كن أول من يجرّب A+ MQ', end_p='سجّل في قائمة الوصول المبكر، أو قولنا فريقك محتاج إيه.', end_b='راسلنا بالإيميل', end_b2='رسالة على LinkedIn',
- foot='A+ MQ منتج مستقل من عبدالله أبو الخير.', foot_a='Autodesk وRevit علامتان تجاريتان لشركة Autodesk, Inc. وA+ MQ غير تابعة لها أو معتمدة منها.', copy='© 2026 A+ MQ. جميع الحقوق محفوظة.', portlabel='الموقع الشخصي',
+ foot='A+ MQ منتج مستقل من عبدالله أبو الخير.', foot_a='Autodesk و Revit علامتان تجاريتان لشركة Autodesk, Inc. و A+ MQ غير تابعة لها أو معتمدة منها.', copy='© 2026 A+ MQ. جميع الحقوق محفوظة.', portlabel='الموقع الشخصي',
  mail_sub='وصول مبكر A+ MQ',
 )}
 
@@ -134,7 +134,7 @@ def page(k):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
 <link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/mq.css?v=1">
+<link rel="stylesheet" href="{r}assets/mq.css?v=2">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
 <header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if k=='ar' else 'ar'}">{t['other_label']}</a><a class="btn" href="{mail}">{t['cta']}</a></div></header>
