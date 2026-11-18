@@ -119,6 +119,11 @@ L = {
   ('Are there team and company licenses?','Yes. Team and company licenses cost less per seat. Get in touch to discuss your team size.'),
   ('Can I suggest a tool?','Yes. A+ MQ is shaped by planners. Send your idea by email or LinkedIn.'),
   ('Is A+ MQ affiliated with Autodesk?','No. It is an independent product for use with Autodesk Revit.')],
+ form=dict(h='Book your A+ MQ demo', p='Tell us a little about your team and we will get back to you by email to set a time.',
+   name='Full name', email='Work email', company='Company', role='Your role', roles=['Medical equipment planner','BIM manager or coordinator','Architect or hospital designer','Contractor or equipment supplier','Other'],
+   size='Team size', sizes=['Just me','2 to 5','6 to 20','More than 20'], country='Country', msg='What would you like to see? (optional)',
+   send='Request my demo', sending='Sending...', ok_h='Thank you, your request is in.', ok_p='We will email you shortly to arrange your demo.',
+   err='Something went wrong. Please try again, or email us directly:', note='We use your details only to arrange your demo.', choose='Select', subject='New A+ MQ demo request'),
  end_h='Ready to plan faster?', end_p='Book a demo for your team or join early access. Team and company licenses get a lower price per seat.', end_b2='Message on LinkedIn',
  foot='A+ MQ is an independent product by Abdallah Abo-Elkhair.', foot_a='Autodesk and Revit are trademarks of Autodesk, Inc. A+ MQ is not affiliated with or endorsed by Autodesk.', copy='© 2026 A+ MQ. All rights reserved.', portlabel='Portfolio',
 ),
@@ -166,18 +171,39 @@ L = {
   ('فيه تراخيص للفرق والشركات؟','أيوه. تراخيص الفرق والشركات سعر المقعد فيها أقل. كلمنا عشان نتكلم عن حجم فريقك.'),
   ('أقدر أقترح أداة؟','أيوه. A+ MQ بتتشكل بآراء المخططين. ابعت فكرتك على الإيميل أو LinkedIn.'),
   ('هل A+ MQ تابعة لـ Autodesk؟','لا. هي منتج مستقل بيشتغل مع Autodesk Revit.')],
+ form=dict(h='احجز ديمو A+ MQ', p='قولنا شوية عن فريقك، وهنرد عليك بالإيميل عشان نحدد معاد.',
+   name='الاسم بالكامل', email='إيميل الشغل', company='الشركة', role='وظيفتك', roles=['مخطط معدات طبية','مدير أو منسق BIM','معماري أو مصمم مستشفيات','مقاول أو مورد معدات','أخرى'],
+   size='حجم الفريق', sizes=['أنا بس','من 2 لـ 5','من 6 لـ 20','أكتر من 20'], country='الدولة', msg='حابب تشوف إيه في الديمو؟ (اختياري)',
+   send='احجز الديمو', sending='جاري الإرسال...', ok_h='شكرًا، طلبك وصل.', ok_p='هنبعتلك إيميل قريب عشان نحدد معاد الديمو.',
+   err='حصلت مشكلة. جرّب تاني، أو ابعتلنا إيميل مباشرة:', note='بياناتك بتستخدم بس لترتيب الديمو.', choose='اختار', subject='طلب ديمو جديد A+ MQ'),
  end_h='جاهز تخطط أسرع؟', end_p='احجز ديمو لفريقك أو سجّل في الوصول المبكر. تراخيص الفرق والشركات بسعر أقل للمقعد.', end_b2='رسالة على LinkedIn',
  foot='A+ MQ منتج مستقل من عبدالله أبو الخير.', foot_a='Autodesk و Revit علامتان تجاريتان لشركة Autodesk, Inc. و A+ MQ غير تابعة لها أو معتمدة منها.', copy='© 2026 A+ MQ. جميع الحقوق محفوظة.', portlabel='الموقع الشخصي',
 )}
 
 def esc(s): return s.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
 
-FILTER_JS = '''<script>document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('.tg .tool').forEach(function(t){t.hidden=!(c==='all'||t.dataset.c===c)})})});var st=document.querySelector('.sticky');addEventListener('scroll',function(){st.classList.toggle('on',scrollY>560)},{passive:true})</script>'''
+FILTER_JS = '''<script>document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('.tg .tool').forEach(function(t){t.hidden=!(c==='all'||t.dataset.c===c)})})});var fm=document.getElementById('demo-form');if(fm){fm.addEventListener('submit',function(e){if(!window.fetch)return;e.preventDefault();var b=fm.querySelector('button[type=submit]'),lbl=b.textContent,er=fm.querySelector('.ferr');er.hidden=true;b.disabled=true;b.textContent=b.dataset.sending;var d={};new FormData(fm).forEach(function(v,k){d[k]=v});fetch(fm.dataset.ajax,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){return r.json().then(function(j){if(!r.ok||String(j.success)==='false')throw 0})}).then(function(){fm.hidden=true;var ok=document.getElementById('demo-ok');ok.hidden=false;ok.scrollIntoView({block:'center'})}).catch(function(){er.hidden=false;b.disabled=false;b.textContent=lbl})})};var st=document.querySelector('.sticky');addEventListener('scroll',function(){st.classList.toggle('on',scrollY>560)},{passive:true})</script>'''
 
 def page(k):
     from urllib.parse import quote
     t = L[k]; r = t['rel']; ar = k == 'ar'
-    demo = 'mailto:' + MAIL + '?subject=' + quote(t['demo_sub']) + '&body=' + quote(t['demo_body'])
+    demo_mail = 'mailto:' + MAIL + '?subject=' + quote(t['demo_sub']) + '&body=' + quote(t['demo_body'])
+    demo = '#demo'
+    f = t['form']
+    opts = lambda xs: f'<option value="" disabled selected>{f["choose"]}</option>' + ''.join(f'<option>{esc(x)}</option>' for x in xs)
+    form = (f'<form class="card df" id="demo-form" action="https://formsubmit.co/{MAIL}" method="POST" data-ajax="https://formsubmit.co/ajax/{MAIL}">'
+      f'<input type="hidden" name="_subject" value="{esc(f["subject"])}"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="{t["home"]}#demo"><input type="hidden" name="Page" value="{t["lang"].upper()}">'
+      f'<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
+      f'<label>{f["name"]}<input name="Name" required autocomplete="name"></label>'
+      f'<label>{f["email"]}<input type="email" name="email" required autocomplete="email" dir="ltr"></label>'
+      f'<label>{f["company"]}<input name="Company" required autocomplete="organization"></label>'
+      f'<label>{f["country"]}<input name="Country" autocomplete="country-name"></label>'
+      f'<label>{f["role"]}<select name="Role" required>{opts(f["roles"])}</select></label>'
+      f'<label>{f["size"]}<select name="Team size" required>{opts(f["sizes"])}</select></label>'
+      f'<label class="wide">{f["msg"]}<textarea name="Message" rows="3"></textarea></label>'
+      f'<div class="wide fa"><button class="btn lg" type="submit" data-sending="{esc(f["sending"])}">{f["send"]}</button><small>{esc(f["note"])}</small></div>'
+      f'<p class="wide ferr" hidden>{esc(f["err"])} <a href="{demo_mail}">{MAIL}</a></p></form>'
+      f'<div class="card dok" id="demo-ok" hidden><svg><use href="#ck"/></svg><h3>{esc(f["ok_h"])}</h3><p>{esc(f["ok_p"])}</p></div>')
     mail = 'mailto:' + MAIL + '?subject=' + quote(t['mail_sub'])
     arrow = '<svg class="ic"><use href="#ar"/></svg>'
     jld = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A+ MQ","applicationCategory":"DesignApplication","operatingSystem":"Windows","description":t['desc'],"url":t['home'],"inLanguage":t['lang'],"creator":{"@type":"Person","name":"Abdallah Abo-Elkhair","url":BASE}}
@@ -209,7 +235,7 @@ def page(k):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
 <link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/mq.css?v=12">
+<link rel="stylesheet" href="{r}assets/mq.css?v=15">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
 <header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if ar else 'ar'}">{t['other_label']}</a><a class="btn" href="{demo}">{t['demo']}</a></div></header>
@@ -223,7 +249,7 @@ def page(k):
 <section class="sec alt"><div class="wrap"><h2>{esc(t['who_h'])}</h2><div class="who">{who}</div><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h3>{esc(t['by_h'])}</h3><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
 <section class="sec" id="licensing"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
 <section class="sec alt" id="faq"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
-<section class="sec"><div class="wrap"><div class="cta"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><div class="row" style="justify-content:center"><a class="btn lg" href="{demo}">{t['demo']} {arrow}</a><a class="btn ghost lg" href="{mail}">{t['cta']}</a></div><p class="li2"><a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div></div></section>
+<section class="sec" id="demo"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><h3>{esc(f['h'])}</h3><p class="dp">{esc(f['p'])}</p><p class="li2"><a href="{mail}">{t['cta']}</a> · <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div><div class="dr">{form}</div></div></div></section>
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
 <div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
