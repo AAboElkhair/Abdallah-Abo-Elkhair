@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/</loc><lastmod>2026-11-07</lastmod></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/services/medical-equipment-planning/</loc><lastmod>2026-11-07</lastmod></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/services/healthcare-bim/</loc><lastmod>2026-11-07</lastmod></url>
@@ -10,6 +10,8 @@
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/services/healthcare-bim/</loc><lastmod>2026-11-07</lastmod></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/projects/</loc><lastmod>2026-11-07</lastmod></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</loc><lastmod>2026-11-07</lastmod></url>
+<url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/</loc><lastmod>2026-11-18</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/"/><xhtml:link rel="alternate" hreflang="ar" href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/ar/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/"/></url>
+<url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/ar/</loc><lastmod>2026-11-18</lastmod><xhtml:link rel="alternate" hreflang="en" href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/"/><xhtml:link rel="alternate" hreflang="ar" href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/ar/"/><xhtml:link rel="alternate" hreflang="x-default" href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/"/></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/7fs-of-medical-equipment-planning/</loc><lastmod>2026-11-18</lastmod></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</loc><lastmod>2026-11-11</lastmod></url>
 <url><loc>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/a-plus-mq-revit-plugin/</loc><lastmod>2026-11-11</lastmod></url>

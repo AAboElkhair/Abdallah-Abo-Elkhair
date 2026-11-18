@@ -58,10 +58,10 @@ L = {
  ask='If one tool could save you the most time in medical equipment planning on Revit, which would it be? Tell us and it moves up the list.', askbtn='Tell us your pick',
  by_h='Built by a planner, for planners', by_p='A+ MQ grew out of the day-to-day work of Abdallah Abo-Elkhair, a Medical Equipment Planning Engineer. It started with Building Explorer and became a full Revit plugin.', by_a='About the author', 
  lic_h='Licensing for individuals, teams and companies', lic_s='Pricing is announced at launch. Teams and companies get a lower price per seat.',
- lic=[('Individual','For a single planner or BIM specialist.',['One user','All released tools','Updates as tools are added'],False),
-      ('Team','For planning teams on shared projects.',['Several seats under one license','Lower price per seat','Shared onboarding'],True),
-      ('Company','For firms and contractors rolling it out across projects.',['Volume pricing','Lowest price per seat','Direct support and tool requests'],False)],
- licbadge='Best value', licprice='Pricing at launch', licbtn='Ask about this plan',
+ lic=[('Individual','For a single planner or BIM specialist.',['One user','Full toolset once released'],False),
+      ('Team','For planning teams on shared projects.',['Several seats under one license','Lower price per seat','For shared projects'],True),
+      ('Company','For firms and contractors rolling it out across projects.',['Many seats across projects','Lower price per seat','Talk to us about your needs'],False)],
+ licbadge='Lower per seat', licprice='Pricing at launch', licbtn='Ask about this plan',
  faq_h='Questions', faq=[
   ('Who is A+ MQ for?','Medical equipment planners and BIM teams who plan equipment for hospitals in Revit.'),
   ('Is it available now?','Not yet. Six tools are in daily use and still being tested. Join the early-access list and you will hear first.'),
@@ -92,10 +92,10 @@ L = {
  ask='لو أداة واحدة توفر عليك أكبر وقت في تخطيط المعدات الطبية على Revit، تبقى إيه؟ قولنا وهتتقدم في القائمة.', askbtn='قولنا اختيارك',
  by_h='مبنية بإيد مخطط، لمخططين', by_p='A+ MQ خرجت من الشغل اليومي لعبدالله أبو الخير، مهندس تخطيط معدات طبية. بدأت بـ Building Explorer وبقت إضافة كاملة على Revit.', by_a='عن المؤلف',
  lic_h='تراخيص للأفراد والفرق والشركات', lic_s='الأسعار تُعلن عند الإطلاق. الفرق والشركات بسعر أقل للمقعد الواحد.',
- lic=[('فرد','لمخطط أو BIM specialist واحد.',['مستخدم واحد','كل الأدوات المُطلقة','تحديثات مع إضافة الأدوات'],False),
-      ('فريق','لفرق التخطيط على مشاريع مشتركة.',['عدة مقاعد في ترخيص واحد','سعر أقل للمقعد','تشغيل مشترك للفريق'],True),
-      ('شركة','للشركات والمقاولين اللي هتطبقها على مشاريع كتير.',['أسعار الكميات','أقل سعر للمقعد','دعم مباشر وطلب أدوات'],False)],
- licbadge='الأوفر', licprice='السعر عند الإطلاق', licbtn='اسأل عن الباقة',
+ lic=[('فرد','لمخطط أو BIM specialist واحد.',['مستخدم واحد','الأدوات كاملة عند الإطلاق'],False),
+      ('فريق','لفرق التخطيط على مشاريع مشتركة.',['عدة مقاعد في ترخيص واحد','سعر أقل للمقعد','لمشاريع مشتركة'],True),
+      ('شركة','للشركات والمقاولين اللي هتطبقها على مشاريع كتير.',['مقاعد كتير على مشاريع متعددة','سعر أقل للمقعد','كلمنا نعرف احتياجك'],False)],
+ licbadge='أقل للمقعد', licprice='السعر عند الإطلاق', licbtn='اسأل عن الباقة',
  faq_h='أسئلة', faq=[
   ('A+ MQ لمين؟','لمخططي المعدات الطبية وفرق BIM اللي بيخططوا معدات المستشفيات على Revit.'),
   ('هي متاحة دلوقتي؟','لسه. ست أدوات شغالة يوميًا وتحت الاختبار. سجّل في قائمة الوصول المبكر وهتعرف أول ناس.'),
@@ -111,7 +111,7 @@ def esc(s): return s.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;'
 
 def page(k):
     t = L[k]; r = t['rel']
-    mail = f'mailto:{MAIL}?subject=' + t['mail_sub'].replace(' ', '%20')
+    mail = f'mailto:{MAIL}?subject=' + t['mail_sub'].replace('+','%2B').replace(' ', '%20')
     jld = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A+ MQ","applicationCategory":"DesignApplication","description":t['desc'],"url":t['home'],"inLanguage":t['lang'],"creator":{"@type":"Person","name":"Abdallah Abo-Elkhair","url":BASE}}
     nav = ''.join(f'<a href="{h}">{esc(x)}</a>' for h,x in t['nav'])
     pains = ''.join(f'<div class="card pain"><svg><use href="#{i}"/></svg><b>{esc(a)}</b><span>{esc(b)}</span></div>' for i,a,b in t['pains'])
@@ -132,18 +132,18 @@ def page(k):
 <link rel="canonical" href="{t['home']}">{hreflang}
 <meta property="og:type" content="website"><meta property="og:site_name" content="A+ MQ"><meta property="og:title" content="{esc(t['title'])}"><meta property="og:description" content="{esc(t['desc'])}"><meta property="og:url" content="{t['home']}"><meta property="og:image" content="{og}"><meta property="og:locale" content="{'ar_AR' if k=='ar' else 'en_US'}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
-<link rel="icon" type="image/svg+xml" href="{r}assets/logo.svg">{GSC}{GA}
+<link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="{r}assets/mq.css?v=1">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
-<header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><img src="{r}assets/logo.svg" alt="" width="30" height="30">A+ MQ <small>for Revit</small></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if k=='ar' else 'ar'}">{t['other_label']}</a><a class="btn" href="{mail}">{t['cta']}</a></div></header>
+<header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if k=='ar' else 'ar'}">{t['other_label']}</a><a class="btn" href="{mail}">{t['cta']}</a></div></header>
 <main>
 <div class="hero"><div class="wrap"><div><span class="kick"><i></i>{t['kick']}</span><h1>{t['h1']}</h1><p class="lede">{esc(t['lede'])}</p><div class="row"><a class="btn" href="{mail}">{t['cta']}</a><a class="btn ghost" href="#tools">{t['see']}</a></div><p class="note">{esc(t['note'])}</p></div>{ribbon()}</div></div>
 <section class="sec"><div class="wrap"><h2>{esc(t['pains_h'])}</h2><p class="sub">{esc(t['pains_s'])}</p><div class="pains">{pains}</div></div></section>
 <section class="sec" id="tools" style="padding-top:20px"><div class="wrap"><div class="eyebrow">{t['inuse']}</div><h2>{esc(t['tools_h'])}</h2><p class="sub">{esc(t['tools_s'])}</p><div class="grid3">{tools}</div><p class="cav">{esc(t['cav'])}</p></div></section>
 <section class="sec" id="roadmap" style="padding-top:20px"><div class="wrap"><h2>{esc(t['road_h'])}</h2><p class="sub">{esc(t['road_s'])}</p><div class="road">{road}</div><div class="card ask"><p>{esc(t['ask'])}</p><a class="btn" href="{mail}">{t['askbtn']}</a></div></div></section>
-<section class="sec" style="padding-top:20px"><div class="wrap"><div class="card by"><div class="av"><img src="{r}assets/logo.svg" alt=""></div><div><h2 style="font-size:24px;margin-bottom:8px">{esc(t['by_h'])}</h2><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
+<section class="sec" style="padding-top:20px"><div class="wrap"><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h2 style="font-size:24px;margin-bottom:8px">{esc(t['by_h'])}</h2><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
 <section class="sec" id="licensing" style="padding-top:20px"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
 <section class="sec" id="faq" style="padding-top:20px"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
 <section style="padding-top:10px"><div class="wrap"><div class="cta"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><div class="row" style="justify-content:center"><a class="btn" href="{mail}">{t['end_b']}</a><a class="btn ghost" href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></div></div></div></section>

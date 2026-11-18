@@ -34,3 +34,5 @@ I am currently working on 10 more tools, from RDS Sync and RBR Schedule to Utili
 ## Your input
 
 I would love your input: if one tool could save you the most time in medical equipment planning on Revit, what would it be? And what else should we automate to make our work faster? Tell me on [LinkedIn](https://linkedin.com/in/abo-elkhair).
+
+Learn more about A+ MQ on its [product page](https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/).

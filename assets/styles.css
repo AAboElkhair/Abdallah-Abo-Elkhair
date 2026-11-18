@@ -195,3 +195,11 @@ html[lang=ar] .prose{font-size:19px;line-height:2}html[lang=ar] .amt,html[lang=a
 .cover{max-width:980px;margin:0 auto 44px}.cover img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
 .art .card .thumb{display:block;margin:0 0 20px;border-radius:8px;overflow:hidden;border:1px solid var(--line)}.art .card .thumb img{display:block;width:100%;height:auto;transition:transform .5s}.art .card:hover .thumb img{transform:scale(1.03)}
 .art-ph{padding:60px 0 54px}.art-ph h1{font-size:clamp(34px,4.6vw,58px);max-width:24ch;line-height:1.08}
+
+/* A+ MQ product band */
+.pband{display:flex;align-items:center;gap:26px;margin-top:56px;padding:26px 30px}
+.pband .pi{flex:none;width:64px;height:64px;border-radius:14px;background:#fff;display:grid;place-items:center;border:1px solid var(--line)}.pband .pi img{width:42px;height:42px}
+.pband .pt{flex:1;min-width:0}.pband .pt b{display:block;font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--goldt);margin-bottom:6px}.pband .pt span{display:block;font:500 clamp(22px,2.6vw,30px)/1.2 "Cormorant Garamond",Georgia,serif;color:var(--ink)}
+html[lang=ar] .pband .pt b{letter-spacing:0}
+@media (max-width:620px){.pband{flex-wrap:wrap;padding:22px;gap:18px}.pband .btn{width:100%;justify-content:center}}
+html[lang=ar] .pband .btn .ic{transform:scaleX(-1)}

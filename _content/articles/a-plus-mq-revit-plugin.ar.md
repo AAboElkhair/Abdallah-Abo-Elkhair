@@ -34,3 +34,5 @@ Building Explorer كان أول خطوة، ودلوقتي بقى جزء من Plu
 ## محتاج رأيكم
 
 لو فيه أداة واحدة توفر عليكم أكبر وقت في شغل الـ Planning على Revit، تبقى إيه؟ وإيه الأدوات التانية اللي شايفين إننا محتاجين نعملها أوتوميشن عشان شغلنا يبقى أسرع؟ قولولي على [LinkedIn](https://linkedin.com/in/abo-elkhair).
+
+اعرف أكتر عن A+ MQ في [صفحة المنتج](https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/aplus-mq/ar/).
