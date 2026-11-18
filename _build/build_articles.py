@@ -136,7 +136,7 @@ def build_listing(root, lg, items, legacy):
     txt = path.read_text(encoding="utf-8")
     cards = []
     native = sorted(((s, v[lg]) for s, v in items.items() if lg in v), key=lambda x: x[1]["date"], reverse=True)
-    covered = {a.get("linkedin", "").rstrip("/") for s, v in items.items() for a in v.values() if a.get("linkedin")}
+    covered = {v[lg].get("linkedin", "").rstrip("/") for s, v in items.items() if lg in v and v[lg].get("linkedin")}
     for s, a in native: cards.append(card(a, lg, slug=s))
     for l in legacy:
         if l["url"].rstrip("/") not in covered: cards.append(card(None, lg, legacy=l))
@@ -166,6 +166,8 @@ def build_article(root, lg, slug, a, items, ch):
     extra = f'<meta property="article:published_time" content="{iso}"><meta property="article:modified_time" content="{mod}">' + "".join(f'<meta property="article:tag" content="{esc(t)}">' for t in a["tags"])
     page = head(ch, lg, f'{a["title"]} | {T["name"]}', a["description"], canon, hl, "article", img, ld, extra)
     header = set_lang_link(ch.deeper(ch.header), lg, lang_href, T["lang_hl"], T["lang_label"])
+    pre = "../../" if lg == "en" else "../../../"
+    a = dict(a, html=a["html"].replace('src="images/', f'src="{pre}images/'))
     d = fmt_date(a["date"], lg)
     tags = "".join(f'<span class="tag">{esc(t)}</span>' for t in a["tags"])
     up = f' · {T["updated"]} {fmt_date(a["updated"], lg)}' if a.get("updated") and a["updated"] != a["date"] else ""
