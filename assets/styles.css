@@ -154,3 +154,6 @@ html[lang=ar] .kick,html[lang=ar] .eyebrow,html[lang=ar] .crumbs{font-size:14px}
 .cs.one{grid-template-columns:1fr;max-width:820px}
 @media (max-width:620px){.nav .wrap{gap:10px}.nav strong{font-size:17px}.nav .lang{padding:6px 10px;font-size:12px}.nav .btn{padding:9px 11px;font-size:10.5px;letter-spacing:.06em}}
 @media (max-width:400px){.nav .wrap{gap:7px}.nav strong{font-size:15px}.nav .lang{padding:5px 8px}.nav .btn{padding:8px 9px;letter-spacing:.03em}}
+.nav nav{scrollbar-width:none}.nav nav::-webkit-scrollbar{display:none}
+@media (min-width:961px){.nav strong{font-size:21px}.nav .wrap{gap:14px}.nav nav{gap:16px;font-size:12px;letter-spacing:.05em}.nav .btn{padding:10px 14px}}
+@media (min-width:961px) and (max-width:1179px){.nav nav{display:none}.nav .btn{margin-left:auto}}
