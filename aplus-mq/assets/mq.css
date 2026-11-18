@@ -92,3 +92,4 @@ footer small{display:block;line-height:1.7;max-width:80ch}
 @media (max-width:620px){section{padding:50px 0}.hero{padding:40px 0 40px}.pains,.road,.grid3,.lic{grid-template-columns:1fr}.tools{grid-template-columns:1fr 1fr}.tabs span:nth-child(n+2):not(.on){display:none}.cta{padding:34px 20px}.by{grid-template-columns:1fr}.nav .btn{display:none}.nav .lang{margin-inline-start:auto}}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+.tc.soon{box-shadow:none;border-style:dashed;background:transparent}.tc.soon .tx{padding:16px 18px 18px}.tc.soon h3{font-size:17px}.tc.soon p{font-size:13px}.tc .tag.s{color:var(--mute);background:var(--blue-s)}
