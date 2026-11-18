@@ -1,2 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</link><description>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</description><language>ar</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/feed.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</link><description>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</description><language>ar</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/feed.xml" rel="self" type="application/rss+xml"/><item><title>أتمتة شغل Revit المتكرر في تخطيط المعدات الطبية: تعرّف على A+ MQ</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/a-plus-mq-revit-plugin/</guid><pubDate>Wed, 11 Nov 2026 09:00:00 +0000</pubDate><description>A+ MQ إضافة على Revit خرجت من شغلي اليومي في تخطيط المعدات الطبية. ست أدوات شغالة في الاستخدام اليومي وعشر أدوات أخرى في الطريق.</description><category>Revit</category><category>الأتمتة</category><category>تخطيط المعدات الطبية</category><category>A+ MQ</category><content:encoded><![CDATA[<p>في مشاريع المستشفيات الكبيرة، جزء كبير من وقتي كـ Medical Equipment Planner بيروح في شغل متكرر على Revit: أنهي غرف اتفرشت؟ إيه اللي لسه ناقص؟ الداتا شيت متحدثة ومربوطة بالعناصر في الريفت ولا لأ؟ وكمان الـ Layout Sheets والـ Tags لكل غرفة…</p>
+<p>Building Explorer كان أول خطوة، ودلوقتي بقى جزء من Plugin كاملة على Revit اسمها A+ MQ، طالعة من قلب شغلي اليومي في الـ Medical Equipment Planning.</p>
+<p><img loading="lazy" alt="إنفوجرافيك: أدوات Revit لمخططي المعدات الطبية، تبويب A+ MQ بست أدوات شغالة وعشر أدوات أخرى في الطريق" src="images/a-plus-mq-revit-tools.webp" /></p>
+<h2>الأدوات اللي شغالة معايا دلوقتي</h2>
+<p>دي أدوات شغالة معايا في الشغل اليومي، وإن شاء الله هنزّلها قريب بعد ما أخلص من تجربتها واختبارها:</p>
+<ul>
+<li><strong>Building Explorer:</strong> حالة كل غرفة في المبنى، مفروشة ولا ناقصها إيه</li>
+<li><strong>Furnishing Report:</strong> تقرير الفرش والنواقص</li>
+<li><strong>Equipment Datasheet:</strong> توليد داتا شيت لكل جهاز طبي شامل كل التفاصيل الخاصة به ومتطلبات تشغيله</li>
+<li><strong>Room Layout Sheet:</strong> شيت جاهز لكل غرفة بضغطة زر</li>
+<li><strong>Room Tags Auto Leader:</strong> تاجات الغرف بالـ leaders أوتوماتيك</li>
+<li><strong>Sheet Export:</strong> تصدير الشيتات CAD أو PDF بضغطة واحدة، من غير أي تعقيدات</li>
+</ul>
+<h2>عشر أدوات تانية في الطريق</h2>
+<p>شغال حاليًا على 10 أدوات تانية، من RDS Sync وRBR Schedule لحد Utility Matrix وMedical Gas Map. والقائمة الكاملة في الإنفوجرافيك:</p>
+<ul>
+<li><strong>Healthcare QA:</strong> Item Code Guard</li>
+<li><strong>Planning:</strong> Smart Placement وRDS Sync وRBR Schedule وEquipment BOQ</li>
+<li><strong>Coordination:</strong> Utility Matrix وMedical Gas Map وCeiling Load Map وClearance Check</li>
+<li><strong>Sheets:</strong> As-Built Tracker</li>
+</ul>
+<h2>محتاج رأيكم</h2>
+<p>لو فيه أداة واحدة توفر عليكم أكبر وقت في شغل الـ Planning على Revit، تبقى إيه؟ وإيه الأدوات التانية اللي شايفين إننا محتاجين نعملها أوتوميشن عشان شغلنا يبقى أسرع؟ قولولي على <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">LinkedIn</a>.</p>]]></content:encoded></item></channel></rss>
