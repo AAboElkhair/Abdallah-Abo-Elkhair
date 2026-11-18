@@ -3,6 +3,7 @@ title: Navigating the Healthcare Project Delivery Phases: Insights from a Medica
 date: 2026-11-18
 description: A walk through the five phases of a healthcare project, from strategic plan to occupancy, and what a medical equipment planner contributes at each stage.
 tags: Healthcare planning, Medical equipment planning, Project delivery
+image: images/cover-navigating-healthcare-project-delivery-phases.webp
 linkedin: https://www.linkedin.com/pulse/navigating-healthcare-project-delivery-phases-from-abo-elkhair-dbiuf/
 ---
 As a Medical Equipment Planner, I’ve seen firsthand how crucial our role is in the successful delivery of healthcare projects. From early planning stages to final handovers, our work ensures that healthcare facilities are well-equipped and ready to serve patients effectively.

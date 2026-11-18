@@ -192,3 +192,6 @@ html[lang=ar] .prose{font-size:19px;line-height:2}html[lang=ar] .amt,html[lang=a
 @media (max-width:620px){.prose{font-size:17.5px}.author{padding:22px}}
 .prose p>img{display:block;margin:1.6em auto .6em}.prose p:has(>img){margin-bottom:.4em}
 .prose p>em:only-child{display:block;text-align:center;color:var(--muted);font-size:.92em}
+.cover{max-width:980px;margin:0 auto 44px}.cover img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--line)}
+.art .card .thumb{display:block;margin:0 0 20px;border-radius:8px;overflow:hidden;border:1px solid var(--line)}.art .card .thumb img{display:block;width:100%;height:auto;transition:transform .5s}.art .card:hover .thumb img{transform:scale(1.03)}
+.art-ph{padding:60px 0 54px}.art-ph h1{font-size:clamp(34px,4.6vw,58px);max-width:24ch;line-height:1.08}

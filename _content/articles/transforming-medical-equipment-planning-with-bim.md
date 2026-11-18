@@ -3,6 +3,7 @@ title: Transforming Medical Equipment Planning with BIM Technology
 date: 2024-06-04
 description: What BIM is and how it improves medical equipment planning, from visualization and coordination to key documents, plus the planner's role as a BIM specialist and the future with AR and AI.
 tags: BIM, Medical equipment planning, Healthcare design
+image: images/cover-transforming-medical-equipment-planning-with-bim.webp
 linkedin: https://www.linkedin.com/pulse/transforming-medical-equipment-planning-bim-abdallah-abo-elkhair-gz9cf/
 ---
 ![BIM, Building Information Modeling, shown as a network of icons around a building: construction logistics, maintenance, data management, efficiency and more](images/bim-overview-graphic.webp)

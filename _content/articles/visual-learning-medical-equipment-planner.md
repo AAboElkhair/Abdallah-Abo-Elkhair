@@ -3,6 +3,7 @@ title: How Visual Learning Transforms My Work as a Medical Equipment Planner
 date: 2024-08-26
 description: How borrowing the idea of visual learning from graphic design helps a medical equipment planner stay current and make better design decisions.
 tags: Medical equipment planning, Visual learning, Healthcare design
+image: images/cover-visual-learning-medical-equipment-planner.webp
 linkedin: https://www.linkedin.com/pulse/how-visual-learning-transforms-my-work-medical-abdallah-abo-elkhair-zvcnf/
 ---
 Did you know that around 65% of people are visual learners? Studies show that we retain up to 80% of what we see and do, compared to just 20% of what we read and 10% of what we hear. This makes visual learning a powerful tool, not just for understanding complex information but for enhancing creativity and problem-solving skills. In fact, visual aids have been shown to improve productivity and efficiency by 43% in the workplace.

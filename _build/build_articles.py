@@ -119,7 +119,7 @@ def person_ld(lg):
 def set_lang_link(header, lg, target_href, hreflang, label):
     return re.sub(r'<a class="lang"[^>]*>.*?</a>', f'<a class="lang" href="{target_href}" hreflang="{hreflang}" lang="{hreflang}">{label}</a>', header, count=1, flags=re.S)
 
-def card(a, lg, slug=None, legacy=None):
+def card(a, lg, slug=None, legacy=None, pre="../"):
     T = L[lg]
     if legacy:
         meta = " · ".join(x for x in [legacy.get("date")] if x)
@@ -127,7 +127,8 @@ def card(a, lg, slug=None, legacy=None):
                 f'<h3>{esc(legacy["title"])}</h3></div><a class="btn dk" href="{esc(legacy["url"])}" target="_blank" rel="noopener" style="margin-top:16px">{T["on_li_btn"]} &rarr;</a></article>')
     d = fmt_date(a["date"], lg)
     tags = "".join(f'<span class="tag">{esc(t)}</span>' for t in a["tags"][:3])
-    return (f'<article class="card"><div><span class="amt">{d} · {a["minutes"]} {T["min"]}</span>'
+    thumb = (f'<a class="thumb" href="{slug}/" tabindex="-1" aria-hidden="true"><img src="{pre}{a["image"]}" alt="" loading="lazy" width="1200" height="630"></a>' if a.get("image") else "")
+    return (f'<article class="card"><div>{thumb}<span class="amt">{d} · {a["minutes"]} {T["min"]}</span>'
             f'<h3><a href="{slug}/">{esc(a["title"])}</a></h3><p>{esc(a["description"])}</p></div>'
             f'<div class="amr">{tags}<a class="btn dk" href="{slug}/">{T["read"]} &rarr;</a></div></article>')
 
@@ -137,7 +138,8 @@ def build_listing(root, lg, items, legacy):
     cards = []
     native = sorted(((s, v[lg]) for s, v in items.items() if lg in v), key=lambda x: x[1]["date"], reverse=True)
     covered = {v[lg].get("linkedin", "").rstrip("/") for s, v in items.items() if lg in v and v[lg].get("linkedin")}
-    for s, a in native: cards.append(card(a, lg, slug=s))
+    pre_l = "../" if lg == "en" else "../../"
+    for s, a in native: cards.append(card(a, lg, slug=s, pre=pre_l))
     for l in legacy:
         if l["url"].rstrip("/") not in covered: cards.append(card(None, lg, legacy=l))
     block = '<!--ART-LIST--><div class="grid art" id="artGrid">' + "".join(cards) + '</div><!--/ART-LIST-->'
@@ -178,10 +180,11 @@ def build_article(root, lg, slug, a, items, ch):
     others = sorted(((s, v[lg]) for s, v in items.items() if lg in v and s != slug), key=lambda x: x[1]["date"], reverse=True)[:2]
     more = ""
     if others:
-        more = f'<section class="more"><h2>{T["more"]}</h2><div class="grid art">' + "".join(card(o, lg, slug="../" + s) for s, o in others) + '</div></section>'
+        more = f'<section class="more"><h2>{T["more"]}</h2><div class="grid art">' + "".join(card(o, lg, slug="../" + s, pre="../../" if lg == "en" else "../../../") for s, o in others) + '</div></section>'
+    cover = (f'<figure class="cover"><img src="{pre}{a["image"]}" alt="{esc(a["title"])}" width="1200" height="630" fetchpriority="high"></figure>' if a.get("image") else "")
     body = f'''
-<div class="ph"><div class="wrap"><div class="crumbs"><a href="../../">{T["home"]}</a><span>/</span><a href="../">{T["articles"]}</a></div><h1>{esc(a["title"])}</h1><p class="postmeta">{d} · {a["minutes"]} {T["min"]}{up}</p><div class="tags">{tags}</div></div></div>
-<section id="post"><div class="wrap"><article class="post">
+<div class="ph art-ph"><div class="wrap"><div class="crumbs"><a href="../../">{T["home"]}</a><span>/</span><a href="../">{T["articles"]}</a></div><h1>{esc(a["title"])}</h1><p class="postmeta">{d} · {a["minutes"]} {T["min"]}{up}</p><div class="tags">{tags}</div></div></div>
+<section id="post"><div class="wrap">{cover}<article class="post">
 <div class="prose">{a["html"]}</div>
 {orig}
 <div class="share" data-copied="{T["copied"]}"><span>{T["share"]}</span><a class="btn dk" href="{li}" target="_blank" rel="noopener">LinkedIn</a><a class="btn dk" href="{wa}" target="_blank" rel="noopener">WhatsApp</a><button class="btn dk" type="button" data-copy="{canon}">{T["copy"]}</button></div>

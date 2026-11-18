@@ -3,6 +3,7 @@ title: Automating Repetitive Revit Work in Medical Equipment Planning: Introduci
 date: 2026-11-11
 description: A+ MQ is a Revit plugin built from daily medical equipment planning work. Six tools are in daily use, ten more are on the way.
 tags: Revit, Automation, Medical equipment planning, A+ MQ
+image: images/cover-a-plus-mq-revit-plugin.webp
 ---
 On large hospital projects, a big share of my time as a Medical Equipment Planner goes into repetitive Revit work: which rooms are furnished, what is still missing, whether the datasheets are up to date, plus layout sheets and tags for every room.
 

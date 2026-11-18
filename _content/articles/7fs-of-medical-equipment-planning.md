@@ -3,6 +3,7 @@ title: The 7Fs of Medical Equipment Planning: A Simple Framework for Assessing E
 date: 2026-11-18
 description: Seven factors, all starting with the letter F, that help assess the need for medical equipment: functionality, frequency, fitments, financial, feasibility, future readiness and functional lifespan.
 tags: Medical equipment planning, Framework, Healthcare planning
+image: images/cover-7fs-of-medical-equipment-planning.webp
 ---
 When assessing the need for medical equipment, it's important to consider several factors. In this infographic, I've summarized the most important factors in an easy-to-remember way using 7 words, all starting with the letter 'F' (7Fs).
 
