@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Medical Equipment Planning | Abdallah Abo-Elkhair</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/</link><description>Articles on Medical Equipment Planning | Abdallah Abo-Elkhair</description><language>en</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/feed.xml" rel="self" type="application/rss+xml"/><item><title>The 7Fs of Medical Equipment Planning: A Simple Framework for Assessing Equipment Needs</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/7fs-of-medical-equipment-planning/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/7fs-of-medical-equipment-planning/</guid><pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate><description>Seven factors, all starting with the letter F, that help assess the need for medical equipment: functionality, frequency, fitments, financial, feasibility, future readiness and functional lifespan.</description><category>Medical equipment planning</category><category>Framework</category><category>Healthcare planning</category><content:encoded><![CDATA[<p>When assessing the need for medical equipment, it's important to consider several factors. In this infographic, I've summarized the most important factors in an easy-to-remember way using 7 words, all starting with the letter 'F' (7Fs).</p>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Articles on Medical Equipment Planning | Abdallah Abo-Elkhair</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/</link><description>Articles on Medical Equipment Planning | Abdallah Abo-Elkhair</description><language>en</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/feed.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 for Equipment Planners: Who Asks for What, and Where It Lives</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/iso-19650-basics-for-equipment-planners/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/iso-19650-basics-for-equipment-planners/</guid><pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate><description>ISO 19650 organises BIM information through requirements, plans and a common data environment. Here is what equipment planners need to know about each.</description><category>ISO 19650</category><category>BIM</category><category>Information management</category><category>Medical equipment planning</category><content:encoded><![CDATA[<p>Equipment data is only useful if the right person asks for it, at the right time, in a form others can find. ISO 19650 is the framework that organises exactly that. You do not need to master the standard to work well inside it, but you do need to know its vocabulary.</p>
+<p>This article follows the UK guidance published to support BS EN ISO 19650 (Part 1: Concepts, 2019, and Part 2: Processes for Project Delivery, third edition, 2020). It is an orientation, not a substitute for the standard or the project documents. Check which parts and editions your project actually cites.</p>
+<h2>Who is who</h2>
+<p>The guidance defines the <strong>appointing party</strong> as the organisation leading the project or asset management. The <strong>lead appointed party</strong> is responsible for coordinating information exchange between task teams, or between a delivery team and the appointing party. In practice, an equipment planner usually sits in a task team, and information flows through the lead appointed party.</p>
+<h2>Four requirements, four questions</h2>
+<p>Part 1 defines four sets of information requirements:</p>
+<ul>
+<li><strong>OIR</strong>, organisational information requirements.</li>
+<li><strong>AIR</strong>, asset information requirements.</li>
+<li><strong>PIR</strong>, project information requirements.</li>
+<li><strong>EIR</strong>, exchange information requirements.</li>
+</ul>
+<p><img loading="lazy" alt="Infographic: OIR, AIR and PIR from the appointing party lead to the EIR for each appointment, which the lead appointed party answers with plans and the CDE" src="images/iso-19650-information-flow.webp" /></p>
+<p>The guidance describes the PIR as being set by the appointing party, and the EIR as the requirements for a specific appointment. For equipment planners the EIR is the document to read first, because it states what information must be delivered, when, and in what form. The AIR matters at handover, since it concerns the information the owner needs to operate and maintain the asset.</p>
+<h2>Plans that answer the requirements</h2>
+<p>Three plans turn requirements into work:</p>
+<ol>
+<li><strong>BIM execution plan (BEP).</strong> The guidance describes a pre-appointment BEP as part of the tender response, and a BEP confirmed after appointment. The lead appointed party prepares it.</li>
+<li><strong>Task information delivery plan (TIDP).</strong> Each task team lists what it will deliver.</li>
+<li><strong>Master information delivery plan (MIDP).</strong> The lead appointed party compiles it by collating the task information delivery plans.</li>
+</ol>
+<p>If your equipment deliverables, such as room equipment lists or model data for a given stage, are not in your team's TIDP, they are probably not in anyone's schedule.</p>
+<h2>The common data environment</h2>
+<p>The guidance is blunt on one point: using a shared drive as a Common Data Environment solution will not meet ISO 19650. It treats the CDE as a workflow supported by a solution, and the workflow is the important part. It also notes the appointing party may appoint a third party to host, manage or support the CDE.</p>
+<p>Part 2 covers revision control in work in progress, then shared and published information, with status codes controlling movement. For planners the habit is simple: work in your own area, share only checked information, and never edit a published container directly.</p>
+<h2>Level of information need</h2>
+<p>Part 2 refers to checking contents against the <strong>level of information need</strong>. The idea is to deliver the information required for the purpose of the exchange, no more and no less. For equipment, that means agreeing early which attributes each stage needs, rather than filling every field in every model.</p>
+<h2>Takeaway</h2>
+<p>Read the EIR, find your line in the TIDP, work inside the CDE workflow, and deliver the level of information the exchange needs. Equipment data then arrives where, when and how the project asked for it.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://ukbimframework.org/wp-content/uploads/2020/02/ISO_19650_Guidance_Part_2_Processes_for_Project_Delivery_ThirdEdition.pdf" target="_blank" rel="noopener">UK BIM Framework: Information management according to BS EN ISO 19650, Guidance Part 2: Processes for Project Delivery, third edition, January 2020</a></li>
+<li><a href="https://www.cdbb.cam.ac.uk/system/files/documents/InformationManagementaccordingtoBSENISO19650GuidancePart1Concepts.pdf" target="_blank" rel="noopener">Centre for Digital Built Britain / UK BIM Alliance / BSI: Guidance Part 1: Concepts, 2019</a></li>
+</ul>]]></content:encoded></item><item><title>Room Data Sheet vs Room Layout Sheet: What Each Is For</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/room-data-sheet-vs-room-layout-sheet/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/room-data-sheet-vs-room-layout-sheet/</guid><pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate><description>The RDS states what a room must provide; the RLS shows how the room is laid out. Here is how the two documents differ, connect and stay in step.</description><category>Room data sheet</category><category>Room layout sheet</category><category>Medical equipment planning</category><category>Healthcare design</category><content:encoded><![CDATA[<p>Two documents describe the same room, yet they answer different questions. One says what the room must do and contain. The other shows where everything goes. Mixing them up is a quiet source of rework on healthcare projects.</p>
+<h2>Two documents, two questions</h2>
+<p>Health New Zealand's guidance on Room Data Sheets (RDS) gives their purpose as establishing the project brief at a room-by-room level of detail, and as the foundation information for the Room Layout Sheets. Its guidance on Room Layout Sheets (RLS) describes them as a graphical representation of the brief requirements detailed in the associated RDS.</p>
+<p>In short:</p>
+<ul>
+<li><strong>RDS:</strong> the written brief for one room. What it is for, how big, and what it needs.</li>
+<li><strong>RLS:</strong> the drawn answer to that brief. How the room is arranged.</li>
+</ul>
+<p><img loading="lazy" alt="Infographic: the RDS is the written brief and the RLS is the drawn response. Changes flow from the brief to the layout" src="images/room-data-sheet-vs-room-layout-sheet-compare.webp" /></p>
+<h2>What an RDS holds</h2>
+<p>An example from the NHS Property Services standard design material shows a typical sheet. Each room has its own sheet, keyed by a room code, with activities, planning relationships, space data such as area and ceiling height, environmental data and design character. A "Schedule of Components by Room" lists the items the room contains, by code, group and quantity. That schedule is, in practice, the room's equipment list.</p>
+<p>NHSScotland's Repeatable Rooms report follows the same idea. It publishes room data sheets for standardised rooms as an appendix, and notes that additional items may be added project by project.</p>
+<p>Health New Zealand adds two process points. Sheets are built from the Australasian Health Facility Guidelines (AusHFG) standard component RDS, and any deviation from the standard is recorded with its date, amendment and reason. Briefed ceiling heights are captured in the project RDS.</p>
+<h2>What an RLS shows</h2>
+<p>According to Health New Zealand, a Room Layout Sheet provides the proposed layout as a dimensioned plan, wall elevations and a 3D room layout. It also covers materials, engineering services, and equipment placement and labelling. NHSScotland publishes 1:50 room layouts of its repeatable rooms in a separate appendix, which is the same kind of drawing under a different name.</p>
+<p>For an equipment planner, this is where a line on a list becomes a position on a wall: a unit's location, clearances, and the services it connects to.</p>
+<h2>How they stay in step</h2>
+<p>Health New Zealand states that changes to the RLS are driven by annotated changes to the briefing documents, meaning the RDS. The direction matters. If the brief changes, the layout follows, and the change is recorded. If someone moves an item on the layout and the RDS is not updated, the two documents now disagree.</p>
+<p>Both documents are also tied to project stages. Health New Zealand expects project RDS and RLS sets at Preliminary Design, with client endorsement on each design stage set. A practical routine for teams:</p>
+<ol>
+<li>Agree the room code system first, and use it on every sheet and list.</li>
+<li>Start each project RDS from the relevant standard sheet and log every deviation.</li>
+<li>Update the RDS before, or together with, the RLS, never after.</li>
+<li>Check that the equipment in the RLS matches the room's schedule of components, item by item.</li>
+<li>Re-issue both documents together at each design stage.</li>
+</ol>
+<h2>Where the model comes in</h2>
+<p>In a Revit workflow, the same logic applies. Room parameters and equipment families can carry the data that an RDS needs, and views of the room can serve as layouts. The principle does not change: one source for the brief, drawings that follow it.</p>
+<h2>Takeaway</h2>
+<p>The RDS is the brief, the RLS is the response, and the room's equipment list connects them. Keep one direction of change, from brief to layout, and the two documents will agree when the room is built.</p>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://tewhatuora.govt.nz/assets/Health-services-and-programmes/Infrastructure-and-Investment/Room-data-sheets.docx" target="_blank" rel="noopener">Health New Zealand (Te Whatu Ora): Room data sheets, October 2024</a></li>
+<li><a href="https://tewhatuora.govt.nz/assets/Health-services-and-programmes/Infrastructure-and-Investment/Room-layout-sheets.docx" target="_blank" rel="noopener">Health New Zealand (Te Whatu Ora): Room layout sheets, October 2024</a></li>
+<li><a href="https://www.property.nhs.uk/media/mu5luyza/nhsps-standard-health-design-standards-appendix-i.pdf" target="_blank" rel="noopener">NHS Property Services: Standard health design standards, Appendix I, Room data sheets</a></li>
+<li><a href="https://www.nss.nhs.scot/media/5215/nhsscotland-repeatable-rooms-report-v1-apr-24.pdf" target="_blank" rel="noopener">NHS National Services Scotland: Repeatable Rooms, April 2024</a></li>
+</ul>]]></content:encoded></item><item><title>The 7Fs of Medical Equipment Planning: A Simple Framework for Assessing Equipment Needs</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/7fs-of-medical-equipment-planning/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/articles/7fs-of-medical-equipment-planning/</guid><pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate><description>Seven factors, all starting with the letter F, that help assess the need for medical equipment: functionality, frequency, fitments, financial, feasibility, future readiness and functional lifespan.</description><category>Medical equipment planning</category><category>Framework</category><category>Healthcare planning</category><content:encoded><![CDATA[<p>When assessing the need for medical equipment, it's important to consider several factors. In this infographic, I've summarized the most important factors in an easy-to-remember way using 7 words, all starting with the letter 'F' (7Fs).</p>
 <p><img loading="lazy" alt="Infographic: The 7Fs of Medical Equipment Planning. Functionality, Frequency, Fitments, Financial, Feasibility assessment, Future readiness and Functional lifespan, each with its guiding question" src="images/7fs-medical-equipment-planning.webp" /></p>
 <h2>1. Functionality</h2>
 <p>It's crucial to determine the equipment's clinical need and clearly understand its functions. The guiding questions are: what are the needs, and what does the equipment do? Starting from the clinical need keeps the equipment list tied to the services the facility will provide.</p>

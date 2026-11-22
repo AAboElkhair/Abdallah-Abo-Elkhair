@@ -1,5 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</link><description>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</description><language>ar</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/feed.xml" rel="self" type="application/rss+xml"/><item><title>COBie للمعدات الطبية: كيف يتحول التسليم إلى بيانات أصول قابلة للاستخدام</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/cobie-handover-medical-equipment-asset-data/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/cobie-handover-medical-equipment-asset-data/</guid><pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate><description>يوفّر COBie بيانات الأصول التي يحتاجها المالك عند التسليم. نشرح كيف تطابق جداول Type وComponent قائمة المعدات الطبية، وما يجب الاتفاق عليه مبكرًا.</description><category>COBie</category><category>بيانات الأصول</category><category>تخطيط المعدات الطبية</category><category>التسليم</category><content:encoded><![CDATA[<p>يُفتتح المستشفى، وتكون قائمة المعدات ملف جداول لا يثق به أحد. الموديلات والأرقام التسلسلية والضمانات موزعة بين رسائل البريد وملفات PDF ومجلدات الموقع. ثم يعيد فريق المرافق إدخال البيانات نفسها في نظام الصيانة بعد أشهر من وصول أول مريض.</p>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/</link><description>مقالات عن تخطيط المعدات الطبية | عبدالله أبو الخير</description><language>ar</language><atom:link href="https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/feed.xml" rel="self" type="application/rss+xml"/><item><title>ISO 19650 لمخططي المعدات: من يطلب ماذا، وأين تُحفظ المعلومات</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/iso-19650-basics-for-equipment-planners/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/iso-19650-basics-for-equipment-planners/</guid><pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate><description>ينظّم ISO 19650 معلومات BIM عبر المتطلبات والخطط وبيئة البيانات المشتركة. نوضح ما يحتاج مخططو المعدات معرفته عن كل منها.</description><category>ISO 19650</category><category>BIM</category><category>إدارة المعلومات</category><category>تخطيط المعدات الطبية</category><content:encoded><![CDATA[<p>بيانات المعدات لا تفيد إلا إذا طلبها الشخص المناسب في الوقت المناسب وبصيغة يستطيع الآخرون الوصول إليها. وISO 19650 هو الإطار الذي ينظّم ذلك تمامًا. لا يلزمك إتقان المعيار لتعمل جيدًا داخله، لكن يلزمك أن تعرف مصطلحاته.</p>
+<p>يعتمد هذا المقال على الإرشادات البريطانية المنشورة لدعم BS EN ISO 19650 (الجزء 1: المفاهيم، 2019، والجزء 2: عمليات تسليم المشروع، الطبعة الثالثة، 2020). وهو مدخل تعريفي وليس بديلًا عن المعيار أو وثائق المشروع. تحقق من الأجزاء والطبعات التي يستند إليها مشروعك فعلًا.</p>
+<h2>من هو من</h2>
+<p>تعرّف الإرشادات <strong>appointing party</strong> بأنها الجهة التي تقود المشروع أو إدارة الأصول. أما <strong>lead appointed party</strong> فهي المسؤولة عن تنسيق تبادل المعلومات بين فرق المهام، أو بين فريق التسليم والـ appointing party. وعمليًا يعمل مخطط المعدات عادة ضمن فريق مهام، وتمر المعلومات عبر الـ lead appointed party.</p>
+<h2>أربعة متطلبات وأربعة أسئلة</h2>
+<p>يعرّف الجزء الأول أربع مجموعات من متطلبات المعلومات:</p>
+<ul>
+<li><strong>OIR</strong>، متطلبات معلومات المؤسسة.</li>
+<li><strong>AIR</strong>، متطلبات معلومات الأصل.</li>
+<li><strong>PIR</strong>، متطلبات معلومات المشروع.</li>
+<li><strong>EIR</strong>، متطلبات معلومات التبادل.</li>
+</ul>
+<p><img loading="lazy" alt="إنفوجرافيك: OIR وAIR وPIR من الـ appointing party تؤدي إلى EIR لكل تعيين، وتجيب عنها الـ lead appointed party بالخطط وCDE" src="images/iso-19650-information-flow-ar.webp" /></p>
+<p>تصف الإرشادات PIR بأنها تُحدَّد من قبل الـ appointing party، وEIR بأنها المتطلبات الخاصة بتعيين معين. وبالنسبة لمخططي المعدات فإن EIR هي الوثيقة التي تُقرأ أولًا، لأنها تحدد ما المعلومات المطلوب تسليمها ومتى وبأي صيغة. وتهم AIR عند التسليم، لأنها تتعلق بالمعلومات التي يحتاجها المالك لتشغيل الأصل وصيانته.</p>
+<h2>خطط تجيب عن المتطلبات</h2>
+<p>ثلاث خطط تحول المتطلبات إلى عمل:</p>
+<ol>
+<li><strong>BIM execution plan (BEP).</strong> تصف الإرشادات BEP قبل التعيين بأنها جزء من رد العطاء، وBEP يُؤكَّد بعد التعيين. وتعدّها الـ lead appointed party.</li>
+<li><strong>Task information delivery plan (TIDP).</strong> كل فريق مهام يسرد ما سيسلمه.</li>
+<li><strong>Master information delivery plan (MIDP).</strong> تجمعها الـ lead appointed party من خلال تجميع خطط تسليم المعلومات لفرق المهام.</li>
+</ol>
+<p>إذا لم تكن مخرجات المعدات لديك، مثل قوائم معدات الغرف أو بيانات النموذج لمرحلة ما، موجودة في TIDP الخاصة بفريقك، فغالبًا لا تظهر في جدول أحد.</p>
+<h2>بيئة البيانات المشتركة</h2>
+<p>الإرشادات صريحة في نقطة: استخدام مجلد مشترك كحل لـ Common Data Environment لا يحقق متطلبات ISO 19650. فهي تعدّ CDE سير عمل تدعمه منصة، وسير العمل هو الأهم. وتشير أيضًا إلى أن الـ appointing party قد تعيّن طرفًا ثالثًا لاستضافة CDE أو إدارتها أو دعمها.</p>
+<p>يتناول الجزء الثاني ضبط الإصدارات أثناء العمل، ثم المعلومات المشتركة والمنشورة، مع رموز حالة تتحكم في الانتقال. والعادة المفيدة للمخططين بسيطة: اعمل في مساحتك، وشارك معلومات تمت مراجعتها فقط، ولا تعدّل حاوية منشورة مباشرة.</p>
+<h2>مستوى احتياج المعلومات</h2>
+<p>يشير الجزء الثاني إلى فحص المحتوى وفق <strong>level of information need</strong>. الفكرة تسليم المعلومات المطلوبة لغرض التبادل، لا أقل ولا أكثر. وبالنسبة للمعدات يعني ذلك الاتفاق مبكرًا على الخصائص التي تحتاجها كل مرحلة، بدل ملء كل حقل في كل نموذج.</p>
+<h2>الخلاصة</h2>
+<p>اقرأ EIR، وابحث عن سطرك في TIDP، واعمل داخل سير عمل CDE، وسلّم مستوى المعلومات الذي يحتاجه التبادل. عندها تصل بيانات المعدات حيث ومتى وكيف طلبها المشروع.</p>
+<h2>المصادر</h2>
+<ul>
+<li><a href="https://ukbimframework.org/wp-content/uploads/2020/02/ISO_19650_Guidance_Part_2_Processes_for_Project_Delivery_ThirdEdition.pdf" target="_blank" rel="noopener">UK BIM Framework: Information management according to BS EN ISO 19650, Guidance Part 2: Processes for Project Delivery, third edition, January 2020</a></li>
+<li><a href="https://www.cdbb.cam.ac.uk/system/files/documents/InformationManagementaccordingtoBSENISO19650GuidancePart1Concepts.pdf" target="_blank" rel="noopener">Centre for Digital Built Britain / UK BIM Alliance / BSI: Guidance Part 1: Concepts, 2019</a></li>
+</ul>]]></content:encoded></item><item><title>Room Data Sheet مقابل Room Layout Sheet: ما وظيفة كل منهما</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/room-data-sheet-vs-room-layout-sheet/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/room-data-sheet-vs-room-layout-sheet/</guid><pubDate>Sun, 22 Nov 2026 09:00:00 +0000</pubDate><description>يحدد RDS ما يجب أن توفره الغرفة، ويوضح RLS كيف تُرتَّب. نشرح الفرق بين الوثيقتين وكيف ترتبطان وكيف تبقيان متطابقتين.</description><category>Room data sheet</category><category>Room layout sheet</category><category>تخطيط المعدات الطبية</category><category>تصميم المنشآت الصحية</category><content:encoded><![CDATA[<p>وثيقتان تصفان الغرفة نفسها، لكنهما تجيبان عن سؤالين مختلفين. الأولى تقول ما يجب أن تؤديه الغرفة وما تحتويه. والثانية تبيّن أين يوضع كل شيء. والخلط بينهما مصدر هادئ لإعادة العمل في مشاريع المنشآت الصحية.</p>
+<h2>وثيقتان وسؤالان</h2>
+<p>تذكر إرشادات هيئة الصحة في نيوزيلندا (Health New Zealand) أن غرض Room Data Sheets (RDS) هو وضع برنامج المشروع على مستوى الغرفة الواحدة بتفصيل كامل، وأنها المعلومات الأساسية لإعداد Room Layout Sheets. وتصف إرشاداتها الخاصة بـ Room Layout Sheets (RLS) بأنها تمثيل رسومي لمتطلبات البرنامج المفصّلة في RDS المرتبط بها.</p>
+<p>باختصار:</p>
+<ul>
+<li><strong>RDS:</strong> البرنامج المكتوب للغرفة الواحدة. ما الغرض منها، وما مساحتها، وماذا تحتاج.</li>
+<li><strong>RLS:</strong> الإجابة المرسومة عن هذا البرنامج. كيف تُرتَّب الغرفة.</li>
+</ul>
+<p><img loading="lazy" alt="إنفوجرافيك: RDS هو البرنامج المكتوب وRLS هو الاستجابة المرسومة. التغييرات تنتقل من البرنامج إلى التخطيط" src="images/room-data-sheet-vs-room-layout-sheet-compare-ar.webp" /></p>
+<h2>ماذا يحتوي RDS</h2>
+<p>يوضح مثال من مواد التصميم القياسية لدى NHS Property Services شكل الورقة النموذجية. لكل غرفة ورقة خاصة بها، مفهرسة برمز الغرفة، وفيها الأنشطة وعلاقات التخطيط وبيانات المساحة مثل المساحة وارتفاع السقف والبيانات البيئية وطابع التصميم. ويسرد جدول "Schedule of Components by Room" العناصر الموجودة في الغرفة بالرمز والمجموعة والكمية. وهذا الجدول هو عمليًا قائمة معدات الغرفة.</p>
+<p>ويتبع تقرير Repeatable Rooms في NHSScotland الفكرة نفسها. فهو ينشر أوراق بيانات للغرف الموحدة في ملحق، ويشير إلى إمكانية إضافة عناصر أخرى بحسب كل مشروع.</p>
+<p>وتضيف هيئة الصحة في نيوزيلندا نقطتين في الإجراءات. تُبنى الأوراق من RDS القياسي للمكونات في Australasian Health Facility Guidelines (AusHFG)، ويُسجَّل أي انحراف عن المعيار مع تاريخه والتعديل وسببه. وتُدوَّن ارتفاعات الأسقف المطلوبة في RDS الخاص بالمشروع.</p>
+<h2>ماذا يعرض RLS</h2>
+<p>بحسب هيئة الصحة في نيوزيلندا، يقدم Room Layout Sheet التخطيط المقترح في مسقط أفقي بالأبعاد وواجهات الجدران وتخطيط ثلاثي الأبعاد للغرفة. ويشمل أيضًا المواد والخدمات الهندسية وأماكن المعدات وترميزها. وتنشر NHSScotland مخططات الغرف المتكررة بمقياس 1:50 في ملحق منفصل، وهي النوع نفسه من الرسومات باسم مختلف.</p>
+<p>وبالنسبة لمخطط المعدات، هنا يتحول سطر في القائمة إلى موضع على الجدار: مكان الوحدة والمسافات الحرة والخدمات التي تتصل بها.</p>
+<h2>كيف تبقى الوثيقتان متطابقتين</h2>
+<p>تنص هيئة الصحة في نيوزيلندا على أن تغييرات RLS تُدفع بتغييرات موضحة في وثائق البرنامج، أي RDS. واتجاه التغيير مهم. إذا تغير البرنامج يتبعه التخطيط ويُسجَّل التغيير. وإذا نقل أحدهم عنصرًا في التخطيط دون تحديث RDS، فستختلف الوثيقتان.</p>
+<p>وترتبط الوثيقتان أيضًا بمراحل المشروع. تتوقع الهيئة تسليم مجموعات RDS وRLS للمشروع في مرحلة Preliminary Design، مع اعتماد العميل لكل مجموعة في كل مرحلة تصميم. وفيما يلي روتين عملي للفرق:</p>
+<ol>
+<li>اتفق على نظام رموز الغرف أولًا، واستخدمه في كل ورقة وقائمة.</li>
+<li>ابدأ RDS كل مشروع من الورقة القياسية المناسبة وسجّل كل انحراف.</li>
+<li>حدّث RDS قبل RLS أو معه، وليس بعده أبدًا.</li>
+<li>تحقق من تطابق المعدات في RLS مع جدول مكونات الغرفة، عنصرًا بعنصر.</li>
+<li>أعد إصدار الوثيقتين معًا في كل مرحلة تصميم.</li>
+</ol>
+<h2>أين يأتي دور النموذج</h2>
+<p>في سير عمل Revit ينطبق المنطق نفسه. يمكن أن تحمل معاملات الغرف وعائلات المعدات البيانات التي يحتاجها RDS، وتصلح عروض الغرفة لتكون مخططات تخطيط. والمبدأ لا يتغير: مصدر واحد للبرنامج، ورسومات تتبعه.</p>
+<h2>الخلاصة</h2>
+<p>RDS هو البرنامج، وRLS هو الاستجابة، وقائمة معدات الغرفة تربط بينهما. حافظ على اتجاه واحد للتغيير، من البرنامج إلى التخطيط، وستتطابق الوثيقتان عند تنفيذ الغرفة.</p>
+<h2>المصادر</h2>
+<ul>
+<li><a href="https://tewhatuora.govt.nz/assets/Health-services-and-programmes/Infrastructure-and-Investment/Room-data-sheets.docx" target="_blank" rel="noopener">Health New Zealand (Te Whatu Ora): Room data sheets, October 2024</a></li>
+<li><a href="https://tewhatuora.govt.nz/assets/Health-services-and-programmes/Infrastructure-and-Investment/Room-layout-sheets.docx" target="_blank" rel="noopener">Health New Zealand (Te Whatu Ora): Room layout sheets, October 2024</a></li>
+<li><a href="https://www.property.nhs.uk/media/mu5luyza/nhsps-standard-health-design-standards-appendix-i.pdf" target="_blank" rel="noopener">NHS Property Services: Standard health design standards, Appendix I, Room data sheets</a></li>
+<li><a href="https://www.nss.nhs.scot/media/5215/nhsscotland-repeatable-rooms-report-v1-apr-24.pdf" target="_blank" rel="noopener">NHS National Services Scotland: Repeatable Rooms, April 2024</a></li>
+</ul>]]></content:encoded></item><item><title>COBie للمعدات الطبية: كيف يتحول التسليم إلى بيانات أصول قابلة للاستخدام</title><link>https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/cobie-handover-medical-equipment-asset-data/</link><guid isPermaLink="true">https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/ar/articles/cobie-handover-medical-equipment-asset-data/</guid><pubDate>Wed, 18 Nov 2026 09:00:00 +0000</pubDate><description>يوفّر COBie بيانات الأصول التي يحتاجها المالك عند التسليم. نشرح كيف تطابق جداول Type وComponent قائمة المعدات الطبية، وما يجب الاتفاق عليه مبكرًا.</description><category>COBie</category><category>بيانات الأصول</category><category>تخطيط المعدات الطبية</category><category>التسليم</category><content:encoded><![CDATA[<p>يُفتتح المستشفى، وتكون قائمة المعدات ملف جداول لا يثق به أحد. الموديلات والأرقام التسلسلية والضمانات موزعة بين رسائل البريد وملفات PDF ومجلدات الموقع. ثم يعيد فريق المرافق إدخال البيانات نفسها في نظام الصيانة بعد أشهر من وصول أول مريض.</p>
 <p>وُجد COBie لسد هذه الفجوة. هو طريقة لتسليم بيانات الأصول القابلة للصيانة، وليس الأشكال الهندسية للنموذج، بشكل منظم يستطيع المالك تحميله في أنظمة التشغيل.</p>
 <h2>ما هو COBie وما ليس هو</h2>
 <p>تصفه NBS بأنه صيغة بيانات غير مملوكة لجهة بعينها، تنشر جزءًا من نموذج معلومات المبنى يركز على بيانات الأصول لا على الأشكال الهندسية، وتؤكد أن ملف COBie ليس BIM كاملًا بأي حال. أما ملخص NIBS للمعيار فيصفه بأنه صيغة بيانات ومعيار عملية، يلتقط الأصول القابلة للصيانة في المنشأة بصيغة رقمية لتقليل الفجوة الزمنية بين التسليم وبدء تشغيل المرافق.</p>
