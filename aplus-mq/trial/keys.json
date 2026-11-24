@@ -1,0 +1,61 @@
+{
+  "v": 1,
+  "version": "0.41.1",
+  "file": "a-plus-mq-trial.bin",
+  "name": "A\u002B MQ 0.41.1 Trial.zip",
+  "size": 9668713,
+  "sha256": "4263172b88166b389259b45399ea87d23439433c4de0a85bebb1791509799ed0",
+  "iter": 310000,
+  "keys": {
+    "53990bc65ab09f3a": {
+      "s": "Nlkvmg9wHRpdz3UPIrSVWA==",
+      "i": "PUr3QR1YHVw6kpD2",
+      "k": "xUJUsYrgJrPG2IQAExb5JACRpARmJN2fy55bfatEBVdue0lAnelNRLzARobhK\u002B3r"
+    },
+    "0cc52f50927d1be8": {
+      "s": "CX7dJHW3TosrY8S94G72EA==",
+      "i": "grxEwbb7N8AA5DyI",
+      "k": "pj8h3F7uKo/sCCYSTPXUw863qmW3p1smprcwD1l4Jiokp8\u002By3sw4q70gNlFPufof"
+    },
+    "b84268165bab93c8": {
+      "s": "3XDO\u002BhdaByS/eQ1n1BxdJg==",
+      "i": "vcentm5bg6ua7HSN",
+      "k": "7aXrZ0VJ5cc20hbgsPICuafNYBKv9bidxuUW2SSaW2zWZ/laCIYD0lD1CWdNrJct"
+    },
+    "5ec5889c60798bfc": {
+      "s": "hV/OPOFhvgJxRRc4hUydKg==",
+      "i": "P12BQbmaeP6y/UoN",
+      "k": "dhVxLMPrh20VJ1jiQ0OCiCtS5fxB7Dtih2uMGRC1GLIreJoRpuxT7cjAL41WdlSI"
+    },
+    "a2534d1b777eb83c": {
+      "s": "GcgPF\u002BQJsmKkozIOrj4X7w==",
+      "i": "0AVWtPJ\u002BbIybe1s9",
+      "k": "CWHUXpxMv71RxYFvcfDcd3Ey3\u002B8GjmpY53zGHW2dJUmb7ndRN5bl2X3fTBQEE8fb"
+    },
+    "dc967148cf11b372": {
+      "s": "BQ9jcQD0HI9s0BY0\u002BQhACA==",
+      "i": "zfG6bNcPBv20lvoQ",
+      "k": "cR5PwC8uYG7NYkw7fqEMWtswEjAC0um2T0AoiJQv7e5UtdmmYvD2hznPqTN05cdb"
+    },
+    "2c2dc244b4eab701": {
+      "s": "RrdE5iWpE2JFHMNLoQR6kA==",
+      "i": "BFm38mTp1Bu5e8qM",
+      "k": "B2E88p\u002BFCU8V6m\u002BP\u002B8JFc553n48cQnLlCfOYehKciyJcYVigdtGMCTZNIxJHkir8"
+    },
+    "5b7ed24d15ec48c5": {
+      "s": "FUSWwEgk4Msr1U\u002B6jK2m\u002BA==",
+      "i": "MYiKXvKgGMMzCFdR",
+      "k": "Ur440owZaVGIL1SGOqhcWnqjGhIqeSdyUPSCg/lki/vRMVDMdMlfJFTWX5UjrVEX"
+    },
+    "93dbcb9833dcba57": {
+      "s": "t9h2FYKte\u002BgoUP\u002BsbNp3AQ==",
+      "i": "HzrEcT6mxI8v0dh8",
+      "k": "51eYT\u002BPTLSG2j8MDmshH4VuxCok6PJg3X\u002BByLavNw3huuNZjqykh1dNJezuZAZOQ"
+    },
+    "cd1dd2f98c06c3e5": {
+      "s": "CIhvpfXhSam10S\u002BxLs83SQ==",
+      "i": "vrWKd9VcHXbzprFh",
+      "k": "IiBTv2XezeODGi308BlXG7lksoQc8\u002BIP29W30Duw94k8XlLC8oJPaLw\u002BYfAvjMeb"
+    }
+  }
+}
