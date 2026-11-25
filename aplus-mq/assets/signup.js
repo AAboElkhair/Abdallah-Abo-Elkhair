@@ -61,8 +61,11 @@
     if (!withCode) delete d.Code;
     return d;
   }
-  function post(url, d) {
-    return fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(d) });
+  // wait: ms before giving up (a network that blocks the server can hang for a minute otherwise)
+  function post(url, d, wait) {
+    var o = { method: "POST", headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(d) };
+    if (wait && window.AbortController) { var ac = new AbortController(); o.signal = ac.signal; setTimeout(function () { ac.abort(); }, wait); }
+    return fetch(url, o);
   }
   // the author's e-mail copy (FormSubmit): resolves true when it was accepted
   function mail(d) {
@@ -73,7 +76,7 @@
   // the signup server: resolves the Response, or null when there is no server or it cannot be reached
   function server(d) {
     if (!api) return Promise.resolve(null);
-    return post(api + '/api/signup', d).catch(function () { return null; });
+    return post(api + "/api/signup", d, 10000).catch(function () { return null; });
   }
 
   function fetchBin(url, size) {

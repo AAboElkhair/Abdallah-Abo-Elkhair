@@ -267,7 +267,7 @@ def page(k):
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
 <div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
-<script src="{r}assets/signup.js?v=2" defer></script>
+<script src="{r}assets/signup.js?v=3" defer></script>
 {FILTER_JS}
 </body></html>'''
 
