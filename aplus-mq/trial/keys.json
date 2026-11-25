@@ -1,61 +1,68 @@
 {
   "v": 1,
-  "version": "0.41.1",
+  "version": "0.43.0",
   "file": "a-plus-mq-trial.bin",
-  "name": "A\u002B MQ Setup 0.41.1.exe",
-  "size": 9638672,
-  "sha256": "0a4a0ee54d8ac88dffe61a258c3341033c726a3a0f59646ba8c2c07edf8f4773",
+  "name": "A\u002B MQ Setup 0.43.0.exe",
+  "size": 9741072,
+  "sha256": "e5c5abcc567a78a536ebe6418fc492dac8db579b4578f88b2fd32caa3eb1fd57",
   "iter": 310000,
+  "notes": "Automatic updates: A\u002B MQ tells you when a new version is out and installs it when Revit closes | New Updates button in the A\u002B MQ panel | Licence: a code activates A\u002B MQ on one computer (from 0.42.0)",
+  "released": "2026-11-25",
   "keys": {
     "53990bc65ab09f3a": {
-      "s": "erWbYvRN3ubqgJRSf2NV9A==",
-      "i": "rl6s3eeVkw4v\u002Bo7S",
-      "k": "8wu2zSwzoZzC/TZTmvvGZowCeNkxQJIWABlhxuSggEyJu7V2cRWwnzvw0dkksDt5"
+      "s": "Z0qnOTfDCcx4DCBSz6pgWQ==",
+      "i": "6L8tdjo/YMb2iUXA",
+      "k": "Q5yqJI//Kq31FZApNSLqW\u002BhTteApjxwDmdIp2i/A\u002B2Xw6jZtdTGaCXyixNJq1F6O"
     },
     "0cc52f50927d1be8": {
-      "s": "ysJR9grqJSB1djof58vQgA==",
-      "i": "7hT\u002BuxH\u002BxNqaQvkI",
-      "k": "46Bdq46ABE7wYyw2NUu71kTU3hE56BX5dFJmy1xPe794qF\u002BbUJs7Z3fHLlYa9xmn"
+      "s": "owON2E/sTVEb4PLq9\u002B8PxQ==",
+      "i": "FCqUVuRjuBo5HUzU",
+      "k": "\u002BAaQ/2eQ1e5DAc5hZ59c8CElqzbUtC0IPgsGuGNxtpET\u002BRcpCsnw2kZ\u002BaduCZfNY"
     },
     "b84268165bab93c8": {
-      "s": "guyewxqWz7n6vQw79Q2c2g==",
-      "i": "92J5lfDYKQo/U1SA",
-      "k": "tVPaeBNVgOdJsik2uCaXhlEGELTk2MhstBY7RaRxEZisGBg4J5DIKjhISPFuQidU"
+      "s": "ov8Yyi94irkn5ZxUb5L8Vw==",
+      "i": "a1P38Q5BAqokXt0P",
+      "k": "qbUhMh9F/cMW0Z4yAUCITrF8li\u002BBScGHILhkqlhRhGHAAUzseSh1Sst/GmJuYe8o"
     },
     "5ec5889c60798bfc": {
-      "s": "XKItzUzm4RYKX5twqNiOIQ==",
-      "i": "rIC3XOc5ZBA/SKuJ",
-      "k": "qaBAsJo7BSlmbHEZp52CoKNMcyaVDy7dSIZ0T\u002BJM0//3oF17kBR/Lxfp2pMdjXwA"
+      "s": "B7eWKGvHKmvr/\u002BuNG9JyTw==",
+      "i": "qDI8kEjgDKQ/tA5B",
+      "k": "SpC1PMrDohBwQ5p377J5q2C3iUKw/rLte5qIpFGasuqU2XEXyy4uW4a7Rdx158LH"
     },
     "a2534d1b777eb83c": {
-      "s": "r/rc\u002B7JLuhQCdgGqK5qt2A==",
-      "i": "QsxzrF2sdSTv1yRS",
-      "k": "om9mE3ROIt7NzzakfpDq8Jz7bOs99MoCXTdfrTJO6QJ8w96O1N8V4T9QATajVkUW"
+      "s": "2SZZGF2dwpBVFh7IOYClVw==",
+      "i": "0L3xT6SZxIIO8zmM",
+      "k": "xru6m2UBEgnV1Qd81a\u002BpdznGN18IW/DBVWqIDUvpZaM7nJs9OrH3Nf4ItLT7n4gz"
     },
     "dc967148cf11b372": {
-      "s": "Ij525BX7p9z/1RAto3Z6hw==",
-      "i": "DNBfbDOzzT44w4HT",
-      "k": "tadnbNywi1Km9jdFMN3jHCv5Ymg90HAwLvPXrkp10TjjvIDwxJTbu956ELVP2QqM"
+      "s": "1M4oVsmx5UH0aKb1fZ\u002B\u002BVw==",
+      "i": "ADyfJIBQr2VbOpfR",
+      "k": "lh7OThUIlPXIF5cxhXhiOoRYUMzie0K3\u002Bazdqih43CUxS6ra0yz/ij0rCfp1F8OR"
     },
     "2c2dc244b4eab701": {
-      "s": "uVT/7IPiW6onGTU\u002BYvd1\u002BA==",
-      "i": "PbPv5UN\u002BEkXa/tdS",
-      "k": "Tdyu3CWXQDNM5K/4fWANMgaZRcKoNTT9CnvcQaGkKYoHe97H1DCqshf2xhTUOtD9"
+      "s": "1WY2VxNishBWve\u002Bnry1o/w==",
+      "i": "41fAYoZlzen2Lk5o",
+      "k": "UBWG9OF2QN\u002BHFGXAiPv\u002B1klMTTkLS1OPyVz15SJoMgA7zDHdo0FhRLhUxQ/K/btJ"
     },
     "5b7ed24d15ec48c5": {
-      "s": "WMKZBNsbEriY70vORf6afA==",
-      "i": "pec2kkBz/\u002BVB\u002B3e9",
-      "k": "3Klic8d/g2794scYLKegRqedqWdKN36VY\u002BWs/H9uQfXhCR\u002B/QN1Lbm\u002BWSSoz9Gk9"
+      "s": "J1fLjs/c\u002BfyZ7RVjJXbLLw==",
+      "i": "mj01OObvOedK6PAM",
+      "k": "0i65/7JljSWlqRf7yVtdtfY2FexW8kPMTBMzdbb171vRG1hYIa9dt2pXbSHXMmyg"
     },
     "93dbcb9833dcba57": {
-      "s": "EcG/GhHLtwniPA65bhXvBQ==",
-      "i": "HHPnT0eRaa6wIkdB",
-      "k": "C667N0xOI4qb\u002BRVLT7OjZf2QSQeiQU/tzR4Yc1LZqdAF0goXN9UEA6k9buYSJpBA"
+      "s": "yJCLNMQB74P9qMGBCsjbMg==",
+      "i": "9Z\u002BNwwcz6ph7oWUb",
+      "k": "TipfaDo9gHZ2bfxvqz2kKf6Vd/WdanXdgePBIrEIcYMvrOlQV0YMacG/6bhcqtaz"
     },
     "cd1dd2f98c06c3e5": {
-      "s": "XdapstMj8mD61QYAhIeL3g==",
-      "i": "FP3hNmHBgoxU3gn3",
-      "k": "4q6/X5duYRZOwqTZF6I0m0eO9ASZKb6iTlge\u002BApfNme9lEKpUgZsjANPNSojG8cD"
+      "s": "73J/8/liwy4VrfhiavZgUw==",
+      "i": "tj/PJSran8uJujXj",
+      "k": "Nt7zhLuCGRefHya\u002BBBnFQKfUekGK3NOlF4HSdnFqbRpILeVNNDlV9ozvCkUxuGuC"
+    },
+    "b4a0b6037ae5aebf": {
+      "s": "3D9xICoA6aqB5ahSXrSteg==",
+      "i": "FQv4dZcKLKPUl8fI",
+      "k": "iNQj9A0elN1Wu373S\u002BJhYcd6hhCclJhLsghRG7r9pCzuRoGIE3za26aKkn67v7Fl"
     }
   }
 }
