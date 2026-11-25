@@ -174,3 +174,5 @@ section[id]{scroll-margin-top:76px}
 .ds dl{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;margin:0;font-size:10.5px}
 .ds dt{color:var(--mute)}
 .ds dd{margin:0;font-weight:600}
+
+.df[hidden],.dok[hidden]{display:none!important}
