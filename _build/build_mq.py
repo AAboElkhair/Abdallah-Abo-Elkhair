@@ -6,7 +6,7 @@ BASE = 'https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/'
 MAIL = 'a.aboalkhair99@gmail.com'
 # The A+ MQ signup server (Cloudflare Worker, AAMQ repository AAMQ\Server). Empty = no server yet: the form then uses
 # FormSubmit only and the static trial/keys.json for invitation codes (assets/signup.js handles both).
-API = ''
+API = 'https://aamq-signup.abdallah-aboelkhair.workers.dev'
 GA = '<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K38B1126B"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-0K38B1126B");</script>'
 GSC = '<meta name="google-site-verification" content="oB1Y7vtP2tWkz8GH9cx0OZ_tzoRiDiCoBTRpXzOVgYY">'
 
