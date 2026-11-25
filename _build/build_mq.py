@@ -218,7 +218,8 @@ def page(k):
       f'<p class="wide ferr" hidden><span>{esc(f["err"])}</span> <a href="{demo_mail}">{MAIL}</a></p></form>'
       f'<div class="card dok" id="demo-ok" hidden><svg><use href="#ck"/></svg><h3>{esc(f["ok_h"])}</h3><p>{esc(f["ok_p"])}</p></div>'
       f'<div class="card dok" id="trial-ok" hidden><svg><use href="#ck"/></svg><h3>{f["dl_h"]}</h3><p>{f["dl_p"]} <a id="trial-again" href="#">{f["again"]}</a></p></div>')
-    mail = 'mailto:' + MAIL + '?subject=' + quote(t['mail_sub'])
+    mailto = 'mailto:' + MAIL + '?subject=' + quote(t['mail_sub'])
+    mail = '#demo'                     # "Get early access" opens the one signup form
     arrow = '<svg class="ic"><use href="#ar"/></svg>'
     jld = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A+ MQ","applicationCategory":"DesignApplication","operatingSystem":"Windows","description":t['desc'],"url":t['home'],"inLanguage":t['lang'],"creator":{"@type":"Person","name":"Abdallah Abo-Elkhair","url":BASE}}
     nav = ''.join(f'<a href="{h}">{esc(x)}</a>' for h,x in t['nav'])
@@ -263,7 +264,7 @@ def page(k):
 <section class="sec alt"><div class="wrap"><h2>{esc(t['who_h'])}</h2><div class="who">{who}</div><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h3>{esc(t['by_h'])}</h3><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
 <section class="sec" id="licensing"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
 <section class="sec alt" id="faq"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
-<section class="sec" id="demo"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><h3>{esc(f['h'])}</h3><p class="dp">{esc(f['p'])}</p><p class="li2"><a href="{mail}">{t['cta']}</a> · <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div><div class="dr">{form}</div></div></div></section>
+<section class="sec" id="demo"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><h3>{esc(f['h'])}</h3><p class="dp">{esc(f['p'])}</p><p class="li2"><a href="{mailto}">{t['cta']}</a> · <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div><div class="dr">{form}</div></div></div></section>
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
 <div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
