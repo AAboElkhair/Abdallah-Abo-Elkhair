@@ -4,6 +4,9 @@ import json, os, sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 BASE = 'https://aaboelkhair.github.io/Abdallah-Abo-Elkhair/'
 MAIL = 'a.aboalkhair99@gmail.com'
+# The A+ MQ signup server (Cloudflare Worker, AAMQ repository AAMQ\Server). Empty = no server yet: the form then uses
+# FormSubmit only and the static trial/keys.json for invitation codes (assets/signup.js handles both).
+API = ''
 GA = '<script async src="https://www.googletagmanager.com/gtag/js?id=G-0K38B1126B"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-0K38B1126B");</script>'
 GSC = '<meta name="google-site-verification" content="oB1Y7vtP2tWkz8GH9cx0OZ_tzoRiDiCoBTRpXzOVgYY">'
 
@@ -41,7 +44,7 @@ ICONS = '''<svg width="0" height="0" style="position:absolute" aria-hidden="true
 SHOTS = {
  'explorer': '<div style="font-weight:700;margin-bottom:2px">Level 02 · 18 rooms</div><div class="bar"><i style="width:72%"></i></div><div class="li">Operating Room 01<em class="ok">Furnished</em></div><div class="li">Recovery Bay<em class="ms">3 missing</em></div><div class="li">Sterile Store<em class="ok">Furnished</em></div><div class="li">Isolation Room<em class="ms">5 missing</em></div>',
  'report': '<table class="tbl"><tr><th>Room</th><th>Furnished</th><th>Missing</th></tr><tr><td>Operating Room 01</td><td><em class="li ok" style="display:inline;padding:1px 8px;margin:0;border:0">Yes</em></td><td>0</td></tr><tr><td>Recovery Bay</td><td>Partly</td><td>3</td></tr><tr><td>Sterile Store</td><td><em class="li ok" style="display:inline;padding:1px 8px;margin:0;border:0">Yes</em></td><td>0</td></tr><tr><td>Isolation Room</td><td>Partly</td><td>5</td></tr><tr><td>Staff Lounge</td><td>No</td><td>9</td></tr></table>',
- 'datasheet': '<div class="paper"><h6>Equipment Datasheet</h6><div class="sk m"></div><div class="two"><div><div class="sk s"></div><div class="sk"></div><div class="sk"></div></div><div><div class="sk s"></div><div class="sk"></div><div class="sk"></div></div></div><div class="sk s" style="margin-top:12px"></div><div class="sk m"></div></div>',
+ 'datasheet': '<div class="paper ds"><div class="dsh"><b>Equipment Datasheet</b><span class="dsc">MQ-ICU-014</span></div><div class="dsb"><svg class="dsi" viewBox="0 0 64 64" aria-hidden="true"><rect x="5" y="7" width="54" height="38" rx="5" fill="var(--blue-s)" stroke="var(--blue)" stroke-width="2"/><path d="M10 30h9l3-8 4 15 4-12 3 5h21" fill="none" stroke="var(--ok)" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/><path d="M11 15h12" stroke="var(--blue)" stroke-width="2" stroke-linecap="round" opacity=".55"/><circle cx="51" cy="15" r="2.5" fill="var(--red)"/><path d="M32 45v9M21 56h22" stroke="var(--blue)" stroke-width="2.4" stroke-linecap="round"/></svg><dl><dt>Item</dt><dd>Patient monitor</dd><dt>Room</dt><dd>ICU Bed 01 &middot; Qty 2</dd><dt>Power</dt><dd>230 V &middot; 120 W</dd><dt>Weight</dt><dd>6.5 kg</dd><dt>Size</dt><dd>340 &times; 290 &times; 190 mm</dd></dl></div></div>',
  'layout': '<svg viewBox="0 0 280 150" width="100%" height="150" role="img" aria-hidden="true"><rect x="6" y="6" width="268" height="138" rx="4" fill="var(--card)" stroke="var(--line)"/><rect x="26" y="20" width="150" height="84" fill="none" stroke="var(--ink)" stroke-width="2"/><path d="M26 82h0M96 104h30" stroke="var(--card)" stroke-width="4"/><path d="M96 104a30 30 0 0 1 30 0" fill="none" stroke="var(--mute)"/><rect x="40" y="32" width="36" height="24" fill="var(--blue-s)" stroke="var(--blue)"/><rect x="118" y="32" width="44" height="16" fill="var(--blue-s)" stroke="var(--blue)"/><rect x="140" y="64" width="22" height="22" rx="11" fill="var(--blue-s)" stroke="var(--blue)"/><rect x="190" y="20" width="72" height="84" fill="none" stroke="var(--line)"/><rect x="196" y="28" width="60" height="6" rx="3" fill="var(--line)"/><rect x="196" y="42" width="44" height="6" rx="3" fill="var(--line)"/><rect x="196" y="56" width="52" height="6" rx="3" fill="var(--line)"/><rect x="26" y="114" width="236" height="22" fill="none" stroke="var(--line)"/><rect x="34" y="122" width="70" height="6" rx="3" fill="var(--mute)" opacity=".5"/></svg>',
  'tags': '<svg viewBox="0 0 280 150" width="100%" height="150" role="img" aria-hidden="true"><rect x="14" y="14" width="120" height="70" fill="none" stroke="var(--ink)" stroke-width="2"/><rect x="134" y="14" width="132" height="70" fill="none" stroke="var(--ink)" stroke-width="2"/><rect x="14" y="84" width="252" height="52" fill="none" stroke="var(--ink)" stroke-width="2"/><path d="M60 52L48 118" stroke="var(--red)" stroke-width="1.5"/><path d="M200 50L214 118" stroke="var(--red)" stroke-width="1.5"/><path d="M110 112L150 120" stroke="var(--red)" stroke-width="1.5"/><g font-family="Manrope,sans-serif" font-size="11" font-weight="700" text-anchor="middle"><rect x="30" y="104" width="38" height="18" rx="3" fill="var(--card)" stroke="var(--red)"/><text x="49" y="117" fill="var(--ink)">101</text><rect x="196" y="104" width="38" height="18" rx="3" fill="var(--card)" stroke="var(--red)"/><text x="215" y="117" fill="var(--ink)">102</text><rect x="116" y="104" width="38" height="18" rx="3" fill="var(--card)" stroke="var(--red)"/><text x="135" y="117" fill="var(--ink)">103</text></g></svg>',
  'export': '<div class="li"><span class="cb on"></span>A-101 · Level 01 Plan<span class="exp"><u>DWG</u><u>PDF</u></span></div><div class="li"><span class="cb on"></span>A-102 · Level 02 Plan<span class="exp"><u>DWG</u><u>PDF</u></span></div><div class="li"><span class="cb on"></span>R-201 · Room Layout 201<span class="exp"><u>DWG</u><u>PDF</u></span></div><div class="li"><span class="cb"></span>R-202 · Room Layout 202<span class="exp"><u>DWG</u><u>PDF</u></span></div>',
@@ -79,7 +82,7 @@ L = {
  lang='en', dir='ltr', rel='', home=BASE + 'aplus-mq/', other_href='ar/', other_label='العربية', portfolio='../',
  title='A+ MQ: Revit Plugin for Medical Equipment Planners',
  desc='A+ MQ puts 16 Revit tools for medical equipment planners in one tab: furnishing status, datasheets, layout sheets, schedules, BOQ, utilities and QA. Launching soon.',
- nav=[('#tools','Tools'),('#how','How it works'),('#licensing','Licensing'),('#faq','FAQ'),('#trial','Try it')],
+ nav=[('#tools','Tools'),('#how','How it works'),('#licensing','Licensing'),('#faq','FAQ'),('#demo','Try it')],
  demo='Request a demo', demo_sub='A+ MQ demo request', demo_body='Name:\nCompany:\nTeam size:\nPreferred time for a demo:\n',
  cta='Get early access', mail_sub='A+ MQ early access', see='Explore the 16 tools',
  kick='Revit plugin for medical equipment planning · Launching soon',
@@ -119,11 +122,14 @@ L = {
   ('Are there team and company licenses?','Yes. Team and company licenses cost less per seat. Get in touch to discuss your team size.'),
   ('Can I suggest a tool?','Yes. A+ MQ is shaped by planners. Send your idea by email or LinkedIn.'),
   ('Is A+ MQ affiliated with Autodesk?','No. It is an independent product for use with Autodesk Revit.')],
- form=dict(h='Book your A+ MQ demo', p='Tell us a little about your team and we will get back to you by email to set a time.',
+ form=dict(h='Book a demo or get the trial', p='Tell us a little about your team and we will email you to set a time. Have an invitation code from the author? Tick the box in the form and the trial downloads right away.',
+   has='I have an invitation code', code='Invitation code', send_dl='Register and download', dl_subject='New A+ MQ trial download', again='Download again',
+   code_note='Codes are given personally by the author. The trial needs Windows 10 / 11 and Revit 2023 &ndash; 2026 (about 10 MB).',
+   dl_h='Your download has started.', dl_p='Close Revit, then run the downloaded A+ MQ Setup. If Windows shows &ldquo;Windows protected your PC&rdquo;, click <b>More info</b>, then <b>Run anyway</b>.',
    name='Full name', email='Work email', company='Company', role='Your role', roles=['Medical equipment planner','BIM manager or coordinator','Architect or hospital designer','Contractor or equipment supplier','Other'],
    size='Team size', sizes=['Just me','2 to 5','6 to 20','More than 20'], country='Country', msg='What would you like to see? (optional)',
    send='Request my demo', sending='Sending...', ok_h='Thank you, your request is in.', ok_p='We will email you shortly to arrange your demo.',
-   err='Something went wrong. Please try again, or email us directly:', note='We use your details only to arrange your demo.', choose='Select', subject='New A+ MQ demo request'),
+   err='Something went wrong. Please try again, or email us directly:', note='We use your details only to follow up with you.', choose='Select', subject='New A+ MQ demo request'),
  end_h='Ready to plan faster?', end_p='Book a demo for your team or join early access. Team and company licenses get a lower price per seat.', end_b2='Message on LinkedIn',
  foot='A+ MQ is an independent product by Abdallah Abo-Elkhair.', foot_a='Autodesk and Revit are trademarks of Autodesk, Inc. A+ MQ is not affiliated with or endorsed by Autodesk.', copy='© 2026 A+ MQ. All rights reserved.', portlabel='Portfolio',
 ),
@@ -131,7 +137,7 @@ L = {
  lang='ar', dir='rtl', rel='../', home=BASE + 'aplus-mq/ar/', other_href='../', other_label='English', portfolio='../../ar/',
  title='A+ MQ: إضافة Revit لمخططي المعدات الطبية',
  desc='A+ MQ بتجمع 16 أداة على Revit لمخططي المعدات الطبية في تبويب واحد: حالة الفرش، الداتا شيت، الشيتات، الجداول، الـ BOQ، الخدمات والـ QA. تُطلق قريبًا.',
- nav=[('#tools','الأدوات'),('#how','إزاي بتشتغل'),('#licensing','التراخيص'),('#faq','أسئلة'),('#trial','جرّبها')],
+ nav=[('#tools','الأدوات'),('#how','إزاي بتشتغل'),('#licensing','التراخيص'),('#faq','أسئلة'),('#demo','جرّبها')],
  demo='اطلب ديمو', demo_sub='طلب ديمو A+ MQ', demo_body='الاسم:\nالشركة:\nعدد الفريق:\nالوقت المناسب للديمو:\n',
  cta='احجز وصولًا مبكرًا', mail_sub='وصول مبكر A+ MQ', see='اكتشف الـ 16 أداة',
  kick='إضافة Revit لتخطيط المعدات الطبية · تُطلق قريبًا',
@@ -171,25 +177,22 @@ L = {
   ('فيه تراخيص للفرق والشركات؟','أيوه. تراخيص الفرق والشركات سعر المقعد فيها أقل. كلمنا عشان نتكلم عن حجم فريقك.'),
   ('أقدر أقترح أداة؟','أيوه. A+ MQ بتتشكل بآراء المخططين. ابعت فكرتك على الإيميل أو LinkedIn.'),
   ('هل A+ MQ تابعة لـ Autodesk؟','لا. هي منتج مستقل بيشتغل مع Autodesk Revit.')],
- form=dict(h='احجز ديمو A+ MQ', p='قولنا شوية عن فريقك، وهنرد عليك بالإيميل عشان نحدد معاد.',
+ form=dict(h='احجز ديمو أو حمّل النسخة التجريبية', p='قولنا شوية عن فريقك، وهنرد عليك بالإيميل عشان نحدد معاد. معاك كود دعوة من المؤلف؟ علّم على المربع في الفورم والنسخة التجريبية هتنزل على طول.',
+   has='معايا كود دعوة', code='كود الدعوة', send_dl='سجّل وحمّل', dl_subject='New A+ MQ trial download', again='حمّل تاني',
+   code_note='الأكواد بيديها المؤلف بنفسه. النسخة التجريبية محتاجة Windows 10 / 11 و Revit 2023 &ndash; 2026 (حوالي 10 ميجا).',
+   dl_h='التحميل بدأ.', dl_p='اقفل Revit وشغّل ملف A+ MQ Setup اللي نزل. لو ويندوز طلّع رسالة &ldquo;Windows protected your PC&rdquo;، دوس <b>More info</b> وبعدين <b>Run anyway</b>.',
    name='الاسم بالكامل', email='إيميل الشغل', company='الشركة', role='وظيفتك', roles=['مخطط معدات طبية','مدير أو منسق BIM','معماري أو مصمم مستشفيات','مقاول أو مورد معدات','أخرى'],
    size='حجم الفريق', sizes=['أنا بس','من 2 لـ 5','من 6 لـ 20','أكتر من 20'], country='الدولة', msg='حابب تشوف إيه في الديمو؟ (اختياري)',
    send='احجز الديمو', sending='جاري الإرسال...', ok_h='شكرًا، طلبك وصل.', ok_p='هنبعتلك إيميل قريب عشان نحدد معاد الديمو.',
-   err='حصلت مشكلة. جرّب تاني، أو ابعتلنا إيميل مباشرة:', note='بياناتك بتستخدم بس لترتيب الديمو.', choose='اختار', subject='طلب ديمو جديد A+ MQ'),
+   err='حصلت مشكلة. جرّب تاني، أو ابعتلنا إيميل مباشرة:', note='بياناتك بتستخدم بس عشان نتابع معاك.', choose='اختار', subject='طلب ديمو جديد A+ MQ'),
  end_h='جاهز تخطط أسرع؟', end_p='احجز ديمو لفريقك أو سجّل في الوصول المبكر. تراخيص الفرق والشركات بسعر أقل للمقعد.', end_b2='رسالة على LinkedIn',
  foot='A+ MQ منتج مستقل من عبدالله أبو الخير.', foot_a='Autodesk و Revit علامتان تجاريتان لشركة Autodesk, Inc. و A+ MQ غير تابعة لها أو معتمدة منها.', copy='© 2026 A+ MQ. جميع الحقوق محفوظة.', portlabel='الموقع الشخصي',
 )}
 
 def esc(s): return s.replace('&','&amp;').replace('<','&lt;').replace('>','&gt;')
 
-FILTER_JS = '''<script>document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('.tg .tool').forEach(function(t){t.hidden=!(c==='all'||t.dataset.c===c)})})});var fm=document.getElementById('demo-form');if(fm){fm.addEventListener('submit',function(e){if(!window.fetch)return;e.preventDefault();var b=fm.querySelector('button[type=submit]'),lbl=b.textContent,er=fm.querySelector('.ferr');er.hidden=true;b.disabled=true;b.textContent=b.dataset.sending;var d={};new FormData(fm).forEach(function(v,k){d[k]=v});fetch(fm.dataset.ajax,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)}).then(function(r){return r.json().then(function(j){if(!r.ok||String(j.success)==='false')throw 0})}).then(function(){fm.hidden=true;var ok=document.getElementById('demo-ok');ok.hidden=false;ok.scrollIntoView({block:'center'})}).catch(function(){try{HTMLFormElement.prototype.submit.call(fm)}catch(x){er.hidden=false;b.disabled=false;b.textContent=lbl}})})};var st=document.querySelector('.sticky');addEventListener('scroll',function(){st.classList.toggle('on',scrollY>560)},{passive:true})</script>'''
+FILTER_JS = '''<script>document.querySelectorAll('.chips button').forEach(function(b){b.addEventListener('click',function(){var c=b.dataset.c;document.querySelectorAll('.chips button').forEach(function(x){x.setAttribute('aria-pressed',x===b)});document.querySelectorAll('.tg .tool').forEach(function(t){t.hidden=!(c==='all'||t.dataset.c===c)})})});var st=document.querySelector('.sticky');addEventListener('scroll',function(){st.classList.toggle('on',scrollY>560)},{passive:true})</script>'''
 
-# Code-locked trial download (assets/trial.js; the encrypted installer + keys.json in aplus-mq/trial/ come from the AAMQ repository's DevTools\\TrialPack).
-# {R} = the page's relative root, {MAIL} = the FormSubmit address.
-TRIAL = {
-    'en': '''<section class="sec" id="trial"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>Try A+ MQ</h2><p>The trial edition is open to people with an access code. Register, enter your code, and the download starts.</p><h3>No code yet?</h3><p class="dp">Access codes are given personally by the author. Request a demo below or send a message on LinkedIn to ask for one.</p><p class="li2">Windows 10 / 11 · Revit 2023 – 2026 · about 10 MB</p></div><div class="dr"><form class="card df" id="trial-form" data-base="{R}trial/" data-ajax="https://formsubmit.co/ajax/{MAIL}"><input type="hidden" name="_subject" value="New A+ MQ trial download"><input type="hidden" name="_template" value="table"><input type="hidden" name="Page" value="EN"><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><label>Full name<input name="Name" required autocomplete="name"></label><label>Work email<input type="email" name="email" required autocomplete="email" dir="ltr"></label><label>Company<input name="Company" required autocomplete="organization"></label><label>Country<input name="Country" autocomplete="country-name"></label><label class="wide">Access code<input name="Code" required autocomplete="off" spellcheck="false" dir="ltr" placeholder="AMQ-XXXX-XXXX-XXXX"></label><div class="wide fa"><button class="btn lg" type="submit">Register and download</button><small>Your details go only to the author of A+ MQ, to follow up on your trial.</small></div><p class="wide ferr" hidden></p></form><div class="card dok" id="trial-ok" hidden><svg><use href="#ck"/></svg><h3>Your download has started.</h3><p>Close Revit, then run the downloaded A+ MQ Setup. If Windows shows &ldquo;Windows protected your PC&rdquo;, click <b>More info</b>, then <b>Run anyway</b>. <a id="trial-again" href="#">Download again</a></p></div></div></div></div><script src="{R}assets/trial.js?v=1" defer></script></section>''',
-    'ar': '''<section class="sec" id="trial"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>جرّب A+ MQ</h2><p>النسخة التجريبية متاحة للي معاه كود دخول. سجّل بياناتك، اكتب الكود، والتحميل هيبدأ.</p><h3>لسه ما عندكش كود؟</h3><p class="dp">أكواد الدخول بيديها المؤلف بنفسه. اطلب ديمو تحت أو ابعت رسالة على LinkedIn عشان تطلب كود.</p><p class="li2">Windows 10 / 11 · Revit 2023 – 2026 · حوالي 10 ميجا</p></div><div class="dr"><form class="card df" id="trial-form" data-base="{R}trial/" data-ajax="https://formsubmit.co/ajax/{MAIL}"><input type="hidden" name="_subject" value="New A+ MQ trial download"><input type="hidden" name="_template" value="table"><input type="hidden" name="Page" value="AR"><input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true"><label>الاسم بالكامل<input name="Name" required autocomplete="name"></label><label>إيميل الشغل<input type="email" name="email" required autocomplete="email" dir="ltr"></label><label>الشركة<input name="Company" required autocomplete="organization"></label><label>البلد<input name="Country" autocomplete="country-name"></label><label class="wide">كود الدخول<input name="Code" required autocomplete="off" spellcheck="false" dir="ltr" placeholder="AMQ-XXXX-XXXX-XXXX"></label><div class="wide fa"><button class="btn lg" type="submit">سجّل وحمّل</button><small>بياناتك بتروح لمؤلف A+ MQ بس، عشان يتابع معاك التجربة.</small></div><p class="wide ferr" hidden></p></form><div class="card dok" id="trial-ok" hidden><svg><use href="#ck"/></svg><h3>التحميل بدأ.</h3><p>اقفل Revit وشغّل ملف A+ MQ Setup اللي نزل. لو ويندوز طلّع رسالة &ldquo;Windows protected your PC&rdquo;، دوس <b>More info</b> وبعدين <b>Run anyway</b>. <a id="trial-again" href="#">حمّل تاني</a></p></div></div></div></div><script src="{R}assets/trial.js?v=1" defer></script></section>''',
-}
 
 def page(k):
     from urllib.parse import quote
@@ -198,7 +201,7 @@ def page(k):
     demo = '#demo'
     f = t['form']
     opts = lambda xs: f'<option value="" disabled selected>{f["choose"]}</option>' + ''.join(f'<option>{esc(x)}</option>' for x in xs)
-    form = (f'<form class="card df" id="demo-form" action="https://formsubmit.co/{MAIL}" method="POST" data-ajax="https://formsubmit.co/ajax/{MAIL}">'
+    form = (f'<form class="card df" id="demo-form" action="https://formsubmit.co/{MAIL}" method="POST" data-ajax="https://formsubmit.co/ajax/{MAIL}" data-api="{API}" data-base="{r}trial/">'
       f'<input type="hidden" name="_subject" value="{esc(f["subject"])}"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="{t["home"]}#demo"><input type="hidden" name="Page" value="{t["lang"].upper()}">'
       f'<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
       f'<label>{f["name"]}<input name="Name" required autocomplete="name"></label>'
@@ -208,9 +211,13 @@ def page(k):
       f'<label>{f["role"]}<select name="Role" required>{opts(f["roles"])}</select></label>'
       f'<label>{f["size"]}<select name="Team size" required>{opts(f["sizes"])}</select></label>'
       f'<label class="wide">{f["msg"]}<textarea name="Message" rows="3"></textarea></label>'
-      f'<div class="wide fa"><button class="btn lg" type="submit" data-sending="{esc(f["sending"])}">{f["send"]}</button><small>{esc(f["note"])}</small></div>'
-      f'<p class="wide ferr" hidden>{esc(f["err"])} <a href="{demo_mail}">{MAIL}</a></p></form>'
-      f'<div class="card dok" id="demo-ok" hidden><svg><use href="#ck"/></svg><h3>{esc(f["ok_h"])}</h3><p>{esc(f["ok_p"])}</p></div>')
+      # invitation code: ticking the box shows the code field; a valid code downloads the trial (assets/signup.js)
+      f'<label class="wide chk"><input type="checkbox" id="has-code"> {f["has"]}</label>'
+      f'<div class="wide codebox" id="code-box" hidden><label>{f["code"]}<input name="Code" autocomplete="off" spellcheck="false" dir="ltr" placeholder="AMQ-XXXX-XXXX-XXXX"></label><small>{f["code_note"]}</small></div>'
+      f'<div class="wide fa"><button class="btn lg" type="submit" data-sending="{esc(f["sending"])}" data-demo="{f["send"]}" data-dl="{f["send_dl"]}" data-dl-subject="{f["dl_subject"]}">{f["send"]}</button><small>{esc(f["note"])}</small></div>'
+      f'<p class="wide ferr" hidden><span>{esc(f["err"])}</span> <a href="{demo_mail}">{MAIL}</a></p></form>'
+      f'<div class="card dok" id="demo-ok" hidden><svg><use href="#ck"/></svg><h3>{esc(f["ok_h"])}</h3><p>{esc(f["ok_p"])}</p></div>'
+      f'<div class="card dok" id="trial-ok" hidden><svg><use href="#ck"/></svg><h3>{f["dl_h"]}</h3><p>{f["dl_p"]} <a id="trial-again" href="#">{f["again"]}</a></p></div>')
     mail = 'mailto:' + MAIL + '?subject=' + quote(t['mail_sub'])
     arrow = '<svg class="ic"><use href="#ar"/></svg>'
     jld = {"@context":"https://schema.org","@type":"SoftwareApplication","name":"A+ MQ","applicationCategory":"DesignApplication","operatingSystem":"Windows","description":t['desc'],"url":t['home'],"inLanguage":t['lang'],"creator":{"@type":"Person","name":"Abdallah Abo-Elkhair","url":BASE}}
@@ -242,7 +249,7 @@ def page(k):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
 <link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/mq.css?v=16">
+<link rel="stylesheet" href="{r}assets/mq.css?v=17">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
 <header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if ar else 'ar'}">{t['other_label']}</a><a class="btn" href="{demo}">{t['demo']}</a></div></header>
@@ -256,11 +263,11 @@ def page(k):
 <section class="sec alt"><div class="wrap"><h2>{esc(t['who_h'])}</h2><div class="who">{who}</div><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h3>{esc(t['by_h'])}</h3><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
 <section class="sec" id="licensing"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
 <section class="sec alt" id="faq"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
-{TRIAL[k].replace('{R}', r).replace('{MAIL}', MAIL)}
 <section class="sec" id="demo"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><h3>{esc(f['h'])}</h3><p class="dp">{esc(f['p'])}</p><p class="li2"><a href="{mail}">{t['cta']}</a> · <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div><div class="dr">{form}</div></div></div></section>
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
 <div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
+<script src="{r}assets/signup.js?v=1" defer></script>
 {FILTER_JS}
 </body></html>'''
 
