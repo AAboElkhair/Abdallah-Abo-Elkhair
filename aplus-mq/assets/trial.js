@@ -1,7 +1,7 @@
 /* A+ MQ - code-locked trial download (static page, no server).
-   The trial zip is published only encrypted (trial/a-plus-mq-trial.bin). trial/keys.json holds, per access code, the file key
+   The trial installer is published only encrypted (trial/a-plus-mq-trial.bin). trial/keys.json holds, per access code, the file key
    wrapped with a key derived from that code (PBKDF2-SHA256 + AES-GCM). A valid code unwraps the file key here in the browser,
-   the zip is decrypted, its SHA-256 checked and saved. The registration goes to the author by FormSubmit (as the demo form).
+   the file is decrypted, its SHA-256 checked and saved. The registration goes to the author by FormSubmit (as the demo form).
    Made with the AAMQ repository's DevTools\TrialPack. */
 (function () {
   var f = document.getElementById('trial-form');
@@ -97,7 +97,7 @@
       .then(function (zip) {
         return c.digest('SHA-256', zip).then(function (h) {
           if (hex(h) !== man.sha256) throw 'hash';
-          lastUrl = URL.createObjectURL(new Blob([zip], { type: 'application/zip' }));
+          lastUrl = URL.createObjectURL(new Blob([zip], { type: /[.]exe$/i.test(man.name) ? 'application/octet-stream' : 'application/zip' }));
           lastName = man.name;
           save();
           f.hidden = true;
