@@ -1,68 +1,68 @@
 {
   "v": 1,
-  "version": "0.44.0",
+  "version": "0.44.1",
   "file": "a-plus-mq-trial.bin",
-  "name": "A\u002B MQ Setup 0.44.0.exe",
-  "size": 9831184,
-  "sha256": "88f48141e5b1cd074ade8bf9d24138f063e38e2a36418d3036622ac0c7526025",
+  "name": "A\u002B MQ Setup 0.44.1.exe",
+  "size": 9831696,
+  "sha256": "573a3df484a466bbeca5875ffd1ccb4c53b39f5fa93ab4ce2dd8f7d8646be9e3",
   "iter": 310000,
-  "notes": "Free trial code straight from the website | Equipment and room workbooks delivered encrypted, unlocked by your licence | Optional usage and error reports to improve the tools (can be turned off in the Licence window)",
+  "notes": "Licence and update checks now get through office networks that block the server (opens Chrome when installed) | Free trial code straight from the website | Equipment and room workbooks delivered encrypted, unlocked by your licence | Optional usage and error reports (can be turned off in the Licence window)",
   "released": "2026-11-25",
   "keys": {
     "53990bc65ab09f3a": {
-      "s": "oaLO6LZFe0e4\u002B2qzGj15Fw==",
-      "i": "VO2lCY8QQWMqLz3q",
-      "k": "MrNDwhBJXt4AgRh3SP/zeKI/GlcQRHTGUek9VTxO4kR3oq8hveRkzzDMrcR9hyD3"
+      "s": "F\u002BawHyhcScerab86HKPCVQ==",
+      "i": "EtdiCQ4z8VusxYB2",
+      "k": "gMujD/BevgTooieLWBkCbu6tYCexByxv6hj7kwGLVvRPNm3HlfxlpJF2BD9t7D\u002BK"
     },
     "0cc52f50927d1be8": {
-      "s": "d/Lk4GWQ8DFZsG3PNsTKhg==",
-      "i": "rac2ObnYlAnqBRH1",
-      "k": "BySM5nzom\u002BcLSV24qXfiAgmyfhKA/G8CDhIKOKmf1NnjvdNwOyVrFhzp\u002BofKU4n8"
+      "s": "EbCJFsGCHR/s\u002BnTuwsXLbg==",
+      "i": "f2wBuAc08/Sj5PL3",
+      "k": "GToUCADyMeWxnZDKv8WXjxnWdM8F3T375HdRf\u002B6tJmOekpjCZRT8pLTrz9XAc/1M"
     },
     "b84268165bab93c8": {
-      "s": "CiV0oQvLbLgnNcgplC4xpQ==",
-      "i": "UZmndAti9I0Z4gjM",
-      "k": "0fRQKjqv4AJb7\u002BQcNJLXlFZgjgWs3f5fKzDB5WsYpjWzAeU/wR0MBjk//lP/MhT2"
+      "s": "yHNw5Qd0rGvFMrAppwt27g==",
+      "i": "dTYTH3gb2fUKzGMa",
+      "k": "XF/XocVLKNb7nEzZW//TY8siLiYn0zZh1Y/vh7zFfxza/WRMtv8L/ejgslDvdcVQ"
     },
     "5ec5889c60798bfc": {
-      "s": "2d56eQVgI8xxk/RW3rk4DQ==",
-      "i": "VkPcPMbmciUQ7qcD",
-      "k": "CFxIZ\u002BRyZOmjlIzqx1FXnW\u002Bg9wHogAaLyL2hxOZE2M1XsDWhYcROJbNzWr0QPuK7"
+      "s": "eydaj/\u002Bu/GQKvHjYhdFN3Q==",
+      "i": "rm2f1DsFtsAl23Pq",
+      "k": "K\u002BaYLOPwkHQtyAu50wkZwVVXozTfK0cMYyEIMcIE2ofcy/\u002Bs0rSf9yty9SdjXsDX"
     },
     "a2534d1b777eb83c": {
-      "s": "OzLOK4v6vH63CbHi35xouA==",
-      "i": "gxnwpI4WcK1iCWpf",
-      "k": "usktlIg6K6mb6ghB4hUWGy2mKJk6hytjvJQlBUveBXLTGnPApWQ8N4QdgwMLc33n"
+      "s": "ZgdN/J6dQiPDrbyY6G0nDw==",
+      "i": "MyDDTPsf84MLIdCT",
+      "k": "orat6WahsbgX1TbOv0p8gaDL1jIyoNRJKz5qQdlrVaN70Pfj11lcvJzVWFZXT/zS"
     },
     "dc967148cf11b372": {
-      "s": "cWP5Sl/6Qph1yU0UabXxTw==",
-      "i": "KYNNAVJgmADCpOcq",
-      "k": "sGysXx7lDoQmoCKSVMD8PgHYq5hUrsfxNa/tAaV21gaGJK14ev4nfA24EV9WkJcz"
+      "s": "FBP0/FTEDPyPAPVyUPebaw==",
+      "i": "1ntCLVwfrAvxGk1G",
+      "k": "xEWxNAznDLY4EZXvbQBkQkVd3bnicAZ1xhExqe7K3SUMw8g0WEOuWZHB8dHLlgcn"
     },
     "2c2dc244b4eab701": {
-      "s": "l0mUxbySNbkYNKKxuXHjFQ==",
-      "i": "l4eDlHGiIr9Cl8Kf",
-      "k": "00Q94fhAxChuj6X/V\u002B0\u002BKp3IRux4aT3ue0j3PR2b9VEpJwGew090bv2\u002BBogY3A8/"
+      "s": "ciUTSglUd6YJZGXAdKLbfA==",
+      "i": "OHYSFJPk\u002BJfaaP5f",
+      "k": "baRQujq42ZhSFpZ/CsMTABixK\u002BPBn8mr4sEmNUu8Y9YeMoOGyEp5AzmzV87oyx9c"
     },
     "5b7ed24d15ec48c5": {
-      "s": "1UACWXmyATLHKfhfE5M3hQ==",
-      "i": "GNM7nz04NgvSXr\u002BT",
-      "k": "HjOeNEI8gJ68EiLEchfU3Xbfrx5iru3UiCLAYg9FZeq0Uk6aMgqgT5xLrJ//fK60"
+      "s": "6NhNBx2SfFcX6Wxk27l14Q==",
+      "i": "Xe\u002BUtes9o9EdPa8N",
+      "k": "1nYPfgDJHhvgLvyupmQi2JRQnzo6fbwXwyOQJXlSzH0KHe2lD85U7bXYBPBCQQT7"
     },
     "93dbcb9833dcba57": {
-      "s": "FFX4I4oW1mrhTXALFW4gAQ==",
-      "i": "ovFnF\u002B3k6KnQvpRn",
-      "k": "XC7g\u002Bx5VLh6JG0FYe1SkrW2nb3q66v1vwiCYHpCDONscTkyH3YGF2B87\u002BEEema9l"
+      "s": "ac1QR6w0BaJ5dzsT0GuZ\u002Bg==",
+      "i": "lQmb2u9ClCDHyfT5",
+      "k": "vBi4AS9z\u002BZwOeKp/9CsU7HbREOpfrLCj3Y0VP1MHfpb/ktlcqffd0sHHDWlQ61x9"
     },
     "cd1dd2f98c06c3e5": {
-      "s": "VDlBQmNR0Tp4dKoIZ9qD6w==",
-      "i": "ec38FrMO9wUJ\u002BLkD",
-      "k": "CV6IY5hKJkf3c3l91SV2KqXqfUx4WRXIneIH99tanMSjf1KDzA1Xr/fPpV3Ml9GC"
+      "s": "QrIEArxefQMy7VXZeJnimQ==",
+      "i": "XPl4dyKJEhzF4l2G",
+      "k": "1R\u002BgKGcrlHoH1BBe9UAB0kZvyIskgFBnay2SRPoPKLFcFAVMNvdolkj2mo1tRSPY"
     },
     "b4a0b6037ae5aebf": {
-      "s": "L6VGYV4iPseRNZTyTGo4cg==",
-      "i": "mP4zhn6u/cU3cnVR",
-      "k": "qptD0pS5DLZOzzT4wA/UH3dMGqtkOP/AhjVlzxzikTRAxZjIN\u002BxRq\u002Bwy9bQ03rWJ"
+      "s": "tWJJlej5Bsspubfup6/ZaQ==",
+      "i": "q99XXHm93k2iCvyU",
+      "k": "w51p1/NS0aiEFDt/hGny2Tnz6jpiu8sBM0gE1AolOaK/T9OmSOeGf9MEQGVY2q\u002Bl"
     }
   }
 }
