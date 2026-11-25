@@ -249,7 +249,7 @@ def page(k):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
 <link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/mq.css?v=17">
+<link rel="stylesheet" href="{r}assets/mq.css?v=18">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
 <header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if ar else 'ar'}">{t['other_label']}</a><a class="btn" href="{demo}">{t['demo']}</a></div></header>
@@ -267,7 +267,7 @@ def page(k):
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
 <div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
-<script src="{r}assets/signup.js?v=3" defer></script>
+<script src="{r}assets/signup.js?v=4" defer></script>
 {FILTER_JS}
 </body></html>'''
 

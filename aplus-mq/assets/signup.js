@@ -173,9 +173,10 @@
     e.preventDefault();
     er.hidden = true;
     if (!f.reportValidity()) return;
-    if (f.querySelector('[name=_honey]').value) return show('demo-ok');
     var withCode = cb.checked, d = fields(withCode);
-    if (withCode) download(d); else demo(d);
+    if (withCode) { delete d._honey; return download(d); }   // autofill can fill the trap; a code download needs a valid code anyway
+    if (d._honey) return show('demo-ok');
+    demo(d);
   });
 
   var again = document.getElementById('trial-again');
