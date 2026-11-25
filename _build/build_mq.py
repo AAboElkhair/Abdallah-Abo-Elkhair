@@ -84,8 +84,8 @@ L = {
  desc='A+ MQ puts 16 Revit tools for medical equipment planners in one tab: furnishing status, datasheets, layout sheets, schedules, BOQ, utilities and QA. Launching soon.',
  nav=[('#tools','Tools'),('#how','How it works'),('#licensing','Licensing'),('#faq','FAQ'),('#demo','Try it')],
  demo='Request a demo', demo_sub='A+ MQ demo request', demo_body='Name:\nCompany:\nTeam size:\nPreferred time for a demo:\n',
- cta='Get early access', mail_sub='A+ MQ early access', see='Explore the 16 tools',
- kick='Revit plugin for medical equipment planning · Launching soon',
+ cta='Start free trial', mail_l='Email the author', mail_sub='A+ MQ early access', see='Explore the 16 tools',
+ kick='Revit plugin for medical equipment planning · Free 30-day trial',
  h1='Medical equipment planning in Revit, <em>done faster.</em>',
  lede='A+ MQ puts 16 tools in one Revit tab: furnishing status, datasheets, layout sheets, schedules, BOQ, utilities, medical gases and QA checks. Less clicking, cleaner deliverables, and more time for the planning decisions that matter.',
  trust=['Built by a medical equipment planner','16 tools in one Revit tab','Team and company licenses'],
@@ -107,7 +107,7 @@ L = {
  show_h='See it in action', show_s='A look at how some of the tools present your model data.',
  shows=[('explorer','Building Explorer'),('report','Furnishing Report'),('datasheet','Equipment Datasheet'),('layout','Room Layout Sheet'),('tags','Room Tags Auto Leader'),('export','Sheet Export')],
  cav='Illustrative mockups with sample data, showing the idea of each tool.',
- how_h='Up and running in three steps', how=[('Open your hospital model','A+ MQ adds its own tab to the Revit ribbon, next to the tools you already use.'),('Pick a tool','Run reports, sheets, schedules, coordination maps and checks in a click.'),('Deliver with confidence','Send consistent, checked outputs to the client, the design team and the site.')],
+ how_h='Start your free trial in four steps', how=[('Fill in the form','Get your personal trial code on the spot.'),('Download and install','A small setup (about 10 MB) for Windows 10 / 11 and Revit 2023 – 2026.'),('Activate in Revit','Open any A+ MQ tool and enter your code. The trial runs 30 days on that computer.'),('Stay up to date','New versions and tools install themselves when you close Revit.')],
  who_h='Made for the people who equip hospitals', who=[('w1','Medical equipment planners','Spend less time on Revit chores and more on planning.'),('w2','Healthcare BIM teams','Standard outputs across every model and every team member.'),('w3','Hospital design firms','Faster equipment packages and smoother MEP coordination.'),('w4','Contractors and suppliers','Clear schedules, BOQ and as-built records for delivery and handover.')],
  by_h='Built by a planner, for planners', by_p='A+ MQ grew out of the day-to-day work of Abdallah Abo-Elkhair, a Medical Equipment Planning Engineer on large hospital projects. Every tool solves a task planners repeat on every project.', by_a='About the author',
  lic_h='Licensing for individuals, teams and companies', lic_s='Pricing is announced at launch. The bigger your team, the lower the price per seat.',
@@ -117,20 +117,27 @@ L = {
  licbadge='Best for teams', licprice='Pricing at launch',
  faq_h='Questions', faq=[
   ('Who is A+ MQ for?','Medical equipment planners, healthcare BIM teams, hospital design firms and contractors who plan equipment in Revit.'),
+  ('How does the free trial work?','Fill in the form and you get a personal code straight away. Install A+ MQ, open any tool in Revit and enter the code: all 16 tools work for 30 days on that computer. One trial per person and per computer.'),
+  ('Does it need the internet?','Only to activate, and then about once a day in the background. Offline, A+ MQ keeps working for up to 14 days between checks.'),
+  ('How do updates work?','When a new version is out, A+ MQ tells you in Revit. Press Update and it installs itself the next time you close Revit. Data you edited is kept.'),
+  ('What data does A+ MQ send?','The licence check, and anonymous usage data: which tools run and the errors they stop on, so problems get fixed faster. Never model data, file names or project names. You can switch usage data off in the Licence window.'),
   ('Can I see a demo?','Yes. Send a demo request with your team size and we will walk you through the tools and how they fit your workflow.'),
-  ('When can I buy it?','A+ MQ is launching soon. Join early access or request a demo and you will be the first to know, with launch pricing.'),
+  ('When can I buy it?','A+ MQ is in early access. Start the free trial today; licenses for individuals, teams and companies come with launch pricing.'),
   ('Are there team and company licenses?','Yes. Team and company licenses cost less per seat. Get in touch to discuss your team size.'),
   ('Can I suggest a tool?','Yes. A+ MQ is shaped by planners. Send your idea by email or LinkedIn.'),
   ('Is A+ MQ affiliated with Autodesk?','No. It is an independent product for use with Autodesk Revit.')],
- form=dict(h='Book a demo or get the trial', p='Tell us a little about your team and we will email you to set a time. Have an invitation code from the author? Tick the box in the form and the trial downloads right away.',
-   has='I have an invitation code', code='Invitation code', send_dl='Register and download', dl_subject='New A+ MQ trial download', again='Download again',
-   code_note='Codes are given personally by the author. The trial needs Windows 10 / 11 and Revit 2023 &ndash; 2026 (about 10 MB).',
-   dl_h='Your download has started.', dl_p='Close Revit, then run the downloaded A+ MQ Setup. If Windows shows &ldquo;Windows protected your PC&rdquo;, click <b>More info</b>, then <b>Run anyway</b>.',
+ form=dict(h='Get the 30-day trial, or book a demo', p='Fill in the form and your personal trial code appears right away, with the download. Prefer a walkthrough first? Choose Book a demo and we will email you to set a time.',
+   mode_trial='Start my free trial', mode_demo='Book a demo', send_trial='Get my trial code',
+   has='I already have a code', code='Your code', send_dl='Download the trial', dl_subject='New A+ MQ trial', again='Download again',
+   code_note='A code from the author, or one this page gave you. The trial needs Windows 10 / 11 and Revit 2023 &ndash; 2026 (about 10 MB).',
+   dl_h='Your trial is ready.', dl_p='The download has started. If Windows shows &ldquo;Windows protected your PC&rdquo;, click <b>More info</b>, then <b>Run anyway</b>.',
+   my_code='Your personal code', copy='Copy', copied='Copied', code_keep='Keep it: you enter it once, in Revit. It works on one computer.', code_mailed='We also sent it to your e-mail.',
+   steps=['Close Revit and run the downloaded A+ MQ Setup.','Open Revit and start any A+ MQ tool.','Enter your code: the trial runs 30 days on this computer.'],
    name='Full name', email='Work email', company='Company', role='Your role', roles=['Medical equipment planner','BIM manager or coordinator','Architect or hospital designer','Contractor or equipment supplier','Other'],
    size='Team size', sizes=['Just me','2 to 5','6 to 20','More than 20'], country='Country', msg='What would you like to see? (optional)',
    send='Request my demo', sending='Sending...', ok_h='Thank you, your request is in.', ok_p='We will email you shortly to arrange your demo.',
    err='Something went wrong. Please try again, or email us directly:', note='We use your details only to follow up with you.', choose='Select', subject='New A+ MQ demo request'),
- end_h='Ready to plan faster?', end_p='Book a demo for your team or join early access. Team and company licenses get a lower price per seat.', end_b2='Message on LinkedIn',
+ end_h='Ready to plan faster?', end_p='Start the free trial today, or book a demo for your team. Team and company licenses get a lower price per seat.', end_b2='Message on LinkedIn',
  foot='A+ MQ is an independent product by Abdallah Abo-Elkhair.', foot_a='Autodesk and Revit are trademarks of Autodesk, Inc. A+ MQ is not affiliated with or endorsed by Autodesk.', copy='© 2026 A+ MQ. All rights reserved.', portlabel='Portfolio',
 ),
 'ar': dict(
@@ -139,8 +146,8 @@ L = {
  desc='A+ MQ بتجمع 16 أداة على Revit لمخططي المعدات الطبية في تبويب واحد: حالة الفرش، الداتا شيت، الشيتات، الجداول، الـ BOQ، الخدمات والـ QA. تُطلق قريبًا.',
  nav=[('#tools','الأدوات'),('#how','إزاي بتشتغل'),('#licensing','التراخيص'),('#faq','أسئلة'),('#demo','جرّبها')],
  demo='اطلب ديمو', demo_sub='طلب ديمو A+ MQ', demo_body='الاسم:\nالشركة:\nعدد الفريق:\nالوقت المناسب للديمو:\n',
- cta='احجز وصولًا مبكرًا', mail_sub='وصول مبكر A+ MQ', see='اكتشف الـ 16 أداة',
- kick='إضافة Revit لتخطيط المعدات الطبية · تُطلق قريبًا',
+ cta='ابدأ التجربة المجانية', mail_l='ابعت إيميل للمؤلف', mail_sub='وصول مبكر A+ MQ', see='اكتشف الـ 16 أداة',
+ kick='إضافة Revit لتخطيط المعدات الطبية · تجربة مجانية 30 يوم',
  h1='تخطيط المعدات الطبية على Revit، <em>أسرع بكتير.</em>',
  lede='A+ MQ بتجمعلك 16 أداة في تبويب واحد على Revit: حالة الفرش، الداتا شيت، الـ Layout Sheets، الجداول، الـ BOQ، الخدمات، الغازات الطبية ومراجعات الجودة. ضغطات أقل، مخرجات أنضف، ووقت أكتر لقرارات التخطيط المهمة.',
  trust=['مبنية بإيد مخطط معدات طبية','16 أداة في تبويب واحد','تراخيص للفرق والشركات'],
@@ -162,7 +169,7 @@ L = {
  show_h='شوفها وهي شغالة', show_s='نظرة على طريقة عرض بعض الأدوات لبيانات الموديل.',
  shows=[('explorer','Building Explorer'),('report','Furnishing Report'),('datasheet','Equipment Datasheet'),('layout','Room Layout Sheet'),('tags','Room Tags Auto Leader'),('export','Sheet Export')],
  cav='رسومات توضيحية ببيانات تجريبية بتوضح فكرة كل أداة.',
- how_h='تبدأ في تلات خطوات', how=[('افتح موديل المستشفى','A+ MQ بتضيف تبويبها الخاص على شريط Revit جنب الأدوات اللي بتستخدمها.'),('اختار الأداة','تقارير، شيتات، جداول، خرايط تنسيق ومراجعات بضغطة واحدة.'),('سلّم وانت مطمن','مخرجات موحدة ومتراجعة للعميل وفريق التصميم والموقع.')],
+ how_h='ابدأ تجربتك المجانية في أربع خطوات', how=[('املا الفورم','كودك الشخصي للتجربة هيظهرلك على طول.'),('حمّل وسطّب','ملف Setup صغير (حوالي 10 ميجا) لـ Windows 10 / 11 و Revit 2023 – 2026.'),('فعّل من Revit','افتح أي أداة من A+ MQ واكتب الكود. التجربة شغالة 30 يوم على الجهاز ده.'),('خليك محدّث','النسخ والأدوات الجديدة بتتسطب لوحدها لما تقفل Revit.')],
  who_h='معمولة للناس اللي بتجهز المستشفيات', who=[('w1','مخططي المعدات الطبية','وقت أقل في شغل Revit الروتيني، ووقت أكتر للتخطيط.'),('w2','فرق BIM الصحية','مخرجات بستاندرد واحد في كل موديل ومع كل الفريق.'),('w3','مكاتب تصميم المستشفيات','باكدجات معدات أسرع وتنسيق MEP أسهل.'),('w4','المقاولين والموردين','جداول وBOQ وسجلات As-Built واضحة للتوريد والتسليم.')],
  by_h='مبنية بإيد مخطط، لمخططين', by_p='A+ MQ خرجت من الشغل اليومي لعبدالله أبو الخير، مهندس تخطيط معدات طبية في مشاريع مستشفيات كبيرة. كل أداة بتحل مهمة المخطط بيكررها في كل مشروع.', by_a='عن المؤلف',
  lic_h='تراخيص للأفراد والفرق والشركات', lic_s='الأسعار تُعلن عند الإطلاق. كل ما الفريق يكبر، سعر المقعد يقل.',
@@ -172,20 +179,27 @@ L = {
  licbadge='الأنسب للفرق', licprice='السعر عند الإطلاق',
  faq_h='أسئلة', faq=[
   ('A+ MQ لمين؟','لمخططي المعدات الطبية وفرق BIM الصحية ومكاتب تصميم المستشفيات والمقاولين اللي بيخططوا المعدات على Revit.'),
+  ('التجربة المجانية بتشتغل إزاي؟','املا الفورم وهيطلعلك كود شخصي على طول. سطّب A+ MQ، افتح أي أداة في Revit واكتب الكود: الـ 16 أداة هيشتغلوا 30 يوم على الجهاز ده. تجربة واحدة لكل شخص ولكل جهاز.'),
+  ('محتاجة إنترنت؟','بس وقت التفعيل، وبعدين مرة في اليوم تقريبًا في الخلفية. من غير نت، A+ MQ بتفضل شغالة لحد 14 يوم بين كل مراجعة والتانية.'),
+  ('التحديثات بتنزل إزاي؟','لما تنزل نسخة جديدة، A+ MQ بتعرّفك جوه Revit. دوس Update وهتتسطب لوحدها أول ما تقفل Revit. البيانات اللي عدلتها بتفضل زي ما هي.'),
+  ('A+ MQ بتبعت بيانات إيه؟','مراجعة الترخيص، وبيانات استخدام من غير أسماء: أنهي أدوات اشتغلت والأخطاء اللي وقفتها، عشان المشاكل تتصلح أسرع. أبدًا مش بيانات الموديل ولا أسماء الملفات أو المشاريع. تقدر تقفل بيانات الاستخدام من نافذة Licence.'),
   ('أقدر أشوف ديمو؟','أيوه. ابعت طلب ديمو واكتب عدد فريقك، وهنعرّفك على الأدوات وإزاي تمشي مع طريقة شغلك.'),
-  ('أقدر أشتريها إمتى؟','A+ MQ هتنزل قريب. احجز وصول مبكر أو اطلب ديمو وهتعرف أول واحد، بأسعار الإطلاق.'),
+  ('أقدر أشتريها إمتى؟','A+ MQ في مرحلة الوصول المبكر. ابدأ التجربة المجانية النهارده، وتراخيص الأفراد والفرق والشركات هتنزل بأسعار الإطلاق.'),
   ('فيه تراخيص للفرق والشركات؟','أيوه. تراخيص الفرق والشركات سعر المقعد فيها أقل. كلمنا عشان نتكلم عن حجم فريقك.'),
   ('أقدر أقترح أداة؟','أيوه. A+ MQ بتتشكل بآراء المخططين. ابعت فكرتك على الإيميل أو LinkedIn.'),
   ('هل A+ MQ تابعة لـ Autodesk؟','لا. هي منتج مستقل بيشتغل مع Autodesk Revit.')],
- form=dict(h='احجز ديمو أو حمّل النسخة التجريبية', p='قولنا شوية عن فريقك، وهنرد عليك بالإيميل عشان نحدد معاد. معاك كود دعوة من المؤلف؟ علّم على المربع في الفورم والنسخة التجريبية هتنزل على طول.',
-   has='معايا كود دعوة', code='كود الدعوة', send_dl='سجّل وحمّل', dl_subject='New A+ MQ trial download', again='حمّل تاني',
-   code_note='الأكواد بيديها المؤلف بنفسه. النسخة التجريبية محتاجة Windows 10 / 11 و Revit 2023 &ndash; 2026 (حوالي 10 ميجا).',
-   dl_h='التحميل بدأ.', dl_p='اقفل Revit وشغّل ملف A+ MQ Setup اللي نزل. لو ويندوز طلّع رسالة &ldquo;Windows protected your PC&rdquo;، دوس <b>More info</b> وبعدين <b>Run anyway</b>.',
+ form=dict(h='خد التجربة المجانية 30 يوم، أو احجز ديمو', p='املا الفورم وكودك الشخصي هيظهر على طول ومعاه التحميل. عايز تشوف شرح الأول؟ اختار احجز ديمو وهنبعتلك إيميل نحدد معاد.',
+   mode_trial='ابدأ تجربتي المجانية', mode_demo='احجز ديمو', send_trial='هات كود التجربة',
+   has='معايا كود بالفعل', code='الكود بتاعك', send_dl='حمّل النسخة التجريبية', dl_subject='New A+ MQ trial', again='حمّل تاني',
+   code_note='كود من المؤلف أو من الصفحة دي. النسخة التجريبية محتاجة Windows 10 / 11 و Revit 2023 &ndash; 2026 (حوالي 10 ميجا).',
+   dl_h='تجربتك جاهزة.', dl_p='التحميل بدأ. لو ويندوز طلّع رسالة &ldquo;Windows protected your PC&rdquo;، دوس <b>More info</b> وبعدين <b>Run anyway</b>.',
+   my_code='كودك الشخصي', copy='انسخ', copied='اتنسخ', code_keep='احتفظ بيه: هتكتبه مرة واحدة في Revit. بيشتغل على جهاز واحد.', code_mailed='وبعتناه كمان على إيميلك.',
+   steps=['اقفل Revit وشغّل ملف A+ MQ Setup اللي نزل.','افتح Revit وشغّل أي أداة من A+ MQ.','اكتب كودك: التجربة شغالة 30 يوم على الجهاز ده.'],
    name='الاسم بالكامل', email='إيميل الشغل', company='الشركة', role='وظيفتك', roles=['مخطط معدات طبية','مدير أو منسق BIM','معماري أو مصمم مستشفيات','مقاول أو مورد معدات','أخرى'],
    size='حجم الفريق', sizes=['أنا بس','من 2 لـ 5','من 6 لـ 20','أكتر من 20'], country='الدولة', msg='حابب تشوف إيه في الديمو؟ (اختياري)',
    send='احجز الديمو', sending='جاري الإرسال...', ok_h='شكرًا، طلبك وصل.', ok_p='هنبعتلك إيميل قريب عشان نحدد معاد الديمو.',
    err='حصلت مشكلة. جرّب تاني، أو ابعتلنا إيميل مباشرة:', note='بياناتك بتستخدم بس عشان نتابع معاك.', choose='اختار', subject='طلب ديمو جديد A+ MQ'),
- end_h='جاهز تخطط أسرع؟', end_p='احجز ديمو لفريقك أو سجّل في الوصول المبكر. تراخيص الفرق والشركات بسعر أقل للمقعد.', end_b2='رسالة على LinkedIn',
+ end_h='جاهز تخطط أسرع؟', end_p='ابدأ التجربة المجانية النهارده، أو احجز ديمو لفريقك. تراخيص الفرق والشركات بسعر أقل للمقعد.', end_b2='رسالة على LinkedIn',
  foot='A+ MQ منتج مستقل من عبدالله أبو الخير.', foot_a='Autodesk و Revit علامتان تجاريتان لشركة Autodesk, Inc. و A+ MQ غير تابعة لها أو معتمدة منها.', copy='© 2026 A+ MQ. جميع الحقوق محفوظة.', portlabel='الموقع الشخصي',
 )}
 
@@ -204,6 +218,8 @@ def page(k):
     form = (f'<form class="card df" id="demo-form" action="https://formsubmit.co/{MAIL}" method="POST" data-ajax="https://formsubmit.co/ajax/{MAIL}" data-api="{API}" data-base="{r}trial/">'
       f'<input type="hidden" name="_subject" value="{esc(f["subject"])}"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="{t["home"]}#demo"><input type="hidden" name="Page" value="{t["lang"].upper()}">'
       f'<input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">'
+      # 0.44.0: the free trial is the default; a demo request is the other choice (assets/signup.js)
+      f'<div class="wide mode" role="radiogroup"><label class="chk"><input type="radio" name="_mode" value="trial" checked> {f["mode_trial"]}</label><label class="chk"><input type="radio" name="_mode" value="demo"> {f["mode_demo"]}</label></div>'
       f'<label>{f["name"]}<input name="Name" required autocomplete="name"></label>'
       f'<label>{f["email"]}<input type="email" name="email" required autocomplete="email" dir="ltr"></label>'
       f'<label>{f["company"]}<input name="Company" required autocomplete="organization"></label>'
@@ -211,13 +227,15 @@ def page(k):
       f'<label>{f["role"]}<select name="Role" required>{opts(f["roles"])}</select></label>'
       f'<label>{f["size"]}<select name="Team size" required>{opts(f["sizes"])}</select></label>'
       f'<label class="wide">{f["msg"]}<textarea name="Message" rows="3"></textarea></label>'
-      # invitation code: ticking the box shows the code field; a valid code downloads the trial (assets/signup.js)
-      f'<label class="wide chk"><input type="checkbox" id="has-code"> {f["has"]}</label>'
+      # a code the person already has: ticking the box shows the code field; a valid code downloads the trial (assets/signup.js)
+      f'<label class="wide chk" id="has-code-row"><input type="checkbox" id="has-code"> {f["has"]}</label>'
       f'<div class="wide codebox" id="code-box" hidden><label>{f["code"]}<input name="Code" autocomplete="off" spellcheck="false" dir="ltr" placeholder="AMQ-XXXX-XXXX-XXXX"></label><small>{f["code_note"]}</small></div>'
-      f'<div class="wide fa"><button class="btn lg" type="submit" data-sending="{esc(f["sending"])}" data-demo="{f["send"]}" data-dl="{f["send_dl"]}" data-dl-subject="{f["dl_subject"]}">{f["send"]}</button><small>{esc(f["note"])}</small></div>'
+      f'<div class="wide fa"><button class="btn lg" type="submit" data-sending="{esc(f["sending"])}" data-demo="{f["send"]}" data-trial="{f["send_trial"]}" data-dl="{f["send_dl"]}" data-dl-subject="{f["dl_subject"]}">{f["send_trial"]}</button><small>{esc(f["note"])}</small></div>'
       f'<p class="wide ferr" hidden><span>{esc(f["err"])}</span> <a href="{demo_mail}">{MAIL}</a></p></form>'
       f'<div class="card dok" id="demo-ok" hidden><svg><use href="#ck"/></svg><h3>{esc(f["ok_h"])}</h3><p>{esc(f["ok_p"])}</p></div>'
-      f'<div class="card dok" id="trial-ok" hidden><svg><use href="#ck"/></svg><h3>{f["dl_h"]}</h3><p>{f["dl_p"]} <a id="trial-again" href="#">{f["again"]}</a></p></div>')
+      f'<div class="card dok" id="trial-ok" hidden><svg><use href="#ck"/></svg><h3>{f["dl_h"]}</h3>'
+      f'<div class="mycode" id="my-code" hidden><span>{f["my_code"]}</span><b id="my-code-v" dir="ltr"></b><button type="button" class="btn ghost" id="copy-code" data-done="{f["copied"]}">{f["copy"]}</button><small>{f["code_keep"]} <span id="my-code-mailed" hidden>{f["code_mailed"]}</span></small></div>'
+      f'<p>{f["dl_p"]} <a id="trial-again" href="#">{f["again"]}</a></p><ol class="steps">' + ''.join(f'<li>{x}</li>' for x in f['steps']) + '</ol></div>')
     mailto = 'mailto:' + MAIL + '?subject=' + quote(t['mail_sub'])
     mail = '#demo'                     # "Get early access" opens the one signup form
     arrow = '<svg class="ic"><use href="#ar"/></svg>'
@@ -250,7 +268,7 @@ def page(k):
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(t['title'])}"><meta name="twitter:description" content="{esc(t['desc'])}"><meta name="twitter:image" content="{og}">
 <link rel="icon" href="{r}assets/favicon.ico" sizes="48x48"><link rel="icon" type="image/png" sizes="32x32" href="{r}assets/favicon-32.png"><link rel="apple-touch-icon" href="{r}assets/apple-touch-icon.png">{GSC}{GA}
 <link rel="preload" href="{r}fonts/manrope-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="{r}assets/mq.css?v=19">
+<link rel="stylesheet" href="{r}assets/mq.css?v=20">
 <script type="application/ld+json">{json.dumps(jld, ensure_ascii=False)}</script><script type="application/ld+json">{json.dumps(faqld, ensure_ascii=False)}</script></head>
 <body>{ICONS}
 <header class="nav"><div class="wrap"><a class="logo" href="./" aria-label="A+ MQ"><picture><source media="(prefers-color-scheme: dark)" srcset="{r}assets/logo-horizontal-white.png"><img src="{r}assets/logo-horizontal.png" alt="A+ MQ" width="120" height="38"></picture></a><nav aria-label="Main">{nav}</nav><a class="lang" href="{t['other_href']}" hreflang="{'en' if ar else 'ar'}">{t['other_label']}</a><a class="btn" href="{demo}">{t['demo']}</a></div></header>
@@ -264,11 +282,11 @@ def page(k):
 <section class="sec alt"><div class="wrap"><h2>{esc(t['who_h'])}</h2><div class="who">{who}</div><div class="card by"><div class="av"><img src="{r}assets/icon-128.png" alt="" width="40" height="40"></div><div><h3>{esc(t['by_h'])}</h3><p>{esc(t['by_p'])} <a href="{t['portfolio']}">{t['by_a']}</a></p></div></div></div></section>
 <section class="sec" id="licensing"><div class="wrap"><h2>{esc(t['lic_h'])}</h2><p class="sub">{esc(t['lic_s'])}</p><div class="lic">{lic}</div></div></section>
 <section class="sec alt" id="faq"><div class="wrap"><h2>{t['faq_h']}</h2><div class="faq">{faq}</div></div></section>
-<section class="sec" id="demo"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><h3>{esc(f['h'])}</h3><p class="dp">{esc(f['p'])}</p><p class="li2"><a href="{mailto}">{t['cta']}</a> · <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div><div class="dr">{form}</div></div></div></section>
+<section class="sec" id="demo"><div class="wrap"><div class="cta dcta"><div class="dl"><h2>{esc(t['end_h'])}</h2><p>{esc(t['end_p'])}</p><h3>{esc(f['h'])}</h3><p class="dp">{esc(f['p'])}</p><p class="li2"><a href="{mailto}">{t['mail_l']}</a> · <a href="https://linkedin.com/in/abo-elkhair" target="_blank" rel="noopener">{t['end_b2']}</a></p></div><div class="dr">{form}</div></div></div></section>
 </main>
 <footer><div class="wrap"><div class="fr"><strong style="color:var(--ink)">A+ MQ</strong><span><a href="{t['portfolio']}">{t['portlabel']}</a> · <a href="{t['other_href']}">{t['other_label']}</a></span></div><small>{esc(t['foot'])} {esc(t['foot_a'])}</small><small style="margin-top:8px">{esc(t['copy'])}</small></div></footer>
 <div class="sticky"><a class="btn" href="{demo}">{t['demo']}</a><a class="btn ghost" href="{mail}">{t['cta']}</a></div>
-<script src="{r}assets/signup.js?v=4" defer></script>
+<script src="{r}assets/signup.js?v=5" defer></script>
 {FILTER_JS}
 </body></html>'''
 

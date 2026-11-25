@@ -176,3 +176,18 @@ section[id]{scroll-margin-top:76px}
 .ds dd{margin:0;font-weight:600}
 
 .df[hidden],.dok[hidden]{display:none!important}
+/* trial / demo choice, the personal code, the four trial steps (A+ MQ 0.44.0) */
+.df label[hidden],.mycode[hidden]{display:none!important}
+.df .mode{display:flex;flex-wrap:wrap;gap:10px}
+.df .mode label.chk{flex:1 1 200px;border:1px solid var(--line);border-radius:12px;padding:12px 14px;background:var(--bg)}
+.df .mode label.chk:has(input:checked){border-color:#2f55e0;background:color-mix(in srgb,var(--blue-s) 55%,transparent)}
+.mycode{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 14px;margin:16px auto 18px;padding:16px;border:1px dashed color-mix(in srgb,#2f55e0 45%,var(--line));border-radius:14px;background:color-mix(in srgb,var(--blue-s) 45%,transparent);max-width:460px}
+.mycode span{width:100%;font-size:13px;font-weight:700;color:var(--mute)}
+.mycode b{font:700 22px/1.2 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.06em;color:var(--ink)}
+.mycode .btn{padding:8px 14px;font-size:14px;cursor:pointer}
+.mycode small{width:100%;color:var(--mute);font-size:13px}
+.dok .steps{text-align:start;max-width:440px;margin:16px auto 0;padding-inline-start:22px;color:var(--ink)}
+.dok .steps li{margin:6px 0}
+.how{grid-template-columns:repeat(4,1fr)}
+@media (max-width:900px){.how{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.how{grid-template-columns:1fr}}
