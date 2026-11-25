@@ -128,7 +128,8 @@
     if (n.length !== 12) return fail(T.bad);
     var got;
     busy(T.check);
-    (api ? keyFromServer(c, d) : keyFromStatic(c, n))
+    // a network that blocks the server (some offices block *.workers.dev) falls back to keys.json
+    (api ? keyFromServer(c, d).catch(function (x) { if (x === "net") return keyFromStatic(c, n); throw x; }) : keyFromStatic(c, n))
       .then(function (k) {
         got = k;
         mail(d);                      // the author's e-mail copy; a missed e-mail does not stop a valid download
